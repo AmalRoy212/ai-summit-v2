@@ -27,7 +27,7 @@ export default function ExtraCards() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto" src="https://images.fineartamerica.com/images-medium-large-5/government-building-southern-india-ali-kabas.jpg" width={540} height={405} alt="Features 01" />
+                <img className="max-w-full mx-auto md:max-w-none h-auto" src="/images/who/img1.png" width={540} height={405} alt="Features 01" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
@@ -38,31 +38,43 @@ export default function ExtraCards() {
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Draft new regulations, meet potential partners, network with global Education Technology experts.</span>
+                      <span className="ml-5">Develop New Guidelines: Collaborate with industry leaders to create updated regulations and policies for data, AI, and automation technologies.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Learn from industry experts and thought leaders to help draft new regulations and policies.</span>
+                      <span className="ml-5">Engage with Experts: Gain insights from leading professionals and thought leaders to help draft new regulations and policies related to data, AI, and automation.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Explore the latest EdTech innovations from established tech leaders and emerging startups.</span>
+                      <span className="ml-5">Discover Cutting-Edge Innovations: Investigate the latest advancements in data, AI, and automation from both established technology giants and emerging startups.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Explore collaboration opportunities with top global technology enterprises.</span>
+                      <span className="ml-5">Optimize Services: Learn strategies for automating and reducing costs across various state-provided services.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Network with elite EdTech experts, business owners, investors, and startups.Identify and incentivize local startups with the potential to develop innovative solutions and services.</span>
+                      <span className="ml-5">Explore Collaboration: Seek out partnership opportunities with prominent global technology companies.</span>
+                    </li>
+                    <li className="relative flex items-center mb-2">
+                      <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                      </svg>
+                      <span className="ml-5">Expand Your Network: Connect with top-tier experts in data, AI, and automation, as well as business leaders, investors, and innovative startups.</span>
+                    </li>
+                    <li className="relative flex items-center mb-2">
+                      <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                      </svg>
+                      <span className="ml-5">Support Local Innovation: Identify and incentivize local startups with the potential to develop groundbreaking solutions and services in data, AI, and automation.</span>
                     </li>
                     {/* <li className="flex items-center">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -91,43 +103,43 @@ export default function ExtraCards() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto" src="https://www.businessinsider.in/photo/72272888/none-of-the-indias-top-iits-feature-in-the-list-of-top-30-asian-universities.jpg?imgsize=2452715" width={540} height={405} alt="Features 02" />
+                <img className="max-w-full mx-auto md:max-w-none h-auto" src="/images/who/img2.png" width={540} height={405} alt="Features 02" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <SubHeadings heading="WHY SHOULD EDUCATIONAL INSTITUTIONS ATTEND?" fontSize={8} />
+                  <SubHeadings heading="WHY SHOULD ENTERPRISE COMPANIES ATTEND?" fontSize={8} />
                   <ul className="text-lg text-gray-400 -mb-2">
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Interact directly with customers seeking suitable product solutions.</span>
+                      <span className="ml-5">Explore Innovative Solutions: Discover the latest advancements in data, AI, and automation from both established technology leaders and emerging startups.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Explore innovative EdTech products, network with regional governments and potential partners.</span>
+                      <span className="ml-5">Learn from Top Experts: Gain insights from the world’s leading experts on data, AI, and automation, including successful case studies, implementation strategies, and overcoming challenges.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Explore the latest EdTech innovations from established tech leaders and emerging startups.</span>
+                      <span className="ml-5">Identify Collaboration Opportunities: Find relevant startups for potential partnerships to develop mutually beneficial products and services.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Learn from the world’s top-most EdTech, STEM experts from successful use-cases, implementation, roadblocks, and much more.</span>
+                      <span className="ml-5">Network with Regional Authorities: Connect with regional government officials and potential partners to explore collaborative opportunities in the data, AI, and automation sectors.</span>
                     </li>
-                    <li className="relative flex items-center mb-2">
+                    {/* <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
                       <span className="ml-5">Find relevant startups for collaboration to develop products and services of mutual interest.</span>
-                    </li>
+                    </li> */}
                     {/* <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
@@ -161,7 +173,7 @@ export default function ExtraCards() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto" src="https://krypc.com/static/krypc_New/img/gallery/7.jpg" width={540} height={405} alt="Features 03" />
+                <img className="max-w-full mx-auto md:max-w-none h-auto" src="/images/who/img4.png" width={540} height={405} alt="Features 03" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
@@ -172,31 +184,31 @@ export default function ExtraCards() {
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Showcase innovations, get brand exposure, and network with investors to help raise funds.</span>
+                      <span className="ml-5">Showcase Innovations: Present your data, AI, and automation innovations to early adopters, government officials, and enterprises interested in integrating these solutions into their operations.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Showcase your innovations in front of early adopters who are eager to explore EdTech solutions in their institutions.</span>
+                      <span className="ml-5">Raise Funds: Connect with potential investors who are interested in your data, AI, and automation products and solutions to secure funding.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Showcase Your Products & Services to several educators, researchers, and eager investors attending the event.</span>
+                      <span className="ml-5">Present to a Curated Audience: Demonstrate your ideas and innovations to a select group of investors, senior government officials, and global technology leaders.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Raise funds by meeting with potential investors interested in your type of product and solutions.Present your ideas and innovations in front of a curated audience consisting of investors, senior government authorities, and global education technology enterprises.</span>
+                      <span className="ml-5">Gain Brand Exposure: Achieve maximum visibility through regional and international media, tech bloggers, and journalists.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Get maximum brand exposure through regional and international media, tech-bloggers, and journalists.Learn and network with international EdTech experts and regional policymakers.</span>
+                      <span className="ml-5">Network and Learn: Engage with international experts in data, AI, and automation, as well as regional policymakers to expand your knowledge and connections.</span>
                     </li>
                     {/* <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -232,7 +244,7 @@ export default function ExtraCards() {
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
               {/* Image */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
-                <img className="max-w-full mx-auto md:max-w-none h-auto" src="https://entrackr.com/wp-content/uploads/2019/10/foreign-investment-1200x600.jpg" width={540} height={405} alt="Features 02" />
+                <img className="max-w-full mx-auto md:max-w-none h-auto" src="/images/who/img3.png" width={540} height={405} alt="Features 02" />
               </div>
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
@@ -243,31 +255,31 @@ export default function ExtraCards() {
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Meet curated startup, network with elites from enterprises, governments and global EdTech experts</span>
+                      <span className="ml-5">Discover Promising Startups: Meet selected startups that offer valuable solutions and have high growth potential in data, AI, and automation markets.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Meet curated startups that have potential value in a growth-oriented markets and practical solutions to real problems</span>
+                      <span className="ml-5">Access Curated Pitch Decks: Review startup pitch decks that have been carefully selected and approved by our advisory board, which includes investors, thought leaders, and senior technology experts.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Explore the latest EdTech innovations from established tech leaders and emerging startups.</span>
+                      <span className="ml-5">Enjoy Exclusive Networking: Access a dedicated networking lounge reserved for speakers, investors, and VIPs attending the event.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Learn from the world’s top-most EdTech, STEM experts from successful use-cases, implementation, roadblocks, and much more.</span>
+                      <span className="ml-5">Enjoy Exclusive Networking: Access a dedicated networking lounge reserved for speakers, investors, and VIPs attending the event.</span>
                     </li>
                     <li className="relative flex items-center mb-2">
                       <svg className="absolute top-2 left-0 w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                       </svg>
-                      <span className="ml-5">Find relevant startups for collaboration to develop products and services of mutual interest.</span>
+                      <span className="ml-5">Prepare in Advance: Receive startup pitch decks ahead of the event to prepare customized questions and make the most of your meetings with these innovators.</span>
                     </li>
                     {/* <li className="flex items-center mb-2">
                       <svg className="w-3 h-3 fill-current text-green-500 mr-2 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">

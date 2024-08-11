@@ -26,7 +26,7 @@ function IndexHeader() {
   }, []);
 
   return (
-    <div className="relative md:overflow-hidden h-[130vh]" id="hero">
+    <div className="relative md:overflow-hidden h-[100vh]" id="hero">
       <div className="absolute inset-0">
         <video
           autoPlay
@@ -37,13 +37,14 @@ function IndexHeader() {
           style={{ filter: "brightness(60%)" }}
           ref={pageHeader}
         >
-          <source src="/videos/blackhole.webm" type="video/webm" />
+          <source src="https://www.globalblockchainshow.com/wp-content/uploads/2024/03/GBS_Website-Cover-compressed.mp4" type="video/webm" />
+          {/* <source src="/videos/blackhole.webm" type="video/webm" /> */}
         </video>
         {/* <img src="/images/index/homebanner.jpg" className="object-cover w-full h-full" ref={pageHeader} alt="" /> */}
       </div>
 
       <div className="relative z-10 flex flex-col items-center justify-center py-24 text-white">
-        <span className="flex justify-center font-extrabold text-transparent text-[24px] bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+        {/* <span className="flex justify-center font-extrabold text-transparent text-[24px] bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           INITIATIVE BY{" "}
           <img
             width={55}
@@ -52,10 +53,10 @@ function IndexHeader() {
             src="/images/PNGs/dits.png"
             alt="DITS Logo"
           />
-        </span>
+        </span> */}
         <p className="md:text-2xl flex gap-x-3 justify-center items-center">
           <CiCalendarDate />
-          8th-AUG-2024 <FaLocationDot size={18} /> BENGALURU, INDIA
+          11th-Dec-2024 <FaLocationDot size={18} /> MUSCAT, SULTANATE OF OMAN
         </p>
         <div className="w-full h-auto flex md:flex-row flex-col justify-center items-center md:px-10">
           <motion.div
@@ -63,12 +64,13 @@ function IndexHeader() {
             className="relative flex flex-col items-end gap-6 mt-6 text-5xl md:text-6xl text-bold text-white max-w-[600px] w-auto md:h-auto h-[220px]"
           >
             <span>
-              GLOBAL
+            {/* The Intelligent Data, AI & Automation Summit */}
+              THE INTELLIGENT
               <span className="mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 {" "}
-                FUTURE EDUCATION{" "}
+                DATA, AI &{" "}
               </span>
-              SUMMIT
+              AUTOMATION SUMMIT
             </span>
           </motion.div>
           <Counter />
@@ -94,7 +96,7 @@ function IndexHeader() {
               Speakers
             </a> */}
           </div>
-          <p className="text-slate-300 py-5 md:px-10 px-2 rounded-2xl">
+          {/* <p className="text-slate-300 py-5 md:px-10 px-2 rounded-2xl">
             The Global Future Education Summit is a premier business focussed
             event driven by visionary insights, delving into the most recent
             challenges and technological trends in the education technology
@@ -111,7 +113,7 @@ function IndexHeader() {
             Participants will have the chance to observe state-of-the-art
             technological solutions presented by worldwide tech pioneers and
             assess their significance and influence on various organizations.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

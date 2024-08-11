@@ -4,7 +4,7 @@ import { slideInFromTop } from "@/utils/motion";
 import { motion } from "framer-motion";
 import React from "react";
 
-function  End() {
+function End() {
   return (
     <div className="relative md:overflow-hidden h-screen">
       <div className="absolute inset-0">
@@ -21,7 +21,7 @@ function  End() {
       </div>
 
       <div className="relative z-10 flex flex-col items-center justify-center py-24 text-white">
-        <motion.div
+        {/* <motion.div
           variants={slideInFromTop}
           initial="hidden"
           whileInView="visible"
@@ -32,7 +32,7 @@ function  End() {
             {" "}
             GLOBAL FUTURE EDUCATION SUMMIT{" "}
           </span>
-        </motion.div>
+        </motion.div> */}
         <motion.p
           variants={slideInFromTop}
           initial="hidden"
@@ -40,22 +40,18 @@ function  End() {
           className="text-base font-medium text-center text-gray-200 px-3 md:px-20 py-3 md:py-10 m-5 rounded-3xl"
           style={{ backgroundColor: "rgba(3, 0, 20, 0.674)" }}
         >
-          Live interactive workshops organized by Genifinty Global will be held
-          at Global Future Education Summit. The objective is to empower
-          educators on various advancements in the education and training
-          sector. It is a series of professional development workshops for
-          educators in Bengaluru. Power-packed sessions are conducted over 2
-          days. The workshops are attended by teachers, trainers, senior
-          management, academicians and professors of education institutions from
-          all across the country. Global Future Education Summit Workshops allow
-          teachers, trainers and faculty members to explore multiple facets of:
-          Implementation and impact of technological advancements, Curriculum
-          changes, Inclusive environments. Sports integration and Other
-          breakthroughs, both internationally and nationally. Conducted by
-          prominent companies, the workshops train educators in: Enhancing
-          Teaching and Learning, Exploring aspects in using and implementing of
-          technological advancements, Meeting Faculty development and technology
-          needs, Formulating and discussing new initiatives.
+          We firmly believe that the leaders actively involved in reshaping the
+          technology landscape represent the true pillars of our society. At the
+          Intelligent AI, Data, and Automation Summit, we endeavour to unite
+          them under one roof, fostering a deep understanding of the innovations
+          and transformations capable of simplifying and enhancing the
+          transmission of technology, which will, in turn, encompass strategies
+          to tackle significant challenges. This summit will serve as a platform
+          for world-class innovation, shedding light on effective strategies
+          poised to fuel the digital economy of both the current and future
+          centuries. It will attract the most dynamic leaders from the
+          technology sector, offering fresh insights and perspectives aimed at
+          empowering, inspiring, and enriching the global tech community.
         </motion.p>
         <button className="cursor-pointer  w-auto px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500">
           Register now

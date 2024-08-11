@@ -27,7 +27,7 @@ function StartUp() {
               data-wow-delay=".2s"
             >
               <div className="mb-8">
-                <h2 className="text-3xl font-bold">
+                <h2 className="text-3xl font-bold text-white">
                   Startup Pitch{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                     Competition - Elevating
@@ -37,9 +37,9 @@ function StartUp() {
               </div>
 
               <ul className="document-list">
-                <li className="mb-4 mr-5 text-slate-300">
+                {/* <li className="mb-4 mr-5 text-slate-300">
                   Stand a chance to win Genfinity credit valued at up to $9999
-                </li>
+                </li> */}
                 <li className="text-gray-100 md:mr-10">
                   Startup Pitch Competition serves as a premier fundraising
                   platform, catering to companies in various stages of

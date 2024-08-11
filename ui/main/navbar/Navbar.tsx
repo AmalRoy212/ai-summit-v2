@@ -22,7 +22,7 @@ function Navbar() {
           <Image
             data-aos='flip-right'
             data-aos-duration={600}
-            src="/images/logos/GG_WHITE.png"
+            src="/logo.png"
             alt="logo"
             width={90}
             height={90}

@@ -71,7 +71,7 @@ function TestCards({ src, title, description, index }: Props) {
             <p>
               <a
                 href="#"
-                className="text-sky-500 transition-all duration-300 group-hover:text-white"
+                className="text-white transition-all duration-300 group-hover:text-black"
               >
                 {title} &rarr;
               </a>

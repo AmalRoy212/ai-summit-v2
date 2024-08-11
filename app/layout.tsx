@@ -8,8 +8,8 @@ import Footer from '@/ui/main/footer/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Global Future Education Summit',
-  description: 'Global future education summit bangalore 2024',
+  title: 'Intelligent AI, Data, and Automation Summit',
+  description: 'Intelligent AI, Data, and Automation Summit | December 11, 2024 | Muscat, Sultanate of Oman',
 }
 
 export default function RootLayout({

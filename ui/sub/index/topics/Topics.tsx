@@ -39,7 +39,7 @@ function Topics({ data, index }: Topic) {
       transition={{delay : index * animationDelay}}
       key={index}
       className="relative w-full md:w-1/6 flex flex-col-reverse justify-center items-center border-gradient-blue-purple m-3 p-5 z-[20]"
-      style={{ height: '200px' }}
+      style={{ height: '270px' }}
     >
       <div className="absolute top-0 p-2 flex justify-center items-center h-[50%] overflow-hidden">
         <Image src={data.img} alt="image" width={120} height={120} />

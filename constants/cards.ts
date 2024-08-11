@@ -1,35 +1,41 @@
 export const cardsDataOne = [
   {
-    src : "/images/statics/insightfull-session.jpeg",
-    title : "Insightful Sessions",
-    description : "Immerse yourself in insights from esteemed global tech experts, as they unveil the paramount strategies for attaining unparalleled success within the dynamic realm of the digital landscape. This exclusive occasion offers a gateway to glean wisdom from foremost solution providers worldwide, who will illuminate ingenious pathways towards realizing optimal business outcomes. Don't miss out on this opportunity to navigate the swift currents of the digital age with guidance from industry luminaries"
+    src: "/images/statics/insight.png",
+    title: "Insightful Sessions",
+    description:
+      "Immerse yourself in insights from esteemed global tech experts, as they unveil key strategies for achieving success in the ever-changing digital landscape. This exclusive event provides a unique opportunity to learn from leading solution providers worldwide, who will share innovative approaches to achieving the best business outcomes. Don't miss this chance to navigate the fast-paced digital age with guidance from industry leaders.",
   },
   {
-    src : "/images/statics/tech-usecase.jpeg",
-    title : "Technology Use Cases",
-    description :"New technologies, as they come into use, can change industries a lot. See how different technologies working together can make big changes. Explore such transformational technology use-cases presented by successful early adopters and pioneers within the field of technology innovation"
+    src: "/images/statics/usecase.png",
+    title: "Technology Use Cases",
+    description:
+      "New technologies have the power to significantly transform industries. Witness firsthand how the synergy of various technologies can drive substantial changes across different sectors. Explore transformational technology use-cases presented by successful early adopters and pioneers in the field of technology innovation. These presentations will showcase how innovative solutions have been implemented to revolutionize business processes, enhance efficiency, and create new opportunities for growth. By learning from these trailblazers, you can gain valuable insights into the potential of emerging technologies and their practical applications in real-world scenarios.",
   },
   {
-    src : "/images/statics/exhibitions.avif",
-    title : "Tech Exhibitions",
-    description : "The Global Future Education Summit in Bengaluru offers a unique opportunity to delve into hundreds of cutting-edge technology solutions. Aimed at government bodies and educational institutions, this summit focuses on building a leaner education system, fostering innovative learning approaches, and equipping our workforce with the skills needed for the future. Join us as we shape the next era of education through transformative technologies"
-  }
-]
+    src: "/images/statics/techexhi.png",
+    title: "Tech Exhibitions",
+    description:
+      "Explore hundreds of cutting-edge technology innovations designed for businesses. These technologies can help streamline processes, develop new products, and automate tasks to reduce costs. Discover how these advancements can make your business more efficient and innovative. Gain insights from industry leaders on the latest trends and best practices. Stay ahead of the competition by leveraging the most advanced tools and solutions available.",
+  },
+];
 
 export const cardsDataTwo = [
   {
-    src : "/images/statics/panel-diss.webp",
-    title : "Panel Discussions",
-    description : "Come together to share and discuss ideas with some of the top experts in the field of Technology. Our group consists of experienced and successful thought leaders from the technology sector, aiming to connect and bridge the gap between new innovations in the tech world"
+    src: "/images/statics/panel.png",
+    title: "Panel Discussions",
+    description:
+      "Come together to share and discuss ideas with some of the top experts in the field of Technology. Our group consists of experienced and successful thought leaders from the technology sector, aiming to connect and bridge the gap between new innovations in the tech world. We believe in the power of collaboration and the importance of staying at the forefront of technological advancements. By fostering a community of continuous learning and growth, we strive to inspire and empower the next generation of tech leaders.",
   },
   {
-    src : "/images/statics/b-networking.jpeg",
-    title : "Business Networking",
-    description : "As the world slowly comes back to normal, this series of physical events is bringing together top leaders and decision-makers who are using technology in innovative ways to drive businesses forward while delivering business value, and enhancing the overall customer experience"
+    src: "/images/statics/businessnet.png",
+    title: "Business Networking",
+    description:
+      "This series of physical events brings together top leaders and decision-makers who are using technology in innovative ways to drive businesses forward while delivering business value and enhancing the overall customer experience. By showcasing real-world success stories and cutting-edge solutions, we aim to inspire attendees to leverage technology to its fullest potential. These events provide a unique opportunity for networking, knowledge sharing, and exploring the future of technology in business.",
   },
   {
-    src : "/images/statics/showcase.jpeg",
-    title : "Product Showcase",
-    description : "The Global Future Education Summit, hosted in Bengaluru, promises to unveil cutting-edge technologies for the education industry. Attendees will witness real-world demonstrations of how Artificial Intelligence (AI), Augmented Reality (AR), Virtual Reality (VR), and other emerging technologies can seamlessly integrate into classrooms and educational institutions. These practical examples will empower educational institutions to harness the full potential of these technologies within their own campuses"
+    src: "/images/statics/showcase.png",
+    title: "Product Showcase",
+    description:
+      "DAAS in Oman will feature many new and advanced technologies poised to revolutionize the country's tech industry. The event will showcase real-life examples of how data, AI, and digital automation can be utilized across various business sectors. By providing these practical demonstrations, companies will gain valuable insights into effectively integrating these technologies into their own industries. This exposure will help businesses understand the potential benefits and applications of data, AI, and digital automation, driving innovation and growth within their respective fields.",
   },
-]
+];

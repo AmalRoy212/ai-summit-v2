@@ -17,6 +17,6 @@ export const attendies_Data = [
   },
   {
     label : "INVESTORS",
-    toCount : 40
+    toCount : 20
   }
 ]
