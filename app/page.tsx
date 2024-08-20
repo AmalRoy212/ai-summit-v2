@@ -1,3 +1,5 @@
+"use client";
+
 import Cards from '@/ui/main/cards/Cards'
 import Pricing from '@/ui/main/index/Pricing'
 import DetailsHolder from '@/ui/main/index/aboutEvent/DetailsHolder'

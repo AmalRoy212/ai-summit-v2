@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
+import { slideInFromLeft } from "@/utils/motion";
 import { CiCalendarDate } from "react-icons/ci";
 import { FaLocationDot } from "react-icons/fa6";
 import Counter from "@/ui/sub/counter/Counter";
@@ -13,7 +13,7 @@ function IndexHeader() {
   useEffect(() => {
     if (window.innerWidth > 991 && pageHeader.current) {
       const updateScroll = () => {
-        const windowScrollTop = window.pageYOffset / 3;
+        const windowScrollTop = window?.pageYOffset / 3;
         if (pageHeader.current) {
           pageHeader.current.style.transform = `translate3d(0, ${windowScrollTop}px, 0)`;
         }
