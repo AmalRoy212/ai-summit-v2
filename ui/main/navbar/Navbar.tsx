@@ -34,7 +34,7 @@ function Navbar() {
           </span> */}
         </a>
 
-        <div className='w-[900px] h-full hidden md:flex flex-row items-center justify-between md:mr-20'>
+        <div className='w-[800px] h-full hidden md:flex flex-row items-center justify-between md:mr-20'>
           <div className='flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200'>
             <a href="#about-us" className='cursor-pointer'>ABOUT</a>
             <a href="#happening" className='cursor-pointer'>HAPPENINGS</a>
