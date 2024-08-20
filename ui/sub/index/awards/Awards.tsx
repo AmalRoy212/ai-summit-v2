@@ -16,7 +16,7 @@ const CardContainer = styled.div`
   border-radius: 8px;
   width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 370px;
+  height: 390px;
 `;
 
 const TrophyImage = styled.img`
@@ -42,7 +42,7 @@ const TrophyCard: React.FC<TrophyCardProps> = ({
   description,
 }) => {
   return (
-    <CardContainer data-aos-duration={number * 300} data-aos="fade-right">
+    <CardContainer data-aos-duration={(number * 300) / 2} data-aos="fade-right">
       <TrophyImage src={`/images/statics/award.png`} alt={`Trophy ${number}`} />
       <CardTitle>{title}</CardTitle>
       <CardDescription>{description}</CardDescription>

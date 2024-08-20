@@ -3,6 +3,7 @@ import Pricing from '@/ui/main/index/Pricing'
 import DetailsHolder from '@/ui/main/index/aboutEvent/DetailsHolder'
 import AwardsProvider from '@/ui/main/index/awardSection/AwardsProvide'
 import Card from '@/ui/main/index/cards/Card'
+import ChartsHolder from '@/ui/main/index/chartArea/ChartsHolder'
 import ContactUs from '@/ui/main/index/contactUs/ContactUs'
 import Encryption from '@/ui/main/index/encryption/Encryption'
 import End from '@/ui/main/index/end/End'
@@ -20,6 +21,7 @@ export default function Home() {
         <DetailsHolder />
         <Card />
         <Encryption />
+        <ChartsHolder/>
         {/* <Cards /> */}
         <AwardsProvider/>
         <TopicsProvide />

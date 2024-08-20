@@ -25,7 +25,7 @@ function Occation() {
     <div>
       <div className="relative h-full w-full flex justify-start px-10 md:mb-10">
         <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
-          WHY MUSCAT
+          WHY OMAN ?
         </h1>
         <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-fill-transparent"></div>
       </div>

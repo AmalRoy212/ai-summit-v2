@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Link from "next/link";
 import React from "react";
-import './topics.css';
+// import './topics.css';
 
 interface Topic {
   data: {
@@ -38,10 +38,10 @@ function Topics({ data, index }: Topic) {
       custom={index}
       transition={{delay : index * animationDelay}}
       key={index}
-      className="relative w-full md:w-1/6 flex flex-col-reverse justify-center items-center border-gradient-blue-purple m-3 p-5 z-[20]"
+      className="relative w-full md:w-1/6 flex flex-col-reverse justify-center items-center border-gradient-blue-purple m-3 p-5 z-[20] rounded-full"
       style={{ height: '270px' }}
     >
-      <div className="absolute top-0 p-2 flex justify-center items-center h-[50%] overflow-hidden">
+      <div className="absolute top-0 p-2 flex justify-center items-center h-[50%] overflow-hidden bg-white rounded-full">
         <Image src={data.img} alt="image" width={120} height={120} />
       </div>
       <div className="absolute bottom-0 p-3 text-slate-300 flex justify-center items-center w-full h-[50%]">

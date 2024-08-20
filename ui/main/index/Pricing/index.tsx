@@ -19,49 +19,49 @@ const Pricing = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:px-40 px-2 pt-5">
           <PricingBox
             packageName="Standard Pass"
-            price={"₹ 9,999"}
+            price={"$ 119"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle="Secure your standard tickets today and unlock the following exclusive benefits."
           >
             <OfferList text="Exhibition Zone" status="active" />
-            <OfferList text="Global Future Education Stage" status="active" />
+            <OfferList text="Intelligent Data, Ai & Automation Stage " status="active" />
             <OfferList text="Networking Zone with Coffee & Snacks" status="inactive" />
             <OfferList text="Executive Lunch" status="inactive" />
             <OfferList text="Priority Seating" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Business Pass"
-            price={"₹ 19,999"}
+            price={"$249"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle="Business Pass now and enjoy exclusive perks tailored to elevate your experience."
           >
             <OfferList text="Exhibition Zone" status="active" />
-            <OfferList text="Global Future Education Stage" status="active" />
+            <OfferList text="Intelligent Data, Ai & Automation Stage " status="active" />
             <OfferList text="Networking Zone with Coffee & Snacks" status="active" />
             <OfferList text="Executive Lunch" status="inactive" />
             <OfferList text="Priority Seating" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="VIP Pass"
-            price={"₹ 29,999"}
+            price={"$349"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle="Snag your VIP Pass now for top-tier perks that elevate your experience."
           >
             <OfferList text="Exhibition Zone" status="active" />
-            <OfferList text="Global Future Education Stage" status="active" />
+            <OfferList text="Intelligent Data, Ai & Automation Stage " status="active" />
             <OfferList text="Networking Zone with Coffee & Snacks" status="active" />
             <OfferList text="Executive Lunch" status="active" />
             <OfferList text="Priority Seating" status="active" />
           </PricingBox>
           <PricingBox
             packageName="Enterprise Delegate Pass"
-            price={"₹ 39,999"}
+            price={"$499"}
             duration={isMonthly ? "mo" : "yr"}
             subtitle="Secure your Enterprise Delegate Pass for unparalleled networking and growth."
           >
             <p>For C-level, Directors & Senior Managers from enterprises only</p>
             <OfferList text="Exhibition Zone" status="active" />
-            <OfferList text="Global Future Education Stage" status="active" />
+            <OfferList text="Intelligent Data, Ai & Automation Stage " status="active" />
             <OfferList text="Networking Zone with Coffee & Snacks" status="active" />
             <OfferList text="Executive Lunch" status="active" />
             <OfferList text="Priority Seating" status="active" />
