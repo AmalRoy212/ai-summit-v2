@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { slideInFromLeft } from "@/utils/motion";
@@ -11,17 +12,19 @@ function IndexHeader() {
   const pageHeader = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (window.innerWidth > 991 && pageHeader.current) {
-      const updateScroll = () => {
-        const windowScrollTop = window?.pageYOffset / 3;
-        if (pageHeader.current) {
-          pageHeader.current.style.transform = `translate3d(0, ${windowScrollTop}px, 0)`;
-        }
-      };
-      window.addEventListener("scroll", updateScroll);
-      return () => {
-        window.removeEventListener("scroll", updateScroll);
-      };
+    if(window){
+      if (window.innerWidth > 991 && pageHeader.current) {
+        const updateScroll = () => {
+          const windowScrollTop = window?.pageYOffset / 3;
+          if (pageHeader.current) {
+            pageHeader.current.style.transform = `translate3d(0, ${windowScrollTop}px, 0)`;
+          }
+        };
+        window.addEventListener("scroll", updateScroll);
+        return () => {
+          window.removeEventListener("scroll", updateScroll);
+        };
+      }
     }
   }, []);
 

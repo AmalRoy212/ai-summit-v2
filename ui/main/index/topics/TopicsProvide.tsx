@@ -1,3 +1,4 @@
+"use client"
 import Topics from "@/ui/sub/index/topics/Topics";
 import React from "react";
 import DetailHeading from "../headings/DetailHeading";
