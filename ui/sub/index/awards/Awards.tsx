@@ -7,21 +7,22 @@ type TrophyCardProps = {
   title: string;
   description: string;
 };
+// background: #000066; /* Dark blue background */
 
 const CardContainer = styled.div`
-  background: #000066; /* Dark blue background */
+  background: linear-gradient(180deg, #8a34cc 0%, #6a34cc 50%, #345dcc 100%); /* Dark blue background */
   color: white;
   padding: 20px;
   margin: 10px;
   border-radius: 8px;
   width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 390px;
+  height: 360px;
 `;
 
 const TrophyImage = styled.img`
   width: 100%;
-  height: 140px;
+  height: 90px;
   object-fit: contain;
 `;
 

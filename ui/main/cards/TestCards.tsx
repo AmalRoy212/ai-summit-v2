@@ -2,8 +2,23 @@
 
 import React, { useState } from "react";
 
-type MixBlendModeType = 'normal' | 'multiply' | 'screen' | 'overlay' | 'darken' | 'lighten' | 'color-dodge' | 'color-burn' | 'hard-light' | 'soft-light' | 'difference' | 'exclusion' | 'hue' | 'saturation' | 'color' | 'luminosity';
-
+type MixBlendModeType =
+  | "normal"
+  | "multiply"
+  | "screen"
+  | "overlay"
+  | "darken"
+  | "lighten"
+  | "color-dodge"
+  | "color-burn"
+  | "hard-light"
+  | "soft-light"
+  | "difference"
+  | "exclusion"
+  | "hue"
+  | "saturation"
+  | "color"
+  | "luminosity";
 
 interface Props {
   src: string;
@@ -27,7 +42,13 @@ function TestCards({ src, title, description, index }: Props) {
       style={{ backgroundImage: `url(${src})`, backgroundSize: "cover" }}
     >
       <div className="group relative cursor-pointer overflow-hidden  px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 transition-transform duration-300 hover:-translate-y-1 hover:shadow-2xl sm:mx-auto sm:max-w-sm sm:rounded-lg sm:px-10">
-        <span className="absolute top-10 z-[20] h-20 w-20 rounded-full bg-sky-500 transition-all duration-300 group-hover:scale-[11]"></span>
+        <span
+          style={{
+            background:
+              "linear-gradient(180deg, #8a34cc 0%, #6a34cc 50%, #345dcc 100%)",
+          }}
+          className="absolute top-10 z-[20] h-20 w-20 rounded-full transition-all duration-300 group-hover:scale-[11]"
+        ></span>
         <div className="relative z-[20] mx-auto max-w-md">
           {/* <span className="grid h-20 w-20 place-items-center rounded-full bg-sky-500 transition-all duration-300 group-hover:bg-sky-400">
             <svg

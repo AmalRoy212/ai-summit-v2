@@ -21,8 +21,8 @@ export default function Home() {
         <DetailsHolder />
         <Card />
         <Encryption />
+        <Cards />
         <ChartsHolder/>
-        {/* <Cards /> */}
         <AwardsProvider/>
         <TopicsProvide />
         <WhoIndustries />

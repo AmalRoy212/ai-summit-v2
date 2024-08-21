@@ -87,6 +87,8 @@ import SubHeadings from '../../headers/SubHeadings';
 // Register the chart.js components
 ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
 
+const colorOne = "linear-gradient(180deg, #8a34cc 0%, #6a34cc 50%, #345dcc 100%)"
+
 const PolarChartComponent = () => {
   const data = {
     labels: ['Senior Managers', 'VPs, Directors, Heads', 'C-suite'],
@@ -95,14 +97,14 @@ const PolarChartComponent = () => {
         label: 'Attendees in percentage',
         data: [35, 38, 27],
         backgroundColor: [
-          '#960000',
-          '#090979',
-          '#fcb045',
+          '#8a34cc',
+          '#6a34cc',
+          '#345dcc',
         ],
         borderColor: [
-          '#960000',
-          '#090979',
-          '#fcb045',
+          '#8a34cc',
+          '#6a34cc',
+          '#345dcc',
         ],
         borderWidth: 1,
       },
@@ -120,7 +122,7 @@ const PolarChartComponent = () => {
 
   return (
     <div className='flex flex-col gap-y-5'>
-      <SubHeadings fontSize={10} heading="INDUSTRIES" />
+      <SubHeadings fontSize={10} heading="BY JOB TITLE" />
       <PolarArea data={data} options={options} />
     </div>
   );

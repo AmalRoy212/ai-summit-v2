@@ -41,11 +41,16 @@ function Topics({ data, index }: Topic) {
       className="relative w-full md:w-1/6 flex flex-col-reverse justify-center items-center border-gradient-blue-purple m-3 p-5 z-[20] rounded-full"
       style={{ height: '270px' }}
     >
-      <div className="absolute top-0 p-2 flex justify-center items-center h-[50%] overflow-hidden bg-white rounded-full">
-        <Image src={data.img} alt="image" width={120} height={120} />
+      <div 
+        style={{
+          background:
+            "linear-gradient(180deg, #8a34cc 0%, #6a34cc 50%, #345dcc 100%)",
+        }}
+      className="absolute top-0 p-2 flex justify-center items-center h-[50%] overflow-hidden rounded-full">
+        <Image src={data.img} className="object-cover rounded-full" alt="image" width={120} height={120} />
       </div>
-      <div className="absolute bottom-0 p-3 text-slate-300 flex justify-center items-center w-full h-[50%]">
-        <p className="text-[13px]">{data.dis}</p>
+      <div className="absolute bottom-0 text-slate-300 flex justify-center items-center w-full h-[50%]">
+        <p className="text-[13px] text-pretty">{data.dis}</p>
       </div>
       <Link href="/dashboard">Learn More</Link>
     </motion.div>

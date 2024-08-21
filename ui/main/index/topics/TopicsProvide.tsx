@@ -6,69 +6,69 @@ import DetailHeading from "../headings/DetailHeading";
 function TopicsProvide() {
   const data = [
     {
-      img: "/images/miniCards/img7.png",
+      img: "/images/topics/image1.jpeg",
       dis: "AI-Powered Decision Making: Leveraging AI to enhance strategic business decisions and operational efficiency.",
     },
     {
-      img: "/images/miniCards/img5.png",
+      img: "/images/topics/img2.jpeg",
       dis: "Data-Driven Transformation: Utilizing big data analytics to drive business growth and innovation.",
     },
     {
-      img: "/images/miniCards/img3.png",
+      img: "/images/topics/img3.jpeg",
       dis: "Future of Work with Automation: How automation is reshaping workforce dynamics and business processes.",
     },
     {
-      img: "/images/miniCards/img8.png",
+      img: "/images/topics/img4.jpeg",
       dis: "AI in Predictive Analytics: Harnessing AI to predict market trends, customer behavior, and business outcomes.",
     },
     {
-      img: "/images/miniCards/img4.png",
+      img: "/images/topics/img5.jpeg",
       dis: "Generative AI in Innovation: The role of Generative AI in product development, creative processes, and innovation.",
     },
   ];
 
   const dataTwo = [
     {
-      img: "/images/miniCards/img11.png",
+      img: "/images/topics/img6.jpeg",
       dis: "Data Governance and Security: Ensuring data integrity and security in a rapidly evolving digital landscape.",
     },
     {
-      img: "/images/miniCards/img10.png",
+      img: "/images/topics/img7.jpeg",
       dis: "AI and Automation Integration: Strategies for seamless integration of AI and automation technologies within enterprises.",
     },
     {
-      img: "/images/miniCards/img9.png",
+      img: "/images/topics/img8.jpeg",
       dis: "Building Scalable Data Pipelines: Best practices in data engineering for reliable and scalable data infrastructure.",
     },
     {
-      img: "/images/miniCards/img9.png",
+      img: "/images/topics/img9.jpeg",
       dis: "AI in Customer Experience: Enhancing customer engagement and satisfaction through AI-driven solutions.",
     },
     {
-      img: "/images/miniCards/img2.png",
+      img: "/images/topics/img10.jpeg",
       dis: "AI and Automation in Emerging Markets: Opportunities and challenges in deploying AI and automation in developing regions.",
     },
   ];
 
   const dataThree = [
     {
-      img: "/images/miniCards/img2.png",
+      img: "/images/topics/img11.jpeg",
       dis: "Robotic Process Automation (RPA): Automating routine tasks to improve efficiency and reduce costs.",
     },
     {
-      img: "/images/miniCards/img2.png",
+      img: "/images/topics/img12.jpeg",
       dis: "Advanced Data Analytics: Transforming raw data into actionable insights for competitive advantage.",
     },
     {
-      img: "/images/miniCards/img2.png",
+      img: "/images/topics/img13.jpeg",
       dis: "Real-World AI Use Cases: Success stories and lessons learned from AI implementations across various industries.",
     },
     {
-      img: "/images/miniCards/img2.png",
+      img: "/images/topics/img14.jpeg",
       dis: "Future of Generative AI: Exploring the next frontier of AI creativity and its potential impact on multiple sectors.",
     },
     {
-      img: "/images/miniCards/img2.png",
+      img: "/images/topics/img15.jpeg",
       dis: "Business Intelligence (BI) Trends: Exploring current and emerging trends in BI, including advanced visualization tools, real-time analytics, and integrating BI with AI for deeper insights.",
     },
   ];

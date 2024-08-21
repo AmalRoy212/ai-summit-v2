@@ -58,10 +58,9 @@ function Cards() {
   return (
     <>
       <CardsProvider />
-      <div className="md:flex justify-center items-center gap-5">
+      {/* <div className="md:flex justify-center items-center gap-5">
         <div className="md:w-1/2 h-full">
           <SubHeadings fontSize={10} heading="INDUSTRIES" />
-          {/* First Line */}
           <div className="flex flex-row justify-center items-center h-auto w-full md:w-full gap-5 p-5">
             {progressData.slice(0, 2).map((data, index) => (
               <CircularProgressChildren
@@ -73,7 +72,6 @@ function Cards() {
               />
             ))}
           </div>
-          {/* Second Line */}
           <div className="flex flex-row justify-center items-center h-auto w-full md:w-full gap-5 p-5">
             {progressData.slice(2).map((data, index) => (
               <CircularProgressChildren
@@ -94,7 +92,7 @@ function Cards() {
             <ProgressBar key={index} value={data.value} maxValue={100} index={index} title={data.title} />
           ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
