@@ -6,7 +6,7 @@ import React from 'react'
 function ChartsHolder() {
   return (
     <div className='w-full min-h-[500px] flex md:flex-row flex-col z-20 justify-center items-center'>
-      {/* <ApexChart/> */}
+      <ApexChart/>
       <JobFunctionCharts/>
     </div>
   )

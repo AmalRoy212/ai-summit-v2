@@ -2,10 +2,6 @@
 // import React, { useState, useEffect } from 'react';
 // import ReactApexChart from 'react-apexcharts';
 // import SubHeadings from '../../headers/SubHeadings';
-"use client"
-import { ApexOptions } from "apexcharts";
-import React from "react";
-import ReactApexChart from "react-apexcharts";
 
 // const ApexChart = () => {
 //   const [isBrowser, setIsBrowser] = useState(false);
@@ -83,73 +79,52 @@ import ReactApexChart from "react-apexcharts";
 
 // export default ApexChart;
 
+import React from 'react';
+import { PolarArea } from 'react-chartjs-2';
+import { Chart as ChartJS, RadialLinearScale, ArcElement, Tooltip, Legend } from 'chart.js';
+import SubHeadings from '../../headers/SubHeadings';
 
-interface ApexChartState {
-  series: number[];
-  options: ApexOptions;
-}
+// Register the chart.js components
+ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
 
-class ApexChart extends React.Component<{}, ApexChartState> {
-   constructor(props : any) {
-          super(props);
+const PolarChartComponent = () => {
+  const data = {
+    labels: ['Senior Managers', 'VPs, Directors, Heads', 'C-suite'],
+    datasets: [
+      {
+        label: 'Attendees in percentage',
+        data: [35, 38, 27],
+        backgroundColor: [
+          '#960000',
+          '#090979',
+          '#fcb045',
+        ],
+        borderColor: [
+          '#960000',
+          '#090979',
+          '#fcb045',
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
 
-          this.state = {
-          
-            series: [42, 47, 52, 58, 65],
-            options: {
-              chart: {
-                width: 380,
-                type: 'polarArea'
-              },
-              labels: ['Rose A', 'Rose B', 'Rose C', 'Rose D', 'Rose E'],
-              fill: {
-                opacity: 1
-              },
-              stroke: {
-                width: 1,
-                colors: undefined
-              },
-              yaxis: {
-                show: false
-              },
-              legend: {
-                position: 'bottom'
-              },
-              plotOptions: {
-                polarArea: {
-                  rings: {
-                    strokeWidth: 0
-                  },
-                  spokes: {
-                    strokeWidth: 0
-                  },
-                }
-              },
-              theme: {
-                monochrome: {
-                  enabled: true,
-                  shadeTo: 'light',
-                  shadeIntensity: 0.6
-                }
-              }
-            },
-          
-          
-          };
-        }
+  const options = {
+    plugins: {
+      legend: {
+        position: 'bottom' as const,  // Position the legend at the bottom
+      },
+    },
+  };
 
-      
 
-        render() {
-          return (
-            <div>
-              <div id="chart">
-                <ReactApexChart options={this.state.options} series={this.state.series} type="polarArea" width={380} />
-              </div>
-              <div id="html-dist"></div>
-            </div>
-          );
-        }
-      }
+  return (
+    <div className='flex flex-col gap-y-5'>
+      <SubHeadings fontSize={10} heading="INDUSTRIES" />
+      <PolarArea data={data} options={options} />
+    </div>
+  );
+};
 
-export default ApexChart;
+export default PolarChartComponent;
+
