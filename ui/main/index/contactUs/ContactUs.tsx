@@ -16,7 +16,7 @@ function ContactUs() {
         <Image src="/images/logos/GG_WHITE.png" alt='image' width={150} height={200} />
         {/* <Image src="/images/logos/eventLogo.png" alt='image' width={200} height={200} /> */}
       </div>
-      <p className='text-white md:px-28 text-center px-3 '>Genfinity Global specializes in organizing global B2B conferences and exhibitions, collaborating with both private and government entities to catalyze transformative journeys for organizations. Our mission is to craft dynamic business platforms that foster innovation, facilitate expansion of client bases, provide opportunities to learn about cutting-edge technologies, and encourage the exchange of best practices worldwide. With a commitment to excellence, we strive to create impactful events that connect industry leaders, foster collaboration, and drive positive change on a global scale.</p>
+      <p className='text-white md:px-28 text-center px-3 '>Capstone specializes in organizing global B2B conferences and exhibitions, collaborating with both private and government entities to catalyze transformative journeys for organizations. Our mission is to craft dynamic business platforms that foster innovation, facilitate expansion of client bases, provide opportunities to learn about cutting-edge technologies, and encourage the exchange of best practices worldwide. With a commitment to excellence, we strive to create impactful events that connect industry leaders, foster collaboration, and drive positive change on a global scale.</p>
       {/* <AboutUs /> */}
     </div>
   )

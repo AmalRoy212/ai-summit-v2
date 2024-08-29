@@ -17,13 +17,13 @@ function MobileNav({ setPopup }: any) {
                 <Link href={"Speakers"} data-aos='fade-left' data-aos-duration={800} className='cursor-pointer text-[18px] text-center py-2  w-auto mx-15 my-2 rounded-lg text-white bg-gradient-to-r from-purple-500 to-cyan-500'>Speakers</Link>
                 <Link href={"Delegates"} data-aos='fade-left' data-aos-duration={900} className='cursor-pointer text-[18px] text-center py-2  w-auto mx-15 my-2 rounded-lg text-white bg-gradient-to-r from-purple-500 to-cyan-500'>Delegates</Link>
                 <div className='w-full mt-[200px] flex items-center text-white p-3 justify-between'>
-                    <a target="_blank" data-aos='fade-up' data-aos-duration={700} href="https://www.instagram.com/genfinityglobal/">
+                    {/* <a target="_blank" data-aos='fade-up' data-aos-duration={700} href="https://www.instagram.com/genfinityglobal/">
                         <RiInstagramFill size={40} />
                     </a>
                     <a target="_blank" data-aos='flip-up' data-aos-duration={800} href="https://twitter.com/GenfinityGlobal">
                         <FaSquareXTwitter size={40} />
-                    </a>
-                    <a target="_blank" data-aos='fade-down' data-aos-duration={700} href="https://in.linkedin.com/company/genfinity-global">
+                    </a> */}
+                    <a target="_blank" data-aos='fade-down' data-aos-duration={700} href="https://www.linkedin.com/company/capstonemena">
                         <FaLinkedin size={40} />
                     </a>
                 </div>

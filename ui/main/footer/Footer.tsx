@@ -32,19 +32,19 @@ const Footer = () => {
           </div>
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px]">Social Media</div>
-            <a data-aos="fade-right" data-aos-duration={600} target="_blank" href="https://www.instagram.com/genfinityglobal/">
+            {/* <a data-aos="fade-right" data-aos-duration={600} target="_blank" href="https://www.instagram.com/genfinityglobal/">
               <p className="flex flex-row items-center my-[15px] cursor-pointer">
                 <FaInstagram />
                 <span className="text-[15px] ml-[6px]">Instagram</span>
               </p>
-            </a>
-            <a data-aos="fade-right" data-aos-duration={700} target="_blank" href="https://twitter.com/GenfinityGlobal">
+            </a> */}
+            {/* <a data-aos="fade-right" data-aos-duration={700} target="_blank" href="https://twitter.com/GenfinityGlobal">
               <p className="flex flex-row items-center my-[15px] cursor-pointer">
                 <FaXTwitter />
                 <span className="text-[15px] ml-[6px]">Twitter</span>
               </p>
-            </a>
-            <a data-aos="fade-right" data-aos-duration={800} target="_blank" href="https://www.linkedin.com/company/genfinity-global/">
+            </a> */}
+            <a data-aos="fade-right" data-aos-duration={800} target="_blank" href="https://www.linkedin.com/company/capstonemena">
               <p className="flex flex-row items-center my-[15px] cursor-pointer">
                   <RxLinkedinLogo />
                   <span className="text-[15px] ml-[6px]">Linkedin</span>
@@ -56,13 +56,13 @@ const Footer = () => {
               <span className="text-[15px] font-bold ml-[6px]">Learn More</span>
             </p> */}
             <p data-aos="fade-right" data-aos-duration={900} className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">	info@genfinityglobal.com</span>
+              <span className="text-[15px] ml-[6px]">	Info@capstonemiddleeast.com</span>
             </p>
           </div>
         </div>
 
         <div className="mb-[20px] text-[15px] text-center">
-          &copy; 2024 All rights reserved by Genfinity Global
+          &copy; 2024 All rights reserved by Capstone
         </div>
       </div>
     </div>
