@@ -14,9 +14,9 @@ const Footer = () => {
             <div className="font-bold text-[16px]">Event Location</div>
             <p data-aos="fade-right" data-aos-duration={200} className="flex flex-row items-center my-[15px] cursor-pointer">
               <RxSewingPin />
-              <span className="text-[15px] ml-[6px]">Bangalore</span>
+              <span className="text-[15px] ml-[6px]">Muscat, Sultanate Of Oman</span>
             </p>
-            <div data-aos="fade-right" data-aos-duration={300} className="font-bold text-[16px]">GFES</div>
+            {/* <div data-aos="fade-right" data-aos-duration={300} className="font-bold text-[16px]">GFES</div> */}
             <a data-aos="fade-right" data-aos-duration={400} href="#hero">
               <p className="flex flex-row items-center my-[15px] cursor-pointer">
                 <IoHome />
