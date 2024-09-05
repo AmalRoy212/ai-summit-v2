@@ -13,7 +13,7 @@ const JobFunctionChart: React.FC<JobFunctionChartProps> = ({
 }) => {
   return (
     <div className="flex flex-col items-center ml-2">
-      <div className="text-center text-white text-[10px] font-thin mb-2 w-32">
+      <div className="text-center text-white text-[10px] font-light mb-2 w-32">
         {jobFunction}
       </div>
       <div className="relative h-32 w-5 flex flex-col justify-end">
