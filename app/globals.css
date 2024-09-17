@@ -71,7 +71,7 @@ html {
 .rotating-circle {
   position: absolute;
   top: -12px;
-  left: 20px;
+  left: 19px;
   width: 160px;
   height: 160px;
   border: 3px dashed rgba(255, 255, 255, 0.5);
@@ -104,5 +104,18 @@ html {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 992px) {
+  .rotating-circle {
+    left: 20px; /* Adjust left position for medium-sized devices */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .rotating-circle {
+    left: 40px; /* Adjust left position for mobile devices */
   }
 }
