@@ -12,7 +12,7 @@ function StartUp() {
               data-wow-delay=".2s"
             >
               <Image
-                src="/images/index/startUp.png"
+                src="/images/index/business.png"
                 // className="w-[400px]"
                 alt=""
                 width={400}
