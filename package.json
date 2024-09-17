@@ -12,6 +12,7 @@
     "@heroicons/react": "^2.1.1",
     "@mui/joy": "^5.0.0-beta.22",
     "@mui/styled-engine-sc": "^6.0.0-alpha.12",
+    "antd": "^5.20.6",
     "aos": "^2.3.4",
     "apexcharts": "^3.52.0",
     "chart.js": "^4.4.4",
