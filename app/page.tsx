@@ -13,6 +13,7 @@ import StartUp from "@/ui/main/index/startUp/StartUp";
 import TopicsProvide from "@/ui/main/index/topics/TopicsProvide";
 import StarsCanvas from "@/ui/main/starBackground/StarBackground";
 import WhoIndustries from "@/ui/sub/index/WhyIndustries/WhyIndustries";
+import SpeakerProfiles from "../ui/main/speakers/SpeakersSection";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Hero />
         <DetailsHolder />
         <Card />
+        <SpeakerProfiles/>
         <Encryption />
         <Cards />
         <ChartsHolder />

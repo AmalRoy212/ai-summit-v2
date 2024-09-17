@@ -59,7 +59,7 @@ function IndexHeader() {
         </span> */}
         <p className="md:text-2xl flex gap-x-3 justify-center items-center">
           <CiCalendarDate />
-          11th-Dec-2024 <FaLocationDot size={18} /> MUSCAT, SULTANATE OF OMAN
+          11th December, 2024 <FaLocationDot size={18} /> MUSCAT, SULTANATE OF OMAN
         </p>
         <div className="w-full h-auto flex md:flex-row flex-col justify-center items-center md:px-10">
           <motion.div

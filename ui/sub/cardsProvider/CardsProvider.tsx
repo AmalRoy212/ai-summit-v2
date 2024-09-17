@@ -15,97 +15,100 @@ import { MdAgriculture, MdCastForEducation } from "react-icons/md";
 const items = [
   {
     title: "GOVERNMENT",
-    element: <RiGovernmentFill size={45} />
+    element: <RiGovernmentFill size={45} />,
   },
   {
-    title : "BANK",
-    element: <BsBank2 size={40} />
+    title: "BANK",
+    element: <BsBank2 size={40} />,
   },
   {
-    title : "INSURANCE",
-    element: <AiFillInsurance size={45} />
+    title: "INSURANCE",
+    element: <AiFillInsurance size={45} />,
   },
   {
-    title : "E-COMMERCE",
-    element: <SiCashapp size={45} />
+    title: "E-COMMERCE",
+    element: <SiCashapp size={45} />,
   },
   {
-    title : "TELECOM",
-    element: <GiOilRig size={45} />
+    title: "TELECOM",
+    element: <GiOilRig size={45} />,
   },
   {
-    title : "GOVERMENT",
-    element: <FaOilCan size={45} />
+    title: "OIL & GAS",
+    element: <FaOilCan size={45} />,
   },
-]
+];
 
 const itemsOne = [
   {
     title: "RETAIL",
-    element: <HiShoppingCart size={45} />
+    element: <HiShoppingCart size={45} />,
   },
   {
-    title : "HEALTHCARE",
-    element: <RiMentalHealthFill size={40} />
+    title: "HEALTHCARE",
+    element: <RiMentalHealthFill size={40} />,
   },
   {
-    title : "MINING",
-    element: <GiMining size={45} />
+    title: "MINING",
+    element: <GiMining size={45} />,
   },
   {
-    title : "FMCG",
-    element: <FaStumbleuponCircle size={45} />
+    title: "FMCG",
+    element: <FaStumbleuponCircle size={45} />,
   },
   {
-    title : "MEDIA",
-    element: <PiVideoCameraFill size={45} />
+    title: "MEDIA",
+    element: <PiVideoCameraFill size={45} />,
   },
   {
-    title : "AVIATION",
-    element: <FaAvianex size={45} />
+    title: "AVIATION",
+    element: <FaAvianex size={45} />,
   },
-]
+];
 const itemsTwo = [
   {
     title: "LOGISTICS",
-    element: <TbTruckDelivery size={45} />
+    element: <TbTruckDelivery size={45} />,
   },
   {
-    title : "CONSTRUCTION",
-    element: <IoMdConstruct size={40} />
+    title: "CONSTRUCTION",
+    element: <IoMdConstruct size={40} />,
   },
   {
-    title : "EDUCATION",
-    element: <MdCastForEducation size={45} />
+    title: "EDUCATION",
+    element: <MdCastForEducation size={45} />,
   },
   {
-    title : "AGRICULTURE",
-    element: <MdAgriculture size={45} />
+    title: "AGRICULTURE",
+    element: <MdAgriculture size={45} />,
   },
   {
-    title : "HOSPITALITY",
-    element: <TbVacuumCleaner size={45} />
+    title: "HOSPITALITY",
+    element: <TbVacuumCleaner size={45} />,
   },
   {
-    title : "AUTOMOBILE",
-    element: <SiDsautomobiles size={45} />
+    title: "AUTOMOBILE",
+    element: <SiDsautomobiles size={45} />,
   },
-]
+];
 
-function BlockHelper({title, element } : any) {
+function BlockHelper({ title, element }: any) {
   return (
     <div
       style={{
         background:
           "linear-gradient(180deg, #8a34cc 0%, #6a34cc 50%, #345dcc 100%)",
       }}
-      className="relative flex flex-col items-center w-full p-2 rounded-2xl" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
+      className="relative flex flex-col items-center w-full p-2 rounded-2xl"
+      data-aos="fade-up"
+      data-aos-anchor="[data-aos-id-blocks]"
+    >
       <div className="w-20 h-20 mb-4 bg-white rounded-full flex justify-center items-center">
         {element}
       </div>
       <h3 className="mb-2 text-center text-white">{title}</h3>
     </div>
-  )
+  );
 }
 
 export default function Blocks() {
@@ -121,8 +124,13 @@ export default function Blocks() {
           </div> */}
 
           {/* Items */}
-          <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-6 lg:gap-16 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
-            {items.map((data) => <BlockHelper element={data.element} title={data.title}/>)}
+          <div
+            className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-6 lg:gap-16 items-start md:max-w-2xl lg:max-w-none"
+            data-aos-id-blocks
+          >
+            {items.map((data) => (
+              <BlockHelper element={data.element} title={data.title} />
+            ))}
             {/* <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
               <div className="w-20 h-20 mb-4 bg-white rounded-full p-3">
                 <img className="w-full h-full" src="/images/cards/flowchart.png" alt="" />
@@ -170,17 +178,25 @@ export default function Blocks() {
               <h3 className="mb-2">Enterprise Organizations</h3>
               <p className="text-base text-gray-400 text-center">Government institutions and regulators responsible for setting standards and framework for the education eco-system</p>
             </div> */}
-
           </div>
-          <div className="max-w-sm m-2 grid gap-8 md:grid-cols-2 lg:grid-cols-6 lg:gap-2 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
-            {itemsOne.map((data) => <BlockHelper element={data.element} title={data.title}/>)}
+          <div
+            className="max-w-sm m-2 grid gap-8 md:grid-cols-2 lg:grid-cols-6 lg:gap-2 items-start md:max-w-2xl lg:max-w-none"
+            data-aos-id-blocks
+          >
+            {itemsOne.map((data) => (
+              <BlockHelper element={data.element} title={data.title} />
+            ))}
           </div>
-          <div className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-6 lg:gap-16 items-start md:max-w-2xl lg:max-w-none" data-aos-id-blocks>
-            {itemsTwo.map((data) => <BlockHelper element={data.element} title={data.title}/>)}
+          <div
+            className="max-w-sm mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-6 lg:gap-16 items-start md:max-w-2xl lg:max-w-none"
+            data-aos-id-blocks
+          >
+            {itemsTwo.map((data) => (
+              <BlockHelper element={data.element} title={data.title} />
+            ))}
           </div>
-
         </div>
       </div>
     </section>
-  )
+  );
 }
