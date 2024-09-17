@@ -65,9 +65,9 @@ const SpeakerProfiles: React.FC = () => {
             <div className="p-4 text-center" style={{ borderTopWidth: 1 }}>
               <h3 className="text-lg font-bold">{profile.name}</h3>
               <p className="text-sm text-gray-800 mt-2">{profile.title}</p>
-              <p className="text-xl text-gray-700 mt-1">
+              {/* <p className="text-xl text-gray-700 mt-1">
                 {profile.organization}
-              </p>
+              </p> */}
               {/* <a
                   href={profile.linkedIn}
                   className="inline-block mt-4 bg-blue-500 text-white py-1 px-3 rounded-full"
