@@ -1,8 +1,6 @@
 import { MongoClient } from "mongodb";
 
-const url =
-  process.env.MONGODB_CONNECTION_URI ||
-  "mongodb+srv://amalgenfinity:LPshbbL1U0IS6zQm@cluster0.gwygt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const url = "mongodb+srv://amalgenfinity:LPshbbL1U0IS6zQm@cluster0.gwygt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 const dbName = "ai-summit";
 
 let db: any;
