@@ -8,13 +8,12 @@ const EventsPage: React.FC = () => {
     <div className="bg-contain bg-center flex flex-col justify-center items-center">
       <div
         style={{
-          height: "400px",
           backgroundImage: 'url("images/statics/delegates-bg-1.jpg")',
         }}
-        className="bg-black bg-opacity-60 w-full  flex justify-center"
+        className="bg-black bg-opacity-60 w-full md:h-[400px] h-[300px] flex justify-center"
       >
-        <div className="bg-black bg-opacity-60 w-full py-24 flex justify-center">
-          <Headers first="" middle="DELEGATE" last="FORM" />
+        <div className="bg-black bg-opacity-60 w-full md:py-24 flex justify-center">
+          <Headers first="" middle="DELEGATE" last="ENQUIRY" />
         </div>
       </div>
 
@@ -23,11 +22,12 @@ const EventsPage: React.FC = () => {
           backgroundImage:
             'linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/statics/bg.jpg")',
           backgroundBlendMode: "overlay",
+          backgroundColor:"rgba(0, 0, 0, 0.53)"
         }}
         className="w-full bg-contain py-20 flex flex-col md:flex-row justify-center items-start"
       >
         <DelegateRegistration />
-        <div
+        {/* <div
           className="w-1/3 h-[300px] object-contain rounded-2xl m-5 flex flex-col justify-center items-center"
           style={{
             backgroundImage: 'url("images/statics/delegate.jpg")',
@@ -53,7 +53,7 @@ const EventsPage: React.FC = () => {
           >
             Speakers
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

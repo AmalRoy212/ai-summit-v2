@@ -1,17 +1,81 @@
 "use client";
-// pages/DelegateRegistration.js
-import React from "react";
+
+import React, { useState } from "react";
 import "antd/dist/reset.css";
-import { Form, Input, Button, Select, Checkbox } from "antd";
+import { Form, Input, Button, Select, Checkbox, message, Spin } from "antd";
+import { LoadingOutlined } from "@ant-design/icons";
 
 const { Option } = Select;
 
 export default function DelegateRegistration() {
   const [form] = Form.useForm();
+  const [loading, setLoading] = useState<boolean>(false);
 
-  const onFinish = (values: any) => {
-    console.log("Received values of form: ", values);
-    // Place API call here
+  const onFinish = async (values: any) => {
+    setLoading(true)
+
+    // Check if nomination field is empty and set a default value
+    if (!values.nomination) {
+      values.nomination = "nomination not added";
+    }
+
+    // Check if the first letter is already capital, if not, capitalize it
+    const ensureFirstLetterCapitalized = (name: string) => {
+      if (!name) return name; // Return if name is undefined or null
+      // If the first letter is not uppercase, capitalize it
+      if (name.charAt(0) !== name.charAt(0).toUpperCase()) {
+        return name.charAt(0).toUpperCase() + name.slice(1);
+      }
+      return name; // Return unchanged if already capitalized
+    };
+
+    // Ensure first letter of firstName is capitalized
+    if (values.firstName) {
+      values.firstName = ensureFirstLetterCapitalized(values.firstName);
+    }
+
+    // Ensure first letter of lastName is capitalized
+    if (values.lastName) {
+      values.lastName = ensureFirstLetterCapitalized(values.lastName);
+    }
+    if (values.companyName) {
+      values.companyName = ensureFirstLetterCapitalized(values.companyName);
+    }
+    if (values.jobTitle) {
+      values.jobTitle = ensureFirstLetterCapitalized(values.jobTitle);
+    }
+
+    // Combine firstName and lastName into fullName
+    if (values.firstName && values.lastName) {
+      values.fullName = `${values.firstName} ${values.lastName}`;
+    }
+
+    try {
+      // Make a POST request to the API
+      const response = await fetch("/api/delegates/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values), // Convert form values to JSON string
+      });
+
+      // Check if the request was successful
+      if (response.ok) {
+        await response.json();
+        message.success("Form submitted successfully!");
+        form.resetFields();
+        // You can display a success message or handle it as needed
+      } else {
+        const error = await response.json();
+        message.error("Error happend while saving your request");
+        // You can display an error message or handle it as needed
+      }
+    } catch (error) {
+      console.error("Request failed:", error);
+      // Handle network or request errors
+    }
+    setLoading(false)
   };
 
   const onFinishFailed = (errorInfo: any) => {
@@ -21,7 +85,10 @@ export default function DelegateRegistration() {
   return (
     <div
       className="container md:ml-10 px-4 bg-cover border-[#3b3b3b] py-10 md:0 md:p-10 rounded-2xl bg-slate-200 md:w-2/3"
-      style={{ borderWidth: 1,  backgroundImage: 'url("images/statics/delegate.jpg")', }}
+      style={{
+        borderWidth: 1,
+        backgroundImage: 'url("images/statics/delegate.jpg")',
+      }}
     >
       <Form
         form={form}
@@ -121,9 +188,28 @@ export default function DelegateRegistration() {
             name="mobile"
             rules={[
               { required: true, message: "Please input your mobile number!" },
+              {
+                validator: (_, value) => {
+                  if (!value || /^[0-9]*$/.test(value)) {
+                    return Promise.resolve(); // valid input, resolve the promise
+                  }
+                  return Promise.reject(
+                    new Error("Mobile number must contain only numbers!")
+                  );
+                },
+              },
             ]}
           >
-            <Input className="h-[40px]" placeholder="mobile" />
+            <Input
+              className="h-[40px]"
+              placeholder="Mobile"
+              onChange={(e) => {
+                const { value } = e.target;
+                if (!/^[0-9]*$/.test(value)) {
+                  e.target.value = value.replace(/\D/g, ""); // Remove any non-digit characters
+                }
+              }}
+            />
           </Form.Item>
         </div>
 
@@ -281,17 +367,11 @@ export default function DelegateRegistration() {
             ]}
           >
             <Select className="h-[40px]" placeholder="Select the time period">
-              <Option value="$50,000 - $100,000">$50,000 - $100,000</Option>
-              <Option value="$100,000 - $200,000">$100,000 - $200,000</Option>
-              <Option value="$50,000 - $100,000">$200,000 - $300,000</Option>
-              <Option value="$50,000 - $100,000">$300,000 - $400,000</Option>
-              <Option value="$50,000 - $100,000">$400,000 - $500,000</Option>
-              <Option value="$50,000 - $100,000">$500,000 - $600,000</Option>
-              <Option value="$50,000 - $100,000">$600,000 - $700,000</Option>
-              <Option value="$50,000 - $100,000">$700,000 - $800,000</Option>
-              <Option value="$50,000 - $100,000">$800,000 - $900,000</Option>
-              <Option value="$50,000 - $100,000">$900,000 - $1,000,000</Option>
-              <Option value="$50,000 - $100,000">$1,000,000 and above</Option>
+              <Option value="0 - 1 month">0 - 1 month</Option>
+              <Option value="1 - 2 month">1 - 2 month</Option>
+              <Option value="2 - 3 month">2 - 3 month</Option>
+              <Option value="3 - 4 month">3 - 4 month</Option>
+              <Option value="5 - 6 month">5 - 6 month</Option>
             </Select>
           </Form.Item>
         </div>
@@ -306,14 +386,14 @@ export default function DelegateRegistration() {
               <Form.Item
                 name={["nomination", "fullName"]}
                 noStyle
-                rules={[{ required: true, message: "Full name required!" }]}
+                // rules={[{ required: true, message: "Full name required!" }]}
               >
                 <Input style={{ width: "50%" }} placeholder="Full name" />
               </Form.Item>
               <Form.Item
                 name={["nomination", "email"]}
                 noStyle
-                rules={[{ required: true, message: "Email required!" }]}
+                // rules={[{ required: true, message: "Email required!" }]}
               >
                 <Input style={{ width: "50%" }} placeholder="Email" />
               </Form.Item>
@@ -324,14 +404,14 @@ export default function DelegateRegistration() {
               <Form.Item
                 name={["nomination", "company name"]}
                 noStyle
-                rules={[{ required: true, message: "Company name required!" }]}
+                // rules={[{ required: true, message: "Company name required!" }]}
               >
                 <Input style={{ width: "50%" }} placeholder="company name" />
               </Form.Item>
               <Form.Item
                 name={["nomination", "phone number"]}
                 noStyle
-                rules={[{ required: true, message: "phone number required!" }]}
+                // rules={[{ required: true, message: "phone number required!" }]}
               >
                 <Input style={{ width: "50%" }} placeholder="Phone number" />
               </Form.Item>
@@ -342,7 +422,7 @@ export default function DelegateRegistration() {
               <Form.Item
                 name={["nomination", "job title"]}
                 noStyle
-                rules={[{ required: true, message: "Job title required!" }]}
+                // rules={[{ required: true, message: "Job title required!" }]}
               >
                 <Input style={{ width: "50%" }} placeholder="Job title" />
               </Form.Item>
@@ -351,7 +431,7 @@ export default function DelegateRegistration() {
         </div>
 
         {/* Interests */}
-        <Form.Item className="font-bold" name="interest" label="I am interested in">
+        {/* <Form.Item className="font-bold" name="interest" label="I am interested in">
           <Checkbox.Group
             options={[
               "Delegate pass",
@@ -359,11 +439,11 @@ export default function DelegateRegistration() {
               "Speak at the event",
             ]}
           />
-        </Form.Item>
+        </Form.Item> */}
 
         <Form.Item
           className="font-bold text-[34px]"
-          name="interest"
+          name="confirmation"
           label="Confirmation"
         >
           <Checkbox.Group
@@ -383,7 +463,11 @@ export default function DelegateRegistration() {
             type="primary"
             htmlType="submit"
           >
-            Submit
+            {loading ? (
+              <Spin  indicator={<LoadingOutlined spin color="red" style={{color:"red"}} />} size="small" />
+            ) : (
+              "Submit"
+            )}
           </Button>
         </Form.Item>
       </Form>
