@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import "antd/dist/reset.css";
 import { Form, Input, Button, Select, Checkbox, message, Spin } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
+import { validateEmail } from "@/utils/emailValidator";
 
 const { Option } = Select;
 
@@ -177,6 +178,15 @@ export default function DelegateRegistration() {
             rules={[
               { required: true, message: "Please input your email!" },
               { type: "email", message: "Please enter a valid email!" },
+              {
+                validator: (_, value) => {
+                  const validationResult = validateEmail(value); // Call validateEmail
+                  if (validationResult) {
+                    return Promise.reject(new Error(validationResult)); // If there is an error message, reject the promise
+                  }
+                  return Promise.resolve(); // Otherwise, resolve the promise
+                },
+              },
             ]}
           >
             <Input className="h-[40px]" placeholder="email" />

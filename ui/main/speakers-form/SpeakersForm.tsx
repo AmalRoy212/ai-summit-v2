@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, Input, Button, Radio, Select, Checkbox, message, Spin } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
+import { validateEmail } from "@/utils/emailValidator";
 
 const { Option } = Select;
 
@@ -110,18 +111,24 @@ const SpeakersEnquiryForm: React.FC = () => {
 
           <div className="flex flex-col md:flex-row w-full md:gap-2">
             <Form.Item
+              className="md:w-1/2 font-bold"
               label="Email"
               name="email"
-              className="md:w-1/2 font-bold"
               rules={[
+                { required: true, message: "Please input your email!" },
+                { type: "email", message: "Please enter a valid email!" },
                 {
-                  required: true,
-                  type: "email",
-                  message: "Enter a valid email",
+                  validator: (_, value) => {
+                    const validationResult = validateEmail(value); // Call validateEmail
+                    if (validationResult) {
+                      return Promise.reject(new Error(validationResult)); // If there is an error message, reject the promise
+                    }
+                    return Promise.resolve(); // Otherwise, resolve the promise
+                  },
                 },
               ]}
             >
-              <Input className="h-[40px]" placeholder="Email" />
+              <Input className="h-[40px]" placeholder="email" />
             </Form.Item>
 
             <Form.Item
