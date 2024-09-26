@@ -95,7 +95,7 @@ const SpeakerProfiles: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col justify-center items-center my-28">
+    <div className="w-full flex flex-col justify-center items-center my-28 px-10">
       <div className="text-[40px] font-medium text-center text-gray-200">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           {" "}
@@ -105,19 +105,19 @@ const SpeakerProfiles: React.FC = () => {
 
       <div className="flex justify-center gap-8 flex-wrap py-10 ">
         {profiles.map((profile, index) => (
-          <ThreeDCard item={profile} />
+          <ThreeDCard item={profile} index={index} />
         ))}
       </div>
 
       <div className="flex justify-center gap-8 flex-wrap mt-[-10rem]">
         {profilesTwo.map((profile, index) => (
-          <ThreeDCard item={profile} />
+          <ThreeDCard item={profile} index={index} />
         ))}
       </div>
 
       <div className="flex justify-center gap-8 flex-wrap mt-[-7.5rem]">
         {profilesThree.map((profile, index) => (
-          <ThreeDCard item={profile} />
+          <ThreeDCard item={profile} index={index} />
         ))}
       </div>
     </div>
