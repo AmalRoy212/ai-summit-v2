@@ -46,7 +46,7 @@ function IndexHeader() {
         {/* <img src="/images/index/homebanner.jpg" className="object-cover w-full h-full" ref={pageHeader} alt="" /> */}
       </div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center py-24 text-white">
+      <div className="relative z-10 md:mt-[7rem] flex flex-col items-center justify-center py-24 text-white">
         {/* <span className="flex justify-center font-extrabold text-transparent text-[24px] bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           INITIATIVE BY{" "}
           <img
@@ -81,16 +81,16 @@ function IndexHeader() {
         <div className="w-full text-s text-center md:px-28 md:mt-10 mt-5">
         <div className="flex-row flex justify-center items-center p-5 w-full z-[999] gap-4">
             <Link href={"/sponsors"}
-              className="cursor-pointer w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500">
-              Sponsors
+              className="cursor-pointer text-lg w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500">
+              SPONSORS ENQUIRY
             </Link>
             <Link href={"/delegates"}
-              className="cursor-pointer w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500">
-              Deleagtes
+              className="cursor-pointer text-lg w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500">
+              DELEGATES ENQUIRY
             </Link>
             <Link href={"/speakers"}
-              className="cursor-pointer w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500">
-              Speakers
+              className="cursor-pointer text-lg w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500">
+              SPEAKERS ENQUIRY
             </Link>
             {/* <a className="cursor-pointer w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500">
               Deleagtes

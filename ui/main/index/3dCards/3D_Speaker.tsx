@@ -13,7 +13,7 @@ const positions = [2, 6, 9]
 
 export function ThreeDCard({ item, index }: any) {
   return (
-    <div className={`z-10 ${positions.includes(index) && "mt-[-10rem]"}`}>
+    <div className={`z-10`} key={index}>
       <CardContainer className="inter-var">
         <CardBody 
         // className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border"
@@ -36,13 +36,20 @@ export function ThreeDCard({ item, index }: any) {
               />
             </div>
           </CardItem>
-          <div className="min-h-[100px]">
+          <div className="min-h-[120px]">
             <CardItem
               as="p"
               translateZ="60"
-              className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 mx-auto"
+              className="text-white text-lg max-w-sm mt-2 dark:text-white mx-auto"
             >
               {item.title}
+            </CardItem>
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-lg text-white max-w-sm mt-2 dark:text-white mx-auto"
+            >
+              {item.company}
             </CardItem>
           </div>
           <CardItem
