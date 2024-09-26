@@ -29,7 +29,7 @@ function IndexHeader() {
   }, []);
 
   return (
-    <div className="relative md:overflow-hidden h-[100vh]" id="hero">
+    <div className="relative md:overflow-hidden h-[110vh]" id="hero">
       <div className="absolute inset-0">
         <video
           autoPlay
@@ -46,7 +46,7 @@ function IndexHeader() {
         {/* <img src="/images/index/homebanner.jpg" className="object-cover w-full h-full" ref={pageHeader} alt="" /> */}
       </div>
 
-      <div className="relative z-10 md:mt-[7rem] flex flex-col items-center justify-center py-24 text-white">
+      <div className="relative z-10 lg:mt-[5rem] flex flex-col items-center justify-center py-24 text-white">
         {/* <span className="flex justify-center font-extrabold text-transparent text-[24px] bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           INITIATIVE BY{" "}
           <img
