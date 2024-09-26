@@ -18,6 +18,7 @@ const CardContainer = styled.div`
   width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 360px;
+  z-index:10
 `;
 
 const TrophyImage = styled.img`
@@ -35,6 +36,7 @@ const CardDescription = styled.p`
   font-size: 12px;
   line-height: 1.5;
   margin-top: 10px;
+  width: 100%;
 `;
 
 const TrophyCard: React.FC<TrophyCardProps> = ({

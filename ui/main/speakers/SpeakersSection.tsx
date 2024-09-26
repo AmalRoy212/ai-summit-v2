@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { ThreeDCard } from "../index/3dCards/3D_Speaker";
 // import "./App.css"; // Assuming Tailwind is imported here
 
 // Profile data array
@@ -34,6 +35,60 @@ const profiles = [
   },
 ];
 
+const profilesTwo = [
+  {
+    name: "Dr.Jihad Al Wahshi",
+    title: "Head of Data Management Central Bank of Oman",
+    organization: "OMAN",
+    image: "/images/speakers/img8 (2).png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Bhupendra Pant",
+    title: "Chief Information officer & GM of Information Technology OTE Group",
+    organization: "OMAN",
+    image: "/images/speakers/img7.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Fouad Ibrahim",
+    title: "CO - Founder & Technical Director Falcon Oilfield Services",
+    organization: "OMAN",
+    image: "/images/speakers/img6 (2).png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+];
+
+const profilesThree = [
+  {
+    name: "Amjid Ali",
+    title: "Chief Information Officer Al Ansari Group",
+    organization: "OMAN",
+    image: "/images/speakers/img5 (3).png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Nuwanka Kottegoda",
+    title: "Executive Director BPOS Global ,Founder of ENKII AI ,Investment Advisor at Mays EV",
+    organization: "OMAN",
+    image: "/images/speakers/img-4.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Fouad Ibrahim",
+    title: "CO - Founder & Technical Director Falcon Oilfield Services",
+    organization: "OMAN",
+    image: "/images/speakers/img6 (2).png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+];
+
 const SpeakerProfiles: React.FC = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -47,37 +102,22 @@ const SpeakerProfiles: React.FC = () => {
           SPEAKERS{" "}
         </span>
       </div>
+
       <div className="flex justify-center gap-8 flex-wrap py-10 ">
         {profiles.map((profile, index) => (
-          <div
-            style={{
-              backgroundImage: 'url("images/statics/delegate.jpg")',
-            }}
-            key={index}
-            className="w-72 bg-white shadow-md rounded-xl overflow-hidden"
-            data-aos="zoom-in"
-          >
-            <img
-              src={profile.image}
-              alt={profile.name}
-              className={`h-[300px] w-full object-cover mt-${profile.marginTP}`}
-            />
-            <div className="p-4 text-center" style={{ borderTopWidth: 1 }}>
-              <h3 className="text-lg font-bold">{profile.name}</h3>
-              <p className="text-sm text-gray-800 mt-2">{profile.title}</p>
-              {/* <p className="text-xl text-gray-700 mt-1">
-                {profile.organization}
-              </p> */}
-              {/* <a
-                  href={profile.linkedIn}
-                  className="inline-block mt-4 bg-blue-500 text-white py-1 px-3 rounded-full"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  LinkedIn
-                </a> */}
-            </div>
-          </div>
+          <ThreeDCard item={profile} />
+        ))}
+      </div>
+
+      <div className="flex justify-center gap-8 flex-wrap mt-[-10rem]">
+        {profilesTwo.map((profile, index) => (
+          <ThreeDCard item={profile} />
+        ))}
+      </div>
+
+      <div className="flex justify-center gap-8 flex-wrap mt-[-7.5rem]">
+        {profilesThree.map((profile, index) => (
+          <ThreeDCard item={profile} />
         ))}
       </div>
     </div>

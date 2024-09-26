@@ -27,6 +27,54 @@ export default function AwardsProvider() {
       description:
         "Honors the team or platform that has demonstrated exceptional innovation in Generative AI, pushing the boundaries of creativity and content creation.",
     },
+    {
+      number: 5,
+      title: "Data Infrastructure Leader",
+      description:
+        "Awarded to the organization that has developed the most reliable, scalable, and innovative data infrastructure, enabling seamless data management and analytics.",
+    },
+    {
+      number: 6,
+      title: "Synergy Award for AI and Automation",
+      description:
+        "Recognizes the best integration of AI and automation technologies, creating a seamless, intelligent system that drives substantial improvements across the board.",
+    },
+    {
+      number: 7,
+      title: "AI-Enhanced Customer Experience Award",
+      description:
+        "Celebrates the platform or solution that has transformed customer interactions, delivering personalized and impactful experiences through AI.",
+    },
+    {
+      number: 8,
+      title: "Innovative Solutions for Emerging Markets",
+      description:
+        "Honors the company that has introduced groundbreaking AI or automation solutions tailored to the unique challenges and opportunities in emerging markets.",
+    },
+    {
+      number: 9,
+      title: "Data Infrastructure LeaderDigital Transformation Champion",
+      description:
+        "Recognizes the organization that has successfully driven comprehensive digital transformation, leveraging advanced technologies to stay ahead in a rapidly evolving landscape.",
+    },
+    {
+      number: 10,
+      title: "Leadership Excellence Award",
+      description:
+        "Awarded to a CTO, CIO, or CDO who has demonstrated exceptional leadership and strategic vision in implementing AI, data, or automation technologies within their organization.",
+    },
+    {
+      number: 11,
+      title: "Strategic Solutions Provider Award",
+      description:
+        "Celebrates the solutions provider that has delivered outstanding products or services, significantly impacting their clients' operational efficiency and technological advancement.",
+    },
+    {
+      number: 12,
+      title: "Excellence in Data-Driven Insights Award",
+      description:
+        "Honors the organization or individual that has demonstrated exceptional skill in leveraging data to generate actionable insights, driving strategic decisions and fostering business growth.",
+    },
   ];
 
   const dataTwo = [
@@ -93,7 +141,9 @@ export default function AwardsProvider() {
             CATEGORIES{" "}
           </span>
         </div>
-        <div className="flex mt-10 md:flex-row flex-col w-[100%] h-auto justify-center items-center">
+        {/* <div className="flex mt-10 md:flex-row flex-col w-[100%] h-auto justify-center items-center overflow-x-auto"> */}
+        <div className="w-full flex overflow-x-auto">
+
           {dataOne.map((dat) => (
             <TrophyCard
               number={dat.number}
@@ -102,7 +152,8 @@ export default function AwardsProvider() {
             />
           ))}
         </div>
-        <div className="flex md:flex-row flex-col w-[100%] h-auto justify-center items-center">
+        {/* </div> */}
+        {/* <div className="flex md:flex-row flex-col w-[100%] h-auto justify-center items-center">
           {dataTwo.map((dat) => (
             <TrophyCard
               number={dat.number}
@@ -119,7 +170,7 @@ export default function AwardsProvider() {
               description={dat.description}
             />
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
