@@ -13,13 +13,15 @@ const ProfileCard: React.FC<any> = ({ item, index }) => {
         <img
           src={item.image}
           alt={item.name}
-          className="w-full h-64 object-cover"
+          className="w-full h-72 object-contain"
         />
       
       </div>
         <div className="p-4">
           <h3 className="text-lg font-semibold text-white text-center">{item.name}</h3>
           <p className="text-white font-medium text-center">{item.title}</p>
+          <p className="text-white font-light text-center">{item.company}</p>
+          <p className="text-white font-light text-center">{item.organization}</p>
         </div>
     </div>
   );
