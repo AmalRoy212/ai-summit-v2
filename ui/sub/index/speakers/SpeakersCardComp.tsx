@@ -12,8 +12,7 @@ const ProfileCard: React.FC<any> = ({ item, index }) => {
       
       </div>
         <div className="p-4">
-          <h3 className="text-lg font-semibold text-white text-center">{item.name}</h3>
-          <br />
+          <h3 className="text-lg font-semibold text-white text-center mb-2">{item.name}</h3>
           <p className="text-white font-medium text-center">{item.title}</p>
           <p className="text-white font-medium text-center">{item.company}</p>
         </div>
