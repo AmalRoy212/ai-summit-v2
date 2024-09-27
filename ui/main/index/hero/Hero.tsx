@@ -12,7 +12,7 @@ function IndexHeader() {
   const pageHeader = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if(window){
+    if (window) {
       if (window.innerWidth > 991 && pageHeader.current) {
         const updateScroll = () => {
           const windowScrollTop = window?.pageYOffset / 3;
@@ -40,7 +40,10 @@ function IndexHeader() {
           style={{ filter: "brightness(60%)" }}
           ref={pageHeader}
         >
-          <source src="https://www.globalblockchainshow.com/wp-content/uploads/2024/03/GBS_Website-Cover-compressed.mp4" type="video/webm" />
+          <source
+            src="https://www.globalblockchainshow.com/wp-content/uploads/2024/03/GBS_Website-Cover-compressed.mp4"
+            type="video/webm"
+          />
           {/* <source src="/videos/blackhole.webm" type="video/webm" /> */}
         </video>
         {/* <img src="/images/index/homebanner.jpg" className="object-cover w-full h-full" ref={pageHeader} alt="" /> */}
@@ -57,9 +60,14 @@ function IndexHeader() {
             alt="DITS Logo"
           />
         </span> */}
-        <p className="md:text-2xl flex gap-x-3 justify-center items-center">
-          <CiCalendarDate />
-          11th December, 2024 <FaLocationDot size={18} /> MUSCAT, SULTANATE OF OMAN
+        <p className="md:text-2xl flex gap-x-3 justify-center items-center md:flex-row flex-col">
+          <span className="flex items-center gap-3">
+            <CiCalendarDate />
+            11th December, 2024
+          </span>
+          <span className="flex items-center gap-3">
+            <FaLocationDot size={18} /> MUSCAT, SULTANATE OF OMAN
+          </span>
         </p>
         <div className="w-full h-auto flex md:flex-row flex-col justify-center items-center md:px-10">
           <motion.div
@@ -67,7 +75,7 @@ function IndexHeader() {
             className="relative flex flex-col items-end gap-6 mt-6 text-5xl md:text-6xl text-bold text-white max-w-[600px] w-auto md:h-auto h-[220px]"
           >
             <span>
-            {/* The Intelligent Data, AI & Automation Summit */}
+              {/* The Intelligent Data, AI & Automation Summit */}
               THE INTELLIGENT
               <span className="mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 {" "}
@@ -79,17 +87,23 @@ function IndexHeader() {
           <Counter />
         </div>
         <div className="w-full text-s text-center md:px-28 md:mt-10 mt-5">
-        <div className="flex-row flex justify-center items-center p-5 w-full z-[999] gap-4">
-            <Link href={"/sponsors"}
-              className="cursor-pointer md:text-lg w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500">
+          <div className="flex-row flex justify-center items-center p-5 w-full z-[999] gap-4">
+            <Link
+              href={"/sponsors"}
+              className="cursor-pointer md:text-lg w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500"
+            >
               SPONSORS ENQUIRY
             </Link>
-            <Link href={"/delegates"}
-              className="cursor-pointer md:text-lg w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500">
+            <Link
+              href={"/delegates"}
+              className="cursor-pointer md:text-lg w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500"
+            >
               DELEGATES ENQUIRY
             </Link>
-            <Link href={"/speakers"}
-              className="cursor-pointer md:text-lg w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500">
+            <Link
+              href={"/speakers"}
+              className="cursor-pointer md:text-lg w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500"
+            >
               SPEAKERS ENQUIRY
             </Link>
             {/* <a className="cursor-pointer w-autp px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500">
