@@ -17,7 +17,7 @@ export function ThreeDCard({ item, index }: any) {
       <CardContainer className="inter-var">
         <CardBody 
         // className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border"
-        className="w-auto sm:w-[30rem] h-auto rounded-xl p-6 bg-gradient-to-r from-purple-500 to-cyan-500"
+        className="w-auto sm:w-[20rem] h-auto rounded-xl p-6 bg-gradient-to-r from-purple-500 to-cyan-500"
         >
           <CardItem
             translateZ="50"
@@ -31,7 +31,7 @@ export function ThreeDCard({ item, index }: any) {
                 src={item.image}
                 height="1000"
                 width="1000"
-                className="h-60 w-full object-contain rounded-xl group-hover/card:shadow-xl"
+                className="h-60 w-60 object-cover rounded-xl group-hover/card:shadow-xl"
                 alt="thumbnail"
               />
             </div>

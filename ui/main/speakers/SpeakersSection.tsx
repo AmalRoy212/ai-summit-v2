@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ThreeDCard } from "../index/3dCards/3D_Speaker";
-// import "./App.css"; // Assuming Tailwind is imported here
+import ProfileCard from "@/ui/sub/index/speakers/SpeakersCardComp";
 
 // Profile data array
 const profiles = [
@@ -34,6 +34,15 @@ const profiles = [
     organization: "OMAN",
     image: "/images/speakers/speaker1211.png", // Add correct paths to images
     linkedIn: "#", // Replace with actual LinkedIn profile links
+    marginTP: 0,
+  },
+  {
+    name: "Dazza Camilo",
+    title: "CEO - Founder",
+    company: "Dazza Hodling Group LLC",
+    organization: "OMAN",
+    image: "/images/speakers/speaker91.png",
+    linkedIn: "#",
     marginTP: 0,
   },
 ];
@@ -103,13 +112,13 @@ const SpeakerProfiles: React.FC = () => {
         </span>
       </div>
 
-      <div className="flex justify-center gap-8 flex-wrap py-10 ">
+      <div className="flex justify-center gap-2 px-8 py-10 md:flex-row flex-col">
         {profiles.map((profile, index) => (
-          <ThreeDCard item={profile} index={index} />
+          <ProfileCard item={profile} index={index} />
         ))}
       </div>
 
-      <div className="flex justify-center gap-8 flex-wrap mt-[-10rem]">
+      {/* <div className="flex justify-center gap-8 flex-wrap mt-[-10rem]">
         {profilesTwo.map((profile, index) => (
           <ThreeDCard item={profile} index={index} />
         ))}
@@ -119,7 +128,7 @@ const SpeakerProfiles: React.FC = () => {
         {profilesThree.map((profile, index) => (
           <ThreeDCard item={profile} index={index} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
