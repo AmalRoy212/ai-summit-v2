@@ -7,12 +7,13 @@ const ProfileCard: React.FC<any> = ({ item, index }) => {
         <img
           src={item.image}
           alt={item.name}
-          className="w-full h-72 object-contain"
+          className={`w-full h-64 object-contain pt-${item.marginTP}`}
         />
       
       </div>
         <div className="p-4">
           <h3 className="text-lg font-semibold text-white text-center">{item.name}</h3>
+          <br />
           <p className="text-white font-medium text-center">{item.title}</p>
           <p className="text-white font-medium text-center">{item.company}</p>
         </div>

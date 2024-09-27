@@ -55,16 +55,16 @@ const profilesTwo = [
     organization: "OMAN",
     image: "/images/speakers/img5 (3).png",
     linkedIn: "#",
-    marginTP: 0,
+    marginTP: 10,
   },
   {
     name: "BHUPENDRA PANT",
-    title: "Chief Information officer & GM of Information Technology OTE Group",
-    company: "",
+    title: "Chief Information Officer & GM of Information Technology",
+    company: "OTE Group",
     organization: "OMAN",
     image: "/images/speakers/img7.png",
     linkedIn: "#",
-    marginTP: 0,
+    marginTP: 10,
   },
   {
     name: "FOUAD IBRAHIM",
@@ -94,16 +94,16 @@ const SpeakerProfiles: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-full flex flex-col justify-center items-center my-28">
+    <div className="w-full flex flex-col justify-center items-center my-28 px-16">
       <Headers first="OUR ESTEEMED" middle="SPEAKERS" last="" />
 
-      <div className="flex mt-[-5rem] justify-center gap-2 px-8 py-10 md:flex-row flex-col">
+      <div className="flex mt-[-5rem] justify-center gap-2  py-10 md:flex-row flex-col">
         {profiles.map((profile, index) => (
           <ProfileCard item={profile} index={index} />
         ))}
       </div>
 
-      <div className="flex mt-[-5rem] justify-center gap-2 px-8 py-10 md:flex-row flex-col">
+      <div className="flex mt-[-5rem] justify-center gap-2  py-10 md:flex-row flex-col">
         {profilesTwo.map((profile, index) => (
           <ProfileCard item={profile} index={index} />
         ))}
