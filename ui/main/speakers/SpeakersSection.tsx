@@ -37,7 +37,7 @@ const profiles = [
     marginTP: 0,
   },
   {
-    name: "DAZZZ CAMILO",
+    name: "DAZZA CAMILO",
     title: "CEO - Founder",
     company: "Dazza Hodling Group LLC",
     organization: "OMAN",
@@ -78,8 +78,9 @@ const profilesTwo = [
   {
     name: "NUWANKA KOTTEGODA",
     title:
-      "Executive Director BPOS Global ,Founder of ENKII AI Investment Advisor at Mays EV",
-    company: "",
+      "Executive Director BPOS Global ",
+    company: "Founder of ENKII AI",
+    com:"Investment Advisor at Mays EV",
     organization: "OMAN",
     image: "/images/speakers/img-4.png",
     linkedIn: "#",
