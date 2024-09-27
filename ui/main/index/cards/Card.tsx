@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { cardsDataOne, cardsDataTwo } from "@/constants/cards";
 import Cards from "@/ui/sub/index/card/Cards";
 import { staggerContainer } from "@/utils/viewMotions";
-import { slideInFromTop } from "@/utils/motion";
 import Headers from "@/ui/sub/headers/Headers";
 import TestCards from "../../cards/TestCards";
 

@@ -5,13 +5,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ThreeDCard } from "../index/3dCards/3D_Speaker";
 import ProfileCard from "@/ui/sub/index/speakers/SpeakersCardComp";
+import Headers from "@/ui/sub/headers/Headers";
 
 // Profile data array
 const profiles = [
   {
-    name: "Dr. Salim Humaid Al-Shuaili",
-    title:
-      "Director of Artificial Intelligence and Advanced Technology Unit",
+    name: "DR. SALIM HUMAID AL-SHUAILI",
+    title: "Director of Artificial Intelligence and Advanced Technology Unit",
     company: " Ministry of Transport, Communication and Information Technology",
     organization: "OMAN",
     image: "/images/speakers/salim.png",
@@ -19,7 +19,7 @@ const profiles = [
     marginTP: 0,
   },
   {
-    name: "Dr.Jihad Al Wahshi",
+    name: "DR.JIHAD AL WAHSHI",
     title: "Head of Data Management",
     company: "Central Bank of Oman",
     organization: "OMAN",
@@ -28,16 +28,16 @@ const profiles = [
     marginTP: 0,
   },
   {
-    name: "Faris A Al Kharusi",
+    name: "FARIS A AL KHARUSI",
     title: "Chief Innovation & Transformation Officer",
-    company: "Renaissance services",
+    company: "Renaissance Services",
     organization: "OMAN",
     image: "/images/speakers/speaker1211.png", // Add correct paths to images
     linkedIn: "#", // Replace with actual LinkedIn profile links
     marginTP: 0,
   },
   {
-    name: "Dazza Camilo",
+    name: "DAZZZ CAMILO",
     title: "CEO - Founder",
     company: "Dazza Hodling Group LLC",
     organization: "OMAN",
@@ -49,16 +49,7 @@ const profiles = [
 
 const profilesTwo = [
   {
-    name: "Dazza Camilo",
-    title: "CEO - Founder",
-    company: "Dazza Hodling Group LLC",
-    organization: "OMAN",
-    image: "/images/speakers/speaker91.png",
-    linkedIn: "#",
-    marginTP: 0,
-  },
-  {
-    name: "Amjid Ali",
+    name: "AMJID ALI",
     title: "Chief Information Officer",
     company: "Al Ansari Group",
     organization: "OMAN",
@@ -67,7 +58,7 @@ const profilesTwo = [
     marginTP: 0,
   },
   {
-    name: "Bhupendra Pant",
+    name: "BHUPENDRA PANT",
     title: "Chief Information officer & GM of Information Technology OTE Group",
     company: "",
     organization: "OMAN",
@@ -75,11 +66,8 @@ const profilesTwo = [
     linkedIn: "#",
     marginTP: 0,
   },
-];
-
-const profilesThree = [
   {
-    name: "Fouad Ibrahim",
+    name: "FOUAD IBRAHIM",
     title: "CO - Founder & Technical Director",
     company: "Falcon Oilfield Services",
     organization: "OMAN",
@@ -88,8 +76,9 @@ const profilesThree = [
     marginTP: 0,
   },
   {
-    name: "Nuwanka Kottegoda",
-    title: "Executive Director BPOS Global ,Founder of ENKII AI Investment Advisor at Mays EV",
+    name: "NUWANKA KOTTEGODA",
+    title:
+      "Executive Director BPOS Global ,Founder of ENKII AI Investment Advisor at Mays EV",
     company: "",
     organization: "OMAN",
     image: "/images/speakers/img-4.png",
@@ -98,6 +87,7 @@ const profilesThree = [
   },
 ];
 
+
 const SpeakerProfiles: React.FC = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -105,30 +95,20 @@ const SpeakerProfiles: React.FC = () => {
 
   return (
     <div className="w-full flex flex-col justify-center items-center my-28">
-      <div className="text-[40px] font-medium text-center text-gray-200">
-        <span className="text-white">
-          OUR ESTEAMED SPEAKERS{" "}
-          {" "}
-        </span>
-      </div>
+      <Headers first="OUR ESTEEMED" middle="SPEAKERS" last="" />
 
-      <div className="flex justify-center gap-2 px-8 py-10 md:flex-row flex-col">
+      <div className="flex mt-[-5rem] justify-center gap-2 px-8 py-10 md:flex-row flex-col">
         {profiles.map((profile, index) => (
           <ProfileCard item={profile} index={index} />
         ))}
       </div>
 
-      {/* <div className="flex justify-center gap-8 flex-wrap mt-[-10rem]">
+      <div className="flex mt-[-5rem] justify-center gap-2 px-8 py-10 md:flex-row flex-col">
         {profilesTwo.map((profile, index) => (
-          <ThreeDCard item={profile} index={index} />
+          <ProfileCard item={profile} index={index} />
         ))}
       </div>
 
-      <div className="flex justify-center gap-8 flex-wrap mt-[-7.5rem]">
-        {profilesThree.map((profile, index) => (
-          <ThreeDCard item={profile} index={index} />
-        ))}
-      </div> */}
     </div>
   );
 };
