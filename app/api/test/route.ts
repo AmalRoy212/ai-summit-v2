@@ -10,6 +10,6 @@ export async function GET() {
       { status: 200 }
     );
   } catch (error) {
-    throw new Error('Cannot retrive the delegates data at this movement')
+    throw new Error('Cannot retrive the sample data at this movement')
   }
 }
