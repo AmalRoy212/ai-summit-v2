@@ -1,12 +1,17 @@
-import { getData } from '@/src/services/getAllDataService';
-import type { NextApiRequest, NextApiResponse } from 'next';
+"use server";
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+import { getData } from "@/src/services/getAllDataService";
+import { NextResponse } from "next/server";
+
+export async function GET() {
+  // Optional: You could implement a GET request to retrieve all users or a specific user.
   try {
-    const result = await getData('sample');
-    res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
-    return res.status(200).json({ message: "All data collected", data: result });
+    const result = await getData('sample');    
+    return NextResponse.json(
+      { message: "All data collected", data: result },
+      { status: 200 }
+    );
   } catch (error) {
-    return res.status(500).json({ error: "Cannot retrieve the data" });
+    throw new Error('Cannot retrive the sample data at this movement')
   }
 }
