@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { Form, Input, Button, Radio, Select, Checkbox, message, Spin } from "antd";
+import {
+  Form,
+  Input,
+  Button,
+  Radio,
+  Select,
+  Checkbox,
+  message,
+  Spin,
+} from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 import { validateEmail } from "@/utils/emailValidator";
 
@@ -60,7 +69,7 @@ const SpeakersEnquiryForm: React.FC = () => {
       }}
     >
       <div className="p-8 rounded-lg shadow-lg w-full">
-        <h2 className="text-2xl font-semibold mb-6">Speakers Enquiry</h2>
+        {/* <h2 className="text-2xl font-semibold mb-6">Speakers Registration </h2> */}
         <Form
           form={form}
           name="sponsor-enquiry"
@@ -76,7 +85,7 @@ const SpeakersEnquiryForm: React.FC = () => {
               rules={[{ required: true, message: "First name is required" }]}
               className="md:w-1/2 font-bold"
             >
-              <Input className="h-[40px]" placeholder="First Name" />
+              <Input className="h-[40px]" />
             </Form.Item>
 
             <Form.Item
@@ -85,7 +94,7 @@ const SpeakersEnquiryForm: React.FC = () => {
               className="md:w-1/2 font-bold"
               rules={[{ required: true, message: "Last name is required" }]}
             >
-              <Input className="h-[40px]" placeholder="Last Name" />
+              <Input className="h-[40px]" />
             </Form.Item>
           </div>
 
@@ -96,7 +105,7 @@ const SpeakersEnquiryForm: React.FC = () => {
               className="md:w-1/2 font-bold"
               rules={[{ required: true, message: "Job title is required" }]}
             >
-              <Input className="h-[40px]" placeholder="Job Title" />
+              <Input className="h-[40px]"/>
             </Form.Item>
 
             <Form.Item
@@ -105,7 +114,7 @@ const SpeakersEnquiryForm: React.FC = () => {
               className="md:w-1/2 font-bold"
               rules={[{ required: true, message: "Company name is required" }]}
             >
-              <Input className="h-[40px]" placeholder="Company Name" />
+              <Input className="h-[40px]" />
             </Form.Item>
           </div>
 
@@ -128,7 +137,7 @@ const SpeakersEnquiryForm: React.FC = () => {
                 },
               ]}
             >
-              <Input className="h-[40px]" placeholder="email" />
+              <Input className="h-[40px]" />
             </Form.Item>
 
             <Form.Item
@@ -151,7 +160,6 @@ const SpeakersEnquiryForm: React.FC = () => {
             >
               <Input
                 className="h-[40px]"
-                placeholder="Mobile"
                 onChange={(e) => {
                   const { value } = e.target;
                   if (!/^[0-9]*$/.test(value)) {
@@ -162,7 +170,7 @@ const SpeakersEnquiryForm: React.FC = () => {
             </Form.Item>
           </div>
 
-          <Form.Item
+          {/* <Form.Item
             label="I'm interested in"
             name="interestedIn"
             className="md:w-1/2 font-bold"
@@ -175,12 +183,12 @@ const SpeakersEnquiryForm: React.FC = () => {
               <Radio value="Post-show Reports">Post-show Reports</Radio>
               <Radio value="Delegate List">Delegate List</Radio>
             </Radio.Group>
-          </Form.Item>
+          </Form.Item> */}
 
           <Form.Item
             name="consent"
             valuePropName="checked"
-            className="md:w-1/2 font-bold"
+            className="font-bold"
             rules={[
               {
                 required: true,
@@ -197,29 +205,11 @@ const SpeakersEnquiryForm: React.FC = () => {
           <Form.Item
             name="terms"
             valuePropName="checked"
-            className="md:w-1/2 font-bold"
+            className="font-bold"
             rules={[{ required: true, message: "You must accept the terms" }]}
           >
             <Checkbox>
-              I agree to the{" "}
-              <a
-                href="https://example.com/terms"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                Terms and Conditions
-              </a>{" "}
-              and{" "}
-              <a
-                href="https://example.com/privacy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500"
-              >
-                Privacy Policy
-              </a>
-              .
+              I agree to the Terms and Conditions and Privacy Policy .
             </Checkbox>
           </Form.Item>
 
@@ -231,12 +221,7 @@ const SpeakersEnquiryForm: React.FC = () => {
             >
               {loading ? (
                 <Spin
-                  indicator={
-                    <LoadingOutlined
-                      spin
-                      style={{ color: "red" }}
-                    />
-                  }
+                  indicator={<LoadingOutlined spin style={{ color: "red" }} />}
                   size="small"
                 />
               ) : (

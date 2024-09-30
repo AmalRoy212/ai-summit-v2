@@ -8,12 +8,15 @@ const EventsPage: React.FC = () => {
     <div className="bg-contain bg-center flex flex-col justify-center items-center">
       <div
         style={{
-          backgroundImage: 'url("images/statics/delegates-bg-1.jpg")',
+          backgroundImage: 'url("images/bg/bg1.jpeg")',
+          backgroundSize: 'cover',       // This will make the image cover the entire div
+          backgroundPosition: 'center',  // This centers the background image
+          backgroundRepeat: 'no-repeat', // Prevents the image from repeating
         }}
         className="bg-black bg-opacity-60 w-full md:h-[400px] h-[300px] flex justify-center"
       >
         <div className="bg-black bg-opacity-60 w-full md:py-24 flex justify-center">
-          <Headers first="" middle="DELEGATE" last="ENQUIRY" />
+          <Headers first="" middle="DELEGATE" last="REGISTRATION" />
         </div>
       </div>
 

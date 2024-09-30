@@ -9,13 +9,15 @@ const sponsorsPage: React.FC = () => {
     <div className="bg-contain bg-center flex flex-col justify-center items-center">
       <div
         style={{
-          // height: "400px",
-          backgroundImage: 'url("images/statics/delegates-bg-1.jpg")',
+          backgroundImage: 'url("images/bg/bg1.jpeg")',
+          backgroundSize: 'cover',       // This will make the image cover the entire div
+          backgroundPosition: 'center',  // This centers the background image
+          backgroundRepeat: 'no-repeat', // Prevents the image from repeating
         }}
         className="bg-black md:h-[400px] h-[300px] bg-opacity-60 w-full  flex justify-center"
       >
         <div className="bg-black bg-opacity-60 w-full md:py-24 flex justify-center">
-          <Headers first="" middle="SPONSORS" last="ENQUIRY" />
+          <Headers first="" middle="SPONSORS" last="REGISTRATION" />
         </div>
       </div>
 

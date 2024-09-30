@@ -101,7 +101,7 @@ export default function DelegateRegistration() {
         <div className="flex flex-col md:flex-row w-full md:gap-2">
           {/* Delegate Pass */}
           <Form.Item label="Delegate Pass" className="md:w-1/2 font-bold">
-            <Input placeholder="Enter delegate pass" className="h-[40px]" />
+            <Input className="h-[40px]" />
           </Form.Item>
 
           {/* Title, First Name, Last Name */}
@@ -111,7 +111,7 @@ export default function DelegateRegistration() {
             name="title"
             rules={[{ required: true, message: "Please select your title!" }]}
           >
-            <Select className="h-[40px]" placeholder="Select a title">
+            <Select className="h-[40px]" >
               <Option value="mr">Mr.</Option>
               <Option value="mrs">Mrs.</Option>
               <Option value="ms">Ms.</Option>
@@ -129,7 +129,7 @@ export default function DelegateRegistration() {
               { required: true, message: "Please enter your first name!" },
             ]}
           >
-            <Input placeholder="first name" className="h-[40px]" />
+            <Input className="h-[40px]" />
           </Form.Item>
 
           <Form.Item
@@ -140,7 +140,7 @@ export default function DelegateRegistration() {
               { required: true, message: "Please enter your last name!" },
             ]}
           >
-            <Input className="h-[40px]" placeholder="last name" />
+            <Input className="h-[40px]"/>
           </Form.Item>
         </div>
 
@@ -154,7 +154,7 @@ export default function DelegateRegistration() {
               { required: true, message: "Please input your job title!" },
             ]}
           >
-            <Input className="h-[40px]" placeholder="job titile" />
+            <Input className="h-[40px]" />
           </Form.Item>
 
           <Form.Item
@@ -165,7 +165,7 @@ export default function DelegateRegistration() {
               { required: true, message: "Please input your company name!" },
             ]}
           >
-            <Input className="h-[40px]" placeholder="company name" />
+            <Input className="h-[40px]" />
           </Form.Item>
         </div>
 
@@ -189,7 +189,7 @@ export default function DelegateRegistration() {
               },
             ]}
           >
-            <Input className="h-[40px]" placeholder="email" />
+            <Input className="h-[40px]" />
           </Form.Item>
 
           <Form.Item
@@ -212,7 +212,6 @@ export default function DelegateRegistration() {
           >
             <Input
               className="h-[40px]"
-              placeholder="Mobile"
               onChange={(e) => {
                 const { value } = e.target;
                 if (!/^[0-9]*$/.test(value)) {
@@ -233,7 +232,7 @@ export default function DelegateRegistration() {
               { required: true, message: "Please select your indusrty!" },
             ]}
           >
-            <Select className="h-[40px]" placeholder="Select a industry">
+            <Select className="h-[40px]">
               <Option value="Software Development">Software Development</Option>
               <Option value="Artifitial Inteligence">
                 Artifitial Inteligence
@@ -249,7 +248,7 @@ export default function DelegateRegistration() {
             name="country"
             rules={[{ required: true, message: "Please select your country!" }]}
           >
-            <Select className="h-[40px]" placeholder="Select a country">
+            <Select className="h-[40px]">
               <Option value="india">India</Option>
               <Option value="USA">USA</Option>
               <Option value="UAE">UAE</Option>
@@ -285,7 +284,7 @@ export default function DelegateRegistration() {
               },
             ]}
           >
-            <Select className="h-[40px]" placeholder="Select a role">
+            <Select className="h-[40px]">
               <Option value="Final dicision maker">Final dicision maker</Option>
               <Option value="One of the final dicision maker">
                 One of the final dicision maker
@@ -312,7 +311,6 @@ export default function DelegateRegistration() {
           >
             <Select
               className="h-[40px]"
-              placeholder="Select a solution you looking for"
             >
               <Option value="Wealthtech">Wealthtech</Option>
               <Option value="Edutech">Edutech</Option>
@@ -329,7 +327,7 @@ export default function DelegateRegistration() {
             { required: true, message: "Please select number of employe!" },
           ]}
         >
-          <Select className="h-[40px]" placeholder="Select a industry">
+          <Select className="h-[40px]">
             <Option value="0-100">0 to 100</Option>
             <Option value="100-500">100 to 500</Option>
             <Option value="500-1000">500 to 1000</Option>
@@ -351,7 +349,7 @@ export default function DelegateRegistration() {
               },
             ]}
           >
-            <Select className="h-[40px]" placeholder="Select budjet">
+            <Select className="h-[40px]">
               <Option value="$50,000 - $100,000">$50,000 - $100,000</Option>
               <Option value="$100,000 - $200,000">$100,000 - $200,000</Option>
               <Option value="$50,000 - $100,000">$200,000 - $300,000</Option>
@@ -376,7 +374,7 @@ export default function DelegateRegistration() {
               },
             ]}
           >
-            <Select className="h-[40px]" placeholder="Select the time period">
+            <Select className="h-[40px]">
               <Option value="0 - 1 month">0 - 1 month</Option>
               <Option value="1 - 2 month">1 - 2 month</Option>
               <Option value="2 - 3 month">2 - 3 month</Option>
