@@ -2,9 +2,14 @@
 
 import SponsorEnquiryForm from "@/ui/main/sponsors-form/SponsorsForm";
 import Headers from "@/ui/sub/headers/Headers";
-import React from "react";
+import React, { useEffect } from "react";
 
 const sponsorsPage: React.FC = () => {
+
+  useEffect(() => {
+    localStorage.setItem("reloaded", "true");
+  }, []);
+
   return (
     <div className="bg-contain bg-center flex flex-col justify-center items-center">
       <div

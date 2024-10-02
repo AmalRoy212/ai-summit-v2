@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect } from "react";
 import Cards from "@/ui/main/cards/Cards";
 import Pricing from "@/ui/main/index/Pricing";
 import DetailsHolder from "@/ui/main/index/aboutEvent/DetailsHolder";
@@ -16,6 +19,14 @@ import WhoIndustries from "@/ui/sub/index/WhyIndustries/WhyIndustries";
 import SpeakerProfiles from "../ui/main/speakers/SpeakersSection";
 
 export default function Home() {
+  
+  useEffect(() => {
+    if (localStorage.getItem("reloaded")) {
+      localStorage.removeItem("reloaded");
+      window.location.reload();
+    }
+  }, []);
+
   return (
     <main className="h-full w-full md:w-[100%] overflow-hidden">
       <StarsCanvas />
@@ -23,7 +34,7 @@ export default function Home() {
         <Hero />
         <DetailsHolder />
         <Card />
-        <SpeakerProfiles/>
+        <SpeakerProfiles />
         <Encryption />
         <Cards />
         <ChartsHolder />
