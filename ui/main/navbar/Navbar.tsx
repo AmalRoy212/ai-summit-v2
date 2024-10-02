@@ -36,11 +36,11 @@ function Navbar() {
 
         <div className='w-[800px] h-full hidden md:flex flex-row items-center justify-between md:mr-20'>
           <div className='flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200'>
-            <a href="#about-us" className='cursor-pointer'>ABOUT</a>
-            <a href="#happening" className='cursor-pointer'>HAPPENINGS</a>
-            <a href="#speakers" className='cursor-pointer'>SPEAKERS</a>
-            <a href="#attendies" className='cursor-pointer'>ATTENDEES</a>
-            <a href="#topics" className='cursor-pointer'>TOPICS</a>
+            <a href="#about-us" className='cursor-pointer text-sm'>ABOUT</a>
+            <a href="#happening" className='cursor-pointer text-sm'>HAPPENINGS</a>
+            <a href="#speakers" className='cursor-pointer text-sm'>SPEAKERS</a>
+            <a href="#topics" className='cursor-pointer text-sm'>AGENDA</a>
+            <a href="#" className='cursor-pointer text-sm'>SPONSORS & PARTNERS</a>
           </div>
         </div>
 
