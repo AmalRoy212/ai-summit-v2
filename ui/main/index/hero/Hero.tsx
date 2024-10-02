@@ -29,7 +29,7 @@ function IndexHeader() {
   }, []);
 
   return (
-    <div className="relative md:overflow-hidden md:h-[90vh]" id="hero">
+    <div className="relative md:overflow-hidden md:h-[110vh]" id="hero">
       <div className="absolute inset-0">
         <video
           autoPlay
