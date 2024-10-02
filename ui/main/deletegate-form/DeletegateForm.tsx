@@ -106,7 +106,7 @@ export default function DelegateRegistration() {
       >
         <div className="flex flex-col md:flex-row w-full md:gap-2">
           {/* Delegate Pass */}
-          <Form.Item label="Delegate Pass" className="md:w-1/2 font-bold">
+          <Form.Item label="Enter Registration Code (If any)" className="md:w-1/2 font-bold">
             <Input className="h-[40px]" />
           </Form.Item>
 
@@ -268,33 +268,14 @@ export default function DelegateRegistration() {
             className="md:w-1/2 font-bold"
             label="Country"
             name="country"
-            rules={[{ required: true, message: "Please select your country!" }]}
+            rules={[{ required: true, message: "Please enter your country name" }]}
           >
-            <Select className="h-[40px]">
-              <Option value="india">India</Option>
-              <Option value="USA">USA</Option>
-              <Option value="UAE">UAE</Option>
-              <Option value="EUROP">Europ</Option>
-            </Select>
+            <Input className="h-[40px]" />
           </Form.Item>
         </div>
 
         <div className="flex flex-col md:flex-row w-full md:gap-2">
           {/* Number of employ, Solution */}
-          {/* <Form.Item
-            className="md:w-1/2 font-bold"
-            label="Number of employees"
-            name="nos_employees"
-            rules={[{ required: true, message: "Please select number of employe!" }]}
-          >
-            <Select className="h-[40px]" placeholder="Select a industry">
-              <Option value="0-100">0 to 100</Option>
-              <Option value="100-500">100 to 500</Option>
-              <Option value="500-1000">500 to 1000</Option>
-              <Option value="1000-10,000">1000 to 10,000</Option>
-              <Option value="10,000 above">10,000 above</Option>
-            </Select>
-          </Form.Item> */}
           <Form.Item
             className="md:w-1/2 font-bold"
             label="What is your role/authority while dealing with solution providers for your organisation? *"
@@ -312,10 +293,10 @@ export default function DelegateRegistration() {
                 One of the final dicision maker
               </Option>
               <Option value="I reffer and influence the decision">
-                I reffer and influence the decision
+                I refer and influence the decision
               </Option>
               <Option value="Am not involved at all">
-                Am not involved at all
+                I am not involved at all
               </Option>
             </Select>
           </Form.Item>

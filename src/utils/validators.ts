@@ -51,8 +51,7 @@ export function validateSponsorsFormData(formData: SponsorsForm): boolean {
     !formData.email ||
     !formData.mobile ||
     !formData.companyName ||
-    !formData.jobTitle ||
-    !formData.interestedIn
+    !formData.jobTitle
   ) {
     console.log("Required fields must not be empty.");
     return false;

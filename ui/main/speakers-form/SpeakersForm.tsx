@@ -3,7 +3,6 @@ import {
   Form,
   Input,
   Button,
-  Radio,
   Select,
   Checkbox,
   message,
@@ -11,6 +10,7 @@ import {
 } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 import { validateEmail } from "@/utils/emailValidator";
+import Uploader from "@/ui/sub/uploader/Uploader";
 
 const { Option } = Select;
 
@@ -20,8 +20,14 @@ type SponsorFormValues = {
   jobTitle: string;
   companyName: string;
   email: string;
-  mobileNumber: string;
-  interestedIn: string;
+  mobile: string; // This should match the form field
+  directLine: string;
+  city?: string; // City is optional in the form, so it should be marked as optional
+  country: string;
+  industry: string;
+  twitter?: string; // Optional in the form
+  linkedin?: string; // Optional in the form
+  professionalBio?: string; // Optional in the form
   consent: boolean;
   terms: boolean;
 };
@@ -32,6 +38,7 @@ const SpeakersEnquiryForm: React.FC = () => {
 
   // Handle form submission using fetch API
   const onFinish = async (values: SponsorFormValues) => {
+    setLoading(true);
     try {
       const response = await fetch("/api/speakers/register", {
         method: "POST",
@@ -51,6 +58,7 @@ const SpeakersEnquiryForm: React.FC = () => {
       console.error("Error submitting form:", error);
       message.error("Error occurred during submission.");
     }
+    setLoading(false);
   };
 
   const validateMessages = {
@@ -78,6 +86,17 @@ const SpeakersEnquiryForm: React.FC = () => {
           validateMessages={validateMessages}
           className="space-y-4"
         >
+          <div className="w-full flex justify-center">
+            {/* <Uploader/> */}
+            {/* <Form.Item
+              label="Upload your image"
+              name="image"
+              rules={[{ required: true, message: "Upload the image" }]}
+              className="md:w-1/2 font-bold"
+            >
+              <Input type="file" className="h-[40px]" />
+            </Form.Item> */}
+          </div>
           <div className="flex flex-col md:flex-row w-full md:gap-2">
             <Form.Item
               label="First Name"
@@ -105,7 +124,7 @@ const SpeakersEnquiryForm: React.FC = () => {
               className="md:w-1/2 font-bold"
               rules={[{ required: true, message: "Job title is required" }]}
             >
-              <Input className="h-[40px]"/>
+              <Input className="h-[40px]" />
             </Form.Item>
 
             <Form.Item
@@ -169,6 +188,95 @@ const SpeakersEnquiryForm: React.FC = () => {
               />
             </Form.Item>
           </div>
+
+          <div className="flex flex-col md:flex-row w-full md:gap-2">
+            <Form.Item
+              label="Direct Line"
+              name="directLine"
+              rules={[{ required: true, message: "Direct line is required" }]}
+              className="md:w-1/2 font-bold"
+            >
+              <Input className="h-[40px]" />
+            </Form.Item>
+
+            <Form.Item
+              label="City"
+              name="city"
+              rules={[{ required: true, message: "City is required" }]} // Add validation rule
+              className="md:w-1/2 font-bold"
+            >
+              <Input className="h-[40px]" />
+            </Form.Item>
+          </div>
+
+          <div className="flex flex-col md:flex-row w-full md:gap-2">
+            <Form.Item
+              label="Country"
+              name="country"
+              rules={[{ required: true, message: "Country is required" }]}
+              className="md:w-1/2 font-bold"
+            >
+              <Input className="h-[40px]" />
+            </Form.Item>
+
+            <Form.Item
+              label="Industry"
+              name="industry"
+              rules={[{ required: true, message: "Industry is required" }]}
+              className="md:w-1/2 font-bold"
+            >
+              <Select className="h-[40px]">
+                <Option value="Technology">Technology</Option>
+                <Option value="Healthcare">Healthcare</Option>
+                <Option value="Finance">Finance</Option>
+                <Option value="Education">Education</Option>
+              </Select>
+            </Form.Item>
+          </div>
+
+          <div className="flex flex-col md:flex-row w-full md:gap-2">
+            <Form.Item
+              label="Twitter"
+              name="twitter"
+              rules={[
+                {
+                  required: true,
+                  type: "url",
+                  message: "Please enter a valid Twitter URL!", // Add URL validation for Twitter
+                },
+              ]}
+              className="md:w-1/2 font-bold"
+            >
+              <Input className="h-[40px]" />
+            </Form.Item>
+
+            <Form.Item
+              label="LinkedIn"
+              name="linkedin"
+              rules={[
+                {
+                  required: true,
+                  type: "url",
+                  message: "Please enter a valid LinkedIn URL!", // Add URL validation for LinkedIn
+                },
+              ]}
+              className="md:w-1/2 font-bold"
+            >
+              <Input className="h-[40px]" />
+            </Form.Item>
+          </div>
+
+          <Form.Item
+            label="Professional Bio"
+            name="professionalBio"
+            rules={[
+              { required: true, message: "Professional Bio is required" }, // Add required rule for Professional Bio
+              { max: 500, message: "Bio cannot be longer than 500 characters" }, // Optional: Add length constraint
+            ]}
+            className="font-bold"
+          >
+            <Input.TextArea rows={4} />
+          </Form.Item>
 
           {/* <Form.Item
             label="I'm interested in"

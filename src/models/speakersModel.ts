@@ -5,7 +5,13 @@ export interface speakersFormData {
   companyName: string;
   email: string;
   mobileNumber: string;
-  interestedIn: string;
+  directLine: string;
+  city: string;
+  country: string;
+  industry: string;
+  twitter: string;
+  linkedin: string;
+  professionalBio: string;
   consent: boolean;
   terms: boolean;
 }
