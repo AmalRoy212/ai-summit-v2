@@ -13,7 +13,7 @@ export default function DelegateRegistration() {
   const [loading, setLoading] = useState<boolean>(false);
 
   const onFinish = async (values: any) => {
-    setLoading(true)
+    setLoading(true);
 
     // Check if nomination field is empty and set a default value
     if (!values.nomination) {
@@ -29,6 +29,10 @@ export default function DelegateRegistration() {
       }
       return name; // Return unchanged if already capitalized
     };
+
+    if (values.title) {
+      values.title = ensureFirstLetterCapitalized(values.title);
+    }
 
     // Ensure first letter of firstName is capitalized
     if (values.firstName) {
@@ -64,7 +68,9 @@ export default function DelegateRegistration() {
       // Check if the request was successful
       if (response.ok) {
         await response.json();
-        message.success("Form submitted successfully!");
+        message.success(
+          "Thank you for registering. Please consider this message as confirmation of your registration. Our event steering committee will review your submission, and you will receive an official confirmation email within the next 48 hours.!"
+        );
         form.resetFields();
         // You can display a success message or handle it as needed
       } else {
@@ -76,7 +82,7 @@ export default function DelegateRegistration() {
       console.error("Request failed:", error);
       // Handle network or request errors
     }
-    setLoading(false)
+    setLoading(false);
   };
 
   const onFinishFailed = (errorInfo: any) => {
@@ -111,7 +117,7 @@ export default function DelegateRegistration() {
             name="title"
             rules={[{ required: true, message: "Please select your title!" }]}
           >
-            <Select className="h-[40px]" >
+            <Select className="h-[40px]">
               <Option value="mr">Mr.</Option>
               <Option value="mrs">Mrs.</Option>
               <Option value="ms">Ms.</Option>
@@ -140,7 +146,7 @@ export default function DelegateRegistration() {
               { required: true, message: "Please enter your last name!" },
             ]}
           >
-            <Input className="h-[40px]"/>
+            <Input className="h-[40px]" />
           </Form.Item>
         </div>
 
@@ -233,12 +239,28 @@ export default function DelegateRegistration() {
             ]}
           >
             <Select className="h-[40px]">
-              <Option value="Software Development">Software Development</Option>
-              <Option value="Artifitial Inteligence">
-                Artifitial Inteligence
+              <Option value="Oil and Gas">Oil and Gas</Option>
+              <Option value="Telecommunications">Telecommunications</Option>
+              <Option value="Banking">Banking</Option>
+              <Option value="Insurance">Insurance</Option>
+              <Option value="Manufacturing">Manufacturing</Option>
+              <Option value="Retail">Retail</Option>
+              <Option value="Healthcare">Healthcare</Option>
+              <Option value="Government and Public Sector">
+                Government and Public Sector
+              </Option>
+              <Option value="Defence & Space">Defence & Space</Option>
+              <Option value="Utilities">Utilities</Option>
+              <Option value="Transportation and Logistics">
+                Transportation and Logistics
+              </Option>
+              <Option value="Real Estate and Construction">
+                Real Estate and Construction
               </Option>
               <Option value="Education">Education</Option>
-              <Option value="Agriculture">Agriculture</Option>
+              <Option value="Financial Services">Financial Services</Option>
+              <Option value="E-commerce">E-commerce</Option>
+              <Option value="Aviation">Aviation</Option>
             </Select>
           </Form.Item>
 
@@ -309,12 +331,118 @@ export default function DelegateRegistration() {
               },
             ]}
           >
-            <Select
-              className="h-[40px]"
-            >
-              <Option value="Wealthtech">Wealthtech</Option>
-              <Option value="Edutech">Edutech</Option>
-              <Option value="Fintech">Fintech</Option>
+            <Select className="h-[40px]">
+              <Option value="API-led Connectivity">API-led Connectivity</Option>
+              <Option value="iPaaS (Integration Platform as a Service)">
+                iPaaS (Integration Platform as a Service)
+              </Option>
+              <Option value="RESTful APIs">RESTful APIs</Option>
+              <Option value="Webhooks">Webhooks</Option>
+              <Option value="ETL (Extract, Transform, Load)">
+                ETL (Extract, Transform, Load)
+              </Option>
+              <Option value="Data Integration Platforms">
+                Data Integration Platforms
+              </Option>
+              <Option value="Data Pipelines">Data Pipelines</Option>
+              <Option value="Message Queuing">Message Queuing</Option>
+              <Option value="Data Lake Integration">
+                Data Lake Integration
+              </Option>
+              <Option value="Data Warehousing">Data Warehousing</Option>
+              <Option value="ESB (Enterprise Service Bus)">
+                ESB (Enterprise Service Bus)
+              </Option>
+              <Option value="EDI (Electronic Data Interchange)">
+                EDI (Electronic Data Interchange)
+              </Option>
+              <Option value="Robotic Process Automation (RPA)">
+                Robotic Process Automation (RPA)
+              </Option>
+              <Option value="Business Process Automation (BPA)">
+                Business Process Automation (BPA)
+              </Option>
+              <Option value="Workflow Automation">Workflow Automation</Option>
+              <Option value="Data Workflow Automation">
+                Data Workflow Automation
+              </Option>
+              <Option value="Data Orchestration Platforms">
+                Data Orchestration Platforms
+              </Option>
+              <Option value="Event-Driven Automation">
+                Event-Driven Automation
+              </Option>
+              <Option value="Intelligent Process Automation (IPA)">
+                Intelligent Process Automation (IPA)
+              </Option>
+              <Option value="DataOps (Data Operations)">
+                DataOps (Data Operations)
+              </Option>
+              <Option value="Event-Driven Architecture (EDA)">
+                Event-Driven Architecture (EDA)
+              </Option>
+              <Option value="Low-Code/No-Code Automation Platforms">
+                Low-Code/No-Code Automation Platforms
+              </Option>
+              <Option value="Machine Learning (ML)">
+                Machine Learning (ML)
+              </Option>
+              <Option value="Natural Language Processing (NLP)">
+                Natural Language Processing (NLP)
+              </Option>
+              <Option value="Predictive Analytics">Predictive Analytics</Option>
+              <Option value="Generative AI">Generative AI</Option>
+              <Option value="AI-powered Data Cleansing and Transformation">
+                AI-powered Data Cleansing and Transformation
+              </Option>
+              <Option value="Computer Vision">Computer Vision</Option>
+              <Option value="Autonomous Data Management">
+                Autonomous Data Management
+              </Option>
+              <Option value="AI-based Data Mining">AI-based Data Mining</Option>
+              <Option value="Chatbots/Virtual Assistants">
+                Chatbots/Virtual Assistants
+              </Option>
+              <Option value="AI for Data Synthesis">
+                AI for Data Synthesis
+              </Option>
+              <Option value="Data Virtualization">Data Virtualization</Option>
+              <Option value="Master Data Management (MDM)">
+                Master Data Management (MDM)
+              </Option>
+              <Option value="Data Integration">Data Integration</Option>
+              <Option value="Data Cataloging">Data Cataloging</Option>
+              <Option value="Data Governance">Data Governance</Option>
+              <Option value="Data Quality Management">
+                Data Quality Management
+              </Option>
+              <Option value="Data Lakes">Data Lakes</Option>
+              <Option value="Metadata Management">Metadata Management</Option>
+              <Option value="Cloud Data Platforms">Cloud Data Platforms</Option>
+              <Option value="Data Replication">Data Replication</Option>
+              <Option value="Data Transformation">Data Transformation</Option>
+              <Option value="Data Fabric">Data Fabric</Option>
+              <Option value="Data Virtualization Platforms">
+                Data Virtualization Platforms
+              </Option>
+              <Option value="Data Analytics">Data Analytics</Option>
+              <Option value="Data Visualization">Data Visualization</Option>
+              <Option value="Self-Service BI">Self-Service BI</Option>
+              <Option value="Embedded Analytics">Embedded Analytics</Option>
+              <Option value="Dashboards and Reporting">
+                Dashboards and Reporting
+              </Option>
+              <Option value="Data Discovery">Data Discovery</Option>
+              <Option value="Mobile BI">Mobile BI</Option>
+              <Option value="Advanced Analytics">Advanced Analytics</Option>
+              <Option value="Real-Time Analytics">Real-Time Analytics</Option>
+              <Option value="Collaborative BI">Collaborative BI</Option>
+              <Option value="OLAP (Online Analytical Processing)">
+                OLAP (Online Analytical Processing)
+              </Option>
+              <Option value="Data Warehousing for BI">
+                Data Warehousing for BI
+              </Option>
             </Select>
           </Form.Item>
         </div>
@@ -472,7 +600,12 @@ export default function DelegateRegistration() {
             htmlType="submit"
           >
             {loading ? (
-              <Spin  indicator={<LoadingOutlined spin color="red" style={{color:"red"}} />} size="small" />
+              <Spin
+                indicator={
+                  <LoadingOutlined spin color="red" style={{ color: "red" }} />
+                }
+                size="small"
+              />
             ) : (
               "Submit"
             )}
