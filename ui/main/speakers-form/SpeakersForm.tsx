@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-import {
-  Form,
-  Input,
-  Button,
-  Select,
-  Checkbox,
-  message,
-  Spin,
-} from "antd";
+import { Form, Input, Button, Select, Checkbox, message, Spin } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 import { validateEmail } from "@/utils/emailValidator";
 import Uploader from "@/ui/sub/uploader/Uploader";
@@ -226,10 +218,30 @@ const SpeakersEnquiryForm: React.FC = () => {
               className="md:w-1/2 font-bold"
             >
               <Select className="h-[40px]">
-                <Option value="Technology">Technology</Option>
-                <Option value="Healthcare">Healthcare</Option>
-                <Option value="Finance">Finance</Option>
-                <Option value="Education">Education</Option>
+                <Select className="h-[40px]">
+                  <Option value="Oil and Gas">Oil and Gas</Option>
+                  <Option value="Telecommunications">Telecommunications</Option>
+                  <Option value="Banking">Banking</Option>
+                  <Option value="Insurance">Insurance</Option>
+                  <Option value="Manufacturing">Manufacturing</Option>
+                  <Option value="Retail">Retail</Option>
+                  <Option value="Healthcare">Healthcare</Option>
+                  <Option value="Government and Public Sector">
+                    Government and Public Sector
+                  </Option>
+                  <Option value="Defence & Space">Defence & Space</Option>
+                  <Option value="Utilities">Utilities</Option>
+                  <Option value="Transportation and Logistics">
+                    Transportation and Logistics
+                  </Option>
+                  <Option value="Real Estate and Construction">
+                    Real Estate and Construction
+                  </Option>
+                  <Option value="Education">Education</Option>
+                  <Option value="Financial Services">Financial Services</Option>
+                  <Option value="E-commerce">E-commerce</Option>
+                  <Option value="Aviation">Aviation</Option>
+                </Select>
               </Select>
             </Form.Item>
           </div>

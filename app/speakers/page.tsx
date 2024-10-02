@@ -22,7 +22,7 @@ const sponsorsPage: React.FC = () => {
         className="bg-black md:h-[400px] h-[300px] bg-opacity-60 w-full  flex justify-center"
       >
         <div className="bg-black bg-opacity-60 w-full md:py-24 flex justify-center">
-          <Headers first="" middle="SPEAKERS" last="REGISTRATION" />
+          <Headers first="" middle="SPEAKER" last="APPLICATION" />
         </div>
       </div>
 

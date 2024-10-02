@@ -505,7 +505,7 @@ export default function DelegateRegistration() {
                 noStyle
                 // rules={[{ required: true, message: "Full name required!" }]}
               >
-                <Input style={{ width: "50%" }} placeholder="Full name" />
+                <Input style={{ width: "50%" }} placeholder="Full Name" />
               </Form.Item>
               <Form.Item
                 name={["nomination", "email"]}
@@ -519,18 +519,18 @@ export default function DelegateRegistration() {
           <Form.Item className="md:w-1/2 font-semibold">
             <Input.Group compact>
               <Form.Item
-                name={["nomination", "company name"]}
+                name={["nomination", "Company Name"]}
                 noStyle
                 // rules={[{ required: true, message: "Company name required!" }]}
               >
-                <Input style={{ width: "50%" }} placeholder="company name" />
+                <Input style={{ width: "50%" }} placeholder="Company Name" />
               </Form.Item>
               <Form.Item
                 name={["nomination", "phone number"]}
                 noStyle
                 // rules={[{ required: true, message: "phone number required!" }]}
               >
-                <Input style={{ width: "50%" }} placeholder="Phone number" />
+                <Input style={{ width: "50%" }} placeholder="Phone Number" />
               </Form.Item>
             </Input.Group>
           </Form.Item>
@@ -541,7 +541,7 @@ export default function DelegateRegistration() {
                 noStyle
                 // rules={[{ required: true, message: "Job title required!" }]}
               >
-                <Input style={{ width: "50%" }} placeholder="Job title" />
+                <Input style={{ width: "50%" }} placeholder="Job Title" />
               </Form.Item>
             </Input.Group>
           </Form.Item>
