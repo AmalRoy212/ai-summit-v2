@@ -16,7 +16,7 @@ const profiles = [
     organization: "OMAN",
     image: "/images/speakers/speaker31111.png",
     linkedIn: "#",
-    marginTP: 10,
+    marginTP: 0,
   },
   {
     name: "DR. SALIM HUMAID AL-SHUAILI",
@@ -36,7 +36,7 @@ const profiles = [
     organization: "",
     image: "/images/speakers/kawthar.png",
     linkedIn: "#",
-    marginTP: 10,
+    marginTP: 0,
   },
   {
     name: "DR.JIHAD AL WAHSHI",
