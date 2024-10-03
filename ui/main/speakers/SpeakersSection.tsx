@@ -49,13 +49,13 @@ const profiles = [
 
 const profilesTwo = [
   {
-    name: "AMJID ALI",
-    title: "Chief Information Officer",
-    company: "Al Ansari Group",
+    name: "FOUAD IBRAHIM",
+    title: "CO - Founder & Technical Director",
+    company: "Falcon Oilfield Services",
     organization: "OMAN",
-    image: "/images/speakers/img5 (3).png",
+    image: "/images/speakers/img6 (2).png",
     linkedIn: "#",
-    marginTP: 10,
+    marginTP: 0,
   },
   {
     name: "BHUPENDRA PANT",
@@ -67,20 +67,19 @@ const profilesTwo = [
     marginTP: 10,
   },
   {
-    name: "FOUAD IBRAHIM",
-    title: "CO - Founder & Technical Director",
-    company: "Falcon Oilfield Services",
+    name: "Saud Al Zakwani",
+    title: "Head of Digital Transformation Petroleum Development Oman",
+    company: "",
     organization: "OMAN",
-    image: "/images/speakers/img6 (2).png",
+    image: "/images/speakers/speaker114.png",
     linkedIn: "#",
     marginTP: 0,
   },
   {
     name: "NUWANKA KOTTEGODA",
-    title:
-      "Executive Director BPOS Global ",
+    title: "Executive Director BPOS Global ",
     company: "Founder of ENKII AI",
-    com:"Investment Advisor at Mays EV",
+    com: "Investment Advisor at Mays EV",
     organization: "OMAN",
     image: "/images/speakers/img-4.png",
     linkedIn: "#",
@@ -88,6 +87,87 @@ const profilesTwo = [
   },
 ];
 
+const profilesThree = [
+  {
+    name: "RAMYA SANKARI",
+    title: "Head of Information Technology",
+    company: "Zawawi Powertech Engineering LLC",
+    organization: "OMAN",
+    image: "/images/speakers/remya.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Talal Bin Ahmed Bin Amer Al Saadi",
+    title: "Director of the Office of the Undersecretary",
+    company: "Ministry of Interior",
+    organization: "OMAN",
+    image: "/images/speakers/speaker3111.png",
+    linkedIn: "#",
+    marginTP: 10,
+  },
+  {
+    name: "Kawthar Ali Al Hinai",
+    title: "Head of Digital Transformation Programs",
+    company:
+      "General Directorate of Digital Transformation and Empowerment Sector",
+    com: "Ministry of Transport, Communication and Information Technology",
+    organization: "",
+    image: "/images/speakers/kawthar.png",
+    linkedIn: "#",
+    marginTP: 10,
+  },
+  {
+    name: "Sanjeev Madavi",
+    title: "Chief Innovation Officer",
+    company: "Kale Logistics",
+    organization: "OMAN",
+    image: "/images/speakers/Sanjeev_Madavi.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+];
+
+const profilesFour = [
+  {
+    name: "AMJID ALI",
+    title: "Chief Information Officer",
+    company: "Al Ansari Group",
+    organization: "OMAN",
+    image: "/images/speakers/img5 (3).png",
+    linkedIn: "#",
+    marginTP: 10,
+  },
+  // {
+  //   name: "Talal Bin Ahmed Bin Amer Al Saadi",
+  //   title: "Director of the Office of the Undersecretary",
+  //   company: "Ministry of Interior",
+  //   organization: "OMAN",
+  //   image: "/images/speakers/speaker3111.png",
+  //   linkedIn: "#",
+  //   marginTP: 10,
+  // },
+  // {
+  //   name: "Kawthar Ali Al Hinai",
+  //   title: "Head of Digital Transformation Programs",
+  //   company:
+  //     "General Directorate of Digital Transformation and Empowerment Sector",
+  //   com: "Ministry of Transport, Communication and Information Technology",
+  //   organization: "",
+  //   image: "/images/speakers/kawthar.png",
+  //   linkedIn: "#",
+  //   marginTP: 10,
+  // },
+  // {
+  //   name: "Sanjeev Madavi",
+  //   title: "Chief Innovation Officer",
+  //   company: "Kale Logistics",
+  //   organization: "OMAN",
+  //   image: "/images/speakers/Sanjeev_Madavi.png",
+  //   linkedIn: "#",
+  //   marginTP: 0,
+  // },
+];
 
 const SpeakerProfiles: React.FC = () => {
   useEffect(() => {
@@ -95,7 +175,10 @@ const SpeakerProfiles: React.FC = () => {
   }, []);
 
   return (
-    <div id="speakers" className="w-full flex flex-col justify-center items-center my-28 px-16 z-10">
+    <div
+      id="speakers"
+      className="w-full flex flex-col justify-center items-center my-28 px-16 z-10"
+    >
       <Headers first="OUR ESTEEMED" middle="SPEAKERS" last="" />
 
       <div className="flex mt-[-5rem] justify-center gap-2  py-10 md:flex-row flex-col">
@@ -110,6 +193,17 @@ const SpeakerProfiles: React.FC = () => {
         ))}
       </div>
 
+      <div className="flex mt-[-5rem] justify-center gap-2  py-10 md:flex-row flex-col">
+        {profilesThree.map((profile, index) => (
+          <ProfileCard item={profile} index={index} />
+        ))}
+      </div>
+
+      <div className="flex mt-[-5rem] justify-center gap-2  py-10 md:flex-row flex-col">
+        {profilesFour.map((profile, index) => (
+          <ProfileCard item={profile} index={index} />
+        ))}
+      </div>
     </div>
   );
 };

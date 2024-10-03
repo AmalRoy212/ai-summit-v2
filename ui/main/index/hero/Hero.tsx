@@ -63,7 +63,7 @@ function IndexHeader() {
         <p className="md:text-2xl flex gap-x-3 justify-center items-center md:flex-row flex-col">
           <span className="flex items-center gap-3">
             <CiCalendarDate />
-            11th December, 2024
+            11 DECEMBER, 2024
           </span>
           <span className="flex items-center gap-3">
             <FaLocationDot size={18} /> MUSCAT, SULTANATE OF OMAN
