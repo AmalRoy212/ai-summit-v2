@@ -10,6 +10,15 @@ import Headers from "@/ui/sub/headers/Headers";
 // Profile data array
 const profiles = [
   {
+    name: "Talal Bin Ahmed Bin Amer Al Saadi",
+    title: "Director of the Office of the Undersecretary",
+    company: "Ministry of Interior",
+    organization: "OMAN",
+    image: "/images/speakers/speaker31111.png",
+    linkedIn: "#",
+    marginTP: 10,
+  },
+  {
     name: "DR. SALIM HUMAID AL-SHUAILI",
     title: "Director of Artificial Intelligence and Advanced Technology Unit",
     company: " Ministry of Transport, Communication and Information Technology",
@@ -17,6 +26,17 @@ const profiles = [
     image: "/images/speakers/salim.png",
     linkedIn: "#",
     marginTP: 0,
+  },
+  {
+    name: "Kawthar Ali Al Hinai",
+    title: "Head of Digital Transformation Programs",
+    company:
+      "General Directorate of Digital Transformation and Empowerment Sector",
+    com: "Ministry of Transport, Communication and Information Technology",
+    organization: "",
+    image: "/images/speakers/kawthar.png",
+    linkedIn: "#",
+    marginTP: 10,
   },
   {
     name: "DR.JIHAD AL WAHSHI",
@@ -27,6 +47,9 @@ const profiles = [
     linkedIn: "#",
     marginTP: 0,
   },
+];
+
+const profilesTwo = [
   {
     name: "FARIS A AL KHARUSI",
     title: "Chief Innovation & Transformation Officer",
@@ -45,9 +68,27 @@ const profiles = [
     linkedIn: "#",
     marginTP: 0,
   },
+  {
+    name: "Sanjeev Madavi",
+    title: "Chief Innovation Officer",
+    company: "Kale Logistics",
+    organization: "OMAN",
+    image: "/images/speakers/Sanjeev_Madavi.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Saud Al Zakwani",
+    title: "Head of Digital Transformation Petroleum Development Oman",
+    company: "",
+    organization: "OMAN",
+    image: "/images/speakers/speaker114.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
 ];
 
-const profilesTwo = [
+const profilesThree = [
   {
     name: "FOUAD IBRAHIM",
     title: "CO - Founder & Technical Director",
@@ -67,15 +108,6 @@ const profilesTwo = [
     marginTP: 10,
   },
   {
-    name: "Saud Al Zakwani",
-    title: "Head of Digital Transformation Petroleum Development Oman",
-    company: "",
-    organization: "OMAN",
-    image: "/images/speakers/speaker114.png",
-    linkedIn: "#",
-    marginTP: 0,
-  },
-  {
     name: "NUWANKA KOTTEGODA",
     title: "Executive Director BPOS Global ",
     company: "Founder of ENKII AI",
@@ -85,50 +117,6 @@ const profilesTwo = [
     linkedIn: "#",
     marginTP: 0,
   },
-];
-
-const profilesThree = [
-  {
-    name: "RAMYA SANKARI",
-    title: "Head of Information Technology",
-    company: "Zawawi Powertech Engineering LLC",
-    organization: "OMAN",
-    image: "/images/speakers/remya.png",
-    linkedIn: "#",
-    marginTP: 0,
-  },
-  {
-    name: "Talal Bin Ahmed Bin Amer Al Saadi",
-    title: "Director of the Office of the Undersecretary",
-    company: "Ministry of Interior",
-    organization: "OMAN",
-    image: "/images/speakers/speaker3111.png",
-    linkedIn: "#",
-    marginTP: 10,
-  },
-  {
-    name: "Kawthar Ali Al Hinai",
-    title: "Head of Digital Transformation Programs",
-    company:
-      "General Directorate of Digital Transformation and Empowerment Sector",
-    com: "Ministry of Transport, Communication and Information Technology",
-    organization: "",
-    image: "/images/speakers/kawthar.png",
-    linkedIn: "#",
-    marginTP: 10,
-  },
-  {
-    name: "Sanjeev Madavi",
-    title: "Chief Innovation Officer",
-    company: "Kale Logistics",
-    organization: "OMAN",
-    image: "/images/speakers/Sanjeev_Madavi.png",
-    linkedIn: "#",
-    marginTP: 0,
-  },
-];
-
-const profilesFour = [
   {
     name: "AMJID ALI",
     title: "Chief Information Officer",
@@ -137,6 +125,19 @@ const profilesFour = [
     image: "/images/speakers/img5 (3).png",
     linkedIn: "#",
     marginTP: 10,
+  },
+  
+];
+
+const profilesFour = [
+  {
+    name: "RAMYA SANKARI",
+    title: "Head of Information Technology",
+    company: "Zawawi Powertech Engineering LLC",
+    organization: "OMAN",
+    image: "/images/speakers/remya.png",
+    linkedIn: "#",
+    marginTP: 0,
   },
   // {
   //   name: "Talal Bin Ahmed Bin Amer Al Saadi",
