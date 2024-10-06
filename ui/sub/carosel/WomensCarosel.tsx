@@ -22,13 +22,6 @@ const TechChampionsCarousel = () => {
       bio: "Zawawi Powertech Engineering LLC",
       image: "/images/speakers/remya.png",
     },
-    {
-      name: "RAMYA SANKARI",
-      position: "Head of Information Technology",
-      bio: "Zawawi Powertech Engineering LLC",
-      image: "/images/speakers/remya.png",
-    },
-    // Add more champion entries here as needed
   ];
 
   const settings = {
@@ -104,14 +97,14 @@ const TechChampionsCarousel = () => {
                 >
                   {champion.name}
                 </h3>
-                <p className="text-gray-400 text-xl">{champion.position}</p>
-                <p className="text-gray-400 text-xl">
+                <p className="text-gray-400 text-sm">{champion.position}</p>
+                <p className="text-gray-400 text-sm">
                   {champion?.position_two}
                 </p>
-                <p className="text-gray-400 text-xl">
+                <p className="text-gray-400 text-sm">
                   {champion?.organisation}
                 </p>
-                <p className="text-gray-500 text-base font-medium mt-2">
+                <p style={{}} className="text-gray-500 text-sm font-bold mt-2">
                   {champion.bio}
                 </p>
               </div>

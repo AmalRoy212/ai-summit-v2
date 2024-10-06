@@ -27,14 +27,17 @@ function Sponsors() {
         className="text-[40px] font-medium text-center text-gray-200 mb-10"
       >
         {/* Some of the  */}
-        Sponsors
+        SPONSORS
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           {" "}
           &{" "}
         </span>
-        Partners
+        PARTNERS
         {/* from the Recent Past */}
       </motion.div>
+      <h3 className="text-transparent text-xl text-start bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+          EXHIBITING PARTNERS{" "}
+        </h3>
       <div className="w-full flex md:flex-row flex-col justify-center min-h-52">
         {sponsorsDataProvider.map(
           (img) => img && <SponsordsData imgSrc={img} />
