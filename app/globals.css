@@ -135,3 +135,31 @@ html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+/* Initial color for the dots */
+.slick-dots li button {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(158, 158, 158) !important; /* Initial color */
+  border-radius: 50%; /* Make the dots circular */
+  border: none; /* Remove any borders if present */
+  opacity: 0.5; /* Adjust opacity for unselected dots */
+  transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth transitions */
+}
+
+/* Color for the active dot */
+.slick-dots li.slick-active button {
+  background-color: blue; /* Active dot color */
+  opacity: 1; /* Fully opaque for the active dot */
+}
+
+/* Hover state color */
+.slick-dots li button:hover {
+  background-color: green; /* Hover color */
+  opacity: 0.8; /* Slightly less opaque when hovered */
+}
+
+.z-manage {
+  position: relative; /* Ensure the stacking context */
+  z-index: 9 !important; /* Keep this as the highest */
+}

@@ -11,6 +11,8 @@ import { FaAvianex, FaStumbleuponCircle } from "react-icons/fa6";
 import { TbTruckDelivery, TbVacuumCleaner } from "react-icons/tb";
 import { IoMdConstruct } from "react-icons/io";
 import { MdAgriculture, MdCastForEducation } from "react-icons/md";
+import { motion } from "framer-motion";
+import { slideInFromTop } from "@/utils/motion";
 
 const items = [
   {
@@ -116,14 +118,15 @@ export default function Blocks() {
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* <SubHeadings fontSize={28} heading="INDUSTRY" /> */}
-        <div
-          data-aos="flip-down"
-          className="w-full h-[10vh] flex justify-center items-center z-[19]"
+        <motion.div
+          variants={slideInFromTop}
+          className="text-[40px] font-medium text-center text-gray-200 mb-10"
         >
-          <h1 className=" `md:text-[28px] lg:text-[38px] text-[21px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-            INDUSTRY
-          </h1>
-        </div>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            BY{" "}
+          </span>
+          JOB TITLE
+        </motion.div>
         <div className="py-12 md:py-20 border-gray-800">
           {/* Section header */}
           {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">

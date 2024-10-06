@@ -8,7 +8,11 @@ const TechChampionsCarousel = () => {
   const champions = [
     {
       name: "Kawthar Ali Al Hinai",
-      position: "General Directorate of Digital Transformation and Empowerment Sector, Ministry of Transport, Communication and Information Technology ",
+      position: "Head of Digital Transformation Programs",
+      position_two:
+        "General Directorate of Digital Transformation and Empowerment Sector",
+      organisation:
+        "Ministry of Transport, Communication and Information Technology",
       bio: "Kawthar Ali Al Hinai is a dynamic leader in digital transformation at the Ministry of Transport, Communication and Information Technology in Oman. With a decade of experience in the tech industry, she has expertise in e-business management, deep analysis, research, digital marketing, and event management. An alumnus of the University of Leeds, UK, with an MSc in data science and analytics, she is a certified scrum master who has completed numerous professional courses in automation of government services and digital marketing. In her current role, she leads projects and initiatives that empower government digital transformation leaders. She also provides consultation and advisory services to government entities, helping them manage their digital transformation roadmap. Her work is shaping the future of Oman and inspiring a new generation of digital enthusiasts worldwide.",
       image: "/images/speakers/kawthar.png",
     },
@@ -63,7 +67,7 @@ const TechChampionsCarousel = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-10">
+    <div className="container mx-auto px-4 py-10 z-manage">
       <div
         data-aos="flip-down"
         className="w-full h-[10vh] flex justify-center items-center z-[19]"
@@ -95,13 +99,19 @@ const TechChampionsCarousel = () => {
               </div>
               <div className="md:w-1/2">
                 <h3
-                  className="text-xl font-semibold text-blue-600"
+                  className="text-2xl font-semibold text-blue-600"
                   style={{ textTransform: "uppercase" }}
                 >
                   {champion.name}
                 </h3>
-                <p className="text-gray-400 text-sm">{champion.position}</p>
-                <p className="text-gray-500 text-base mt-2">
+                <p className="text-gray-400 text-xl">{champion.position}</p>
+                <p className="text-gray-400 text-xl">
+                  {champion?.position_two}
+                </p>
+                <p className="text-gray-400 text-xl">
+                  {champion?.organisation}
+                </p>
+                <p className="text-gray-500 text-base font-medium mt-2">
                   {champion.bio}
                 </p>
               </div>

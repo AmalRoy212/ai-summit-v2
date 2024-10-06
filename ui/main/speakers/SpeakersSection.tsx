@@ -54,7 +54,7 @@ const profilesTwo = [
     name: "DR.GHALIB ALHOSNI",
     title: "Chief People Officer",
     company: "Omantel",
-    com:"chairperson Omani Society for Human Resource Management (OSHRM)",
+    com:"Chairperson Omani Society for Human Resource Management (OSHRM)",
     organization: "OMAN",
     image: "/images/speakers/speaker21.jpeg", // Add correct paths to images
     linkedIn: "#", // Replace with actual LinkedIn profile links
