@@ -115,7 +115,15 @@ export default function Blocks() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <SubHeadings fontSize={10} heading="INDUSTRY" />
+        {/* <SubHeadings fontSize={28} heading="INDUSTRY" /> */}
+        <div
+          data-aos="flip-down"
+          className="w-full h-[10vh] flex justify-center items-center z-[19]"
+        >
+          <h1 className=" `md:text-[28px] lg:text-[38px] text-[21px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
+            INDUSTRY
+          </h1>
+        </div>
         <div className="py-12 md:py-20 border-gray-800">
           {/* Section header */}
           {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">

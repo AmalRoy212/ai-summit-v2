@@ -2,7 +2,7 @@ import React from "react";
 
 const ProfileCard: React.FC<any> = ({ item, index }) => {
   return (
-    <div style={{minWidth:"350px"}} className="md:w-1/4" key={index}>
+    <div style={{minWidth:"300px"}} className="md:w-1/4" key={index}>
       <div className=" bg-white rounded-lg overflow-hidden shadow-lg">
         <img
           src={item.image}

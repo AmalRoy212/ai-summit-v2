@@ -38,8 +38,8 @@ export default function Home() {
         <Encryption />
         <Cards />
         <ChartsHolder />
-        <AwardsProvider />
-        <TopicsProvide />
+        {/* <AwardsProvider /> */}
+        {/* <TopicsProvide /> */}
         <WhoIndustries />
         <Pricing />
         {/* <Sponsors /> */}

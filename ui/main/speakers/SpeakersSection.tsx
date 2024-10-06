@@ -51,21 +51,22 @@ const profiles = [
 
 const profilesTwo = [
   {
-    name: "FARIS A AL KHARUSI",
-    title: "Chief Innovation & Transformation Officer",
-    company: "Renaissance Services",
+    name: "DR.GHALIB ALHOSNI",
+    title: "Chief People Officer",
+    company: "Omani",
+    com:"chairperson Omani Society for Human Resource Management (OSHRM)",
     organization: "OMAN",
     image: "/images/speakers/speaker1211.png", // Add correct paths to images
     linkedIn: "#", // Replace with actual LinkedIn profile links
     marginTP: 0,
   },
   {
-    name: "DAZZA CAMILO",
-    title: "CEO - Founder",
-    company: "Dazza Hodling Group LLC",
+    name: "FARIS A AL KHARUSI",
+    title: "Chief Innovation & Transformation Officer",
+    company: "Renaissance Services",
     organization: "OMAN",
-    image: "/images/speakers/speaker91.png",
-    linkedIn: "#",
+    image: "/images/speakers/speaker1211.png", // Add correct paths to images
+    linkedIn: "#", // Replace with actual LinkedIn profile links
     marginTP: 0,
   },
   {
@@ -90,11 +91,11 @@ const profilesTwo = [
 
 const profilesThree = [
   {
-    name: "FOUAD IBRAHIM",
-    title: "CO - Founder & Technical Director",
-    company: "Falcon Oilfield Services",
+    name: "DAZZA CAMILO",
+    title: "CEO - Founder",
+    company: "Dazza Hodling Group LLC",
     organization: "OMAN",
-    image: "/images/speakers/img6 (2).png",
+    image: "/images/speakers/speaker91.png",
     linkedIn: "#",
     marginTP: 0,
   },
@@ -130,6 +131,15 @@ const profilesThree = [
 ];
 
 const profilesFour = [
+  {
+    name: "FOUAD IBRAHIM",
+    title: "CO - Founder & Technical Director",
+    company: "Falcon Oilfield Services",
+    organization: "OMAN",
+    image: "/images/speakers/img6 (2).png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
   {
     name: "RAMYA SANKARI",
     title: "Head of Information Technology",
