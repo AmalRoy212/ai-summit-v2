@@ -17,6 +17,7 @@ import TopicsProvide from "@/ui/main/index/topics/TopicsProvide";
 import StarsCanvas from "@/ui/main/starBackground/StarBackground";
 import WhoIndustries from "@/ui/sub/index/WhyIndustries/WhyIndustries";
 import SpeakerProfiles from "../ui/main/speakers/SpeakersSection";
+import CaroselHolder from "@/ui/main/index/caroselHolder/CaroselHolser";
 
 export default function Home() {
   
@@ -38,6 +39,7 @@ export default function Home() {
         <Encryption />
         <Cards />
         <ChartsHolder />
+        <CaroselHolder/>
         {/* <AwardsProvider /> */}
         {/* <TopicsProvide /> */}
         <WhoIndustries />
