@@ -118,15 +118,6 @@ export default function Blocks() {
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* <SubHeadings fontSize={28} heading="INDUSTRY" /> */}
-        <motion.div
-          variants={slideInFromTop}
-          className="text-[40px] font-medium text-center text-gray-200 mb-10"
-        >
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-            BY{" "}
-          </span>
-          JOB TITLE
-        </motion.div>
         <div className="py-12 md:py-20 border-gray-800">
           {/* Section header */}
           {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">

@@ -35,9 +35,9 @@ function Sponsors() {
         PARTNERS
         {/* from the Recent Past */}
       </motion.div>
-      <h3 className="text-transparent text-xl text-start bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-          EXHIBITING PARTNERS{" "}
-        </h3>
+      <h3 className="text-transparent text-xl text-center text-white">
+        EXHIBITING PARTNER
+      </h3>
       <div className="w-full flex md:flex-row flex-col justify-center min-h-52">
         {sponsorsDataProvider.map(
           (img) => img && <SponsordsData imgSrc={img} />

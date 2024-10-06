@@ -3,6 +3,8 @@ import CardsProvider from "@/ui/sub/cardsProvider/CardsProvider";
 import { CircularProgressChildren } from "@/ui/sub/progressBar/CircleProgress";
 import ProgressBar from "../index/progressbar/bar/ProgressBar";
 import SubHeadings from "@/ui/sub/headers/SubHeadings";
+import { motion } from "framer-motion";
+import { slideInFromTop } from "@/utils/motion";
 
 function Cards() {
   const progressData = [
@@ -31,32 +33,41 @@ function Cards() {
   const progressBarData = [
     {
       title: "HEAD OF SCHOOL 45%",
-      value: 45
+      value: 45,
     },
     {
       title: "MINISTRIES & AUTHORITIES 40%",
-      value: 40
+      value: 40,
     },
     {
       title: "KEY STAKEHOLDERS 50%",
-      value: 50
+      value: 50,
     },
     {
       title: "INVESTORS & OWNERS 78%",
-      value: 78
+      value: 78,
     },
     {
       title: "ENTERPRISE COMPANIES 36%",
-      value: 36
+      value: 36,
     },
     {
       title: "HEAD OF DEPARTMENTS 46%",
-      value: 46
+      value: 46,
     },
-  ]
+  ];
 
   return (
     <>
+      <motion.div
+        variants={slideInFromTop}
+        className="text-[40px] font-medium text-center text-gray-200 mb-10"
+      >
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+          BY{" "}
+        </span>
+        INDUSTRY
+      </motion.div>
       <CardsProvider />
       {/* <div className="md:flex justify-center items-center gap-5">
         <div className="md:w-1/2 h-full">
@@ -98,4 +109,3 @@ function Cards() {
 }
 
 export default Cards;
-
