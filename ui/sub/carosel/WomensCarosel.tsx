@@ -67,7 +67,7 @@ const TechChampionsCarousel = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-10 z-manage">
+    <div className="container mx-auto px-10 py-10 z-manage">
       <div
         data-aos="flip-down"
         className="w-full h-[10vh] flex justify-center items-center z-[19]"
