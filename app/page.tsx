@@ -36,10 +36,10 @@ export default function Home() {
         <DetailsHolder />
         <Card />
         <SpeakerProfiles />
+        <CaroselHolder/>
         <Encryption />
         <Cards />
         <ChartsHolder />
-        <CaroselHolder/>
         {/* <AwardsProvider /> */}
         {/* <TopicsProvide /> */}
         <WhoIndustries />
