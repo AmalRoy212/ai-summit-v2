@@ -132,6 +132,15 @@ const profilesThree = [
 
 const profilesFour = [
   {
+    name: "Dr.Haitham Hilal Amur ALHajri",
+    title: "Head - Cyber & Information Security",
+    company: "Oman Housing Bank",
+    organization: "OMAN",
+    image: "/images/speakers/speaker121.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
     name: "FOUAD IBRAHIM",
     title: "CO - Founder & Technical Director",
     company: "Falcon Oilfield Services",
@@ -149,35 +158,6 @@ const profilesFour = [
     linkedIn: "#",
     marginTP: 0,
   },
-  // {
-  //   name: "Talal Bin Ahmed Bin Amer Al Saadi",
-  //   title: "Director of the Office of the Undersecretary",
-  //   company: "Ministry of Interior",
-  //   organization: "OMAN",
-  //   image: "/images/speakers/speaker3111.png",
-  //   linkedIn: "#",
-  //   marginTP: 10,
-  // },
-  // {
-  //   name: "Kawthar Ali Al Hinai",
-  //   title: "Head of Digital Transformation Programs",
-  //   company:
-  //     "General Directorate of Digital Transformation and Empowerment Sector",
-  //   com: "Ministry of Transport, Communication and Information Technology",
-  //   organization: "",
-  //   image: "/images/speakers/kawthar.png",
-  //   linkedIn: "#",
-  //   marginTP: 10,
-  // },
-  // {
-  //   name: "Sanjeev Madavi",
-  //   title: "Chief Innovation Officer",
-  //   company: "Kale Logistics",
-  //   organization: "OMAN",
-  //   image: "/images/speakers/Sanjeev_Madavi.png",
-  //   linkedIn: "#",
-  //   marginTP: 0,
-  // },
 ];
 
 const SpeakerProfiles: React.FC = () => {
