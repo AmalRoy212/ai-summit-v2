@@ -12,7 +12,7 @@ function Counter() {
     const intervalId = setInterval(() => {
       const currentDate = Date.now(); // current timestamp in milliseconds
       const eventDate = new Date("2025-04-29").getTime(); // event date timestamp in milliseconds
-
+ 
       const timeDifference = eventDate - currentDate;
 
       // Convert the time difference to days, hours, minutes, and seconds
