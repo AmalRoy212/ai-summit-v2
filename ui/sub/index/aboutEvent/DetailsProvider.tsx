@@ -7,10 +7,7 @@ function DetailsProvider() {
         data-aos="fade-up-right"
         className="flex p-3 flex-col md:w-2/4 w-full md:h-screen justify-center items-center"
       >
-        <img
-          src="/images/statics/abt-con.jpeg"
-          className="rounded-xl"
-        />
+        <img src="/images/statics/abt-con.jpeg" className="rounded-xl" />
         {/* <div className='flex justify-center items-center p-0 m-0 h-full w-full top-0 relative'>
           <Image
             src="/images/PNGs/AI_no_Bg.png"
@@ -37,18 +34,18 @@ function DetailsProvider() {
         <p className="text-[15px] text-gray-400 dark:text-gray-400 md:p-5 text-justify">
           The Intelligent Data, AI & Automation Summit is a premier
           business-centric event driven by thought leadership, focusing on the
-          latest challenges and technological trends in Oman's innovation
+          latest challenges and technological trends in Saudi's innovation
           landscape. This summit stands as a hallmark of technological progress
-          in the Sultanate, bringing together global technology experts,
-          innovators, and startups with pre-qualified executives. These include
+          in the Kingdom, bringing together global technology experts,
+          innovators, and startups with pre-qualied executives. These include
           CEOs, CTOs, CIOs, Heads of Business Transformation, Chief Digital
           Officers, Heads of Innovation, government authorities, and technology
-          investors in Oman. The summit features a diverse range of engaging
+          investors in Riyadh. The summit features a diverse range of engaging
           activities, such as insightful keynotes, enterprise use-case
           presentations, product showcases, panel discussions, and informative
           tech talks. Attendees will have the unique opportunity to explore
           cutting-edge technological solutions from global tech leaders and
-          understand their relevance and impact on their organizations.
+          understand their relevance and impact on their organizations
         </p>
       </div>
     </div>

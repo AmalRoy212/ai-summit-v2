@@ -35,7 +35,7 @@ export default function Home() {
         <Hero />
         <DetailsHolder />
         <Card />
-        <SpeakerProfiles />
+        {/* <SpeakerProfiles /> */}
         <CaroselHolder/>
         <Encryption />
         <Cards />
@@ -44,7 +44,7 @@ export default function Home() {
         {/* <TopicsProvide /> */}
         <WhoIndustries />
         <Pricing />
-        <Sponsors />
+        {/* <Sponsors /> */}
         <StartUp />
         <End />
         {/* <ContactUs /> */}

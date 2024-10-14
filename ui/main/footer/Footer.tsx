@@ -82,7 +82,7 @@ const Footer = () => {
             >
               <span className="text-[15px] ml-[6px]">
                 {" "}
-                Info@capstonemiddleeast.com
+                harshad.Ibrahim@capstonemiddleeast.com
               </span>
             </p>
           </div>

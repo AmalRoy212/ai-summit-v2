@@ -63,10 +63,10 @@ function IndexHeader() {
         <p className="md:text-2xl flex gap-x-3 justify-center items-center md:flex-row flex-col">
           <span className="flex items-center gap-3">
             <CiCalendarDate />
-            16 DECEMBER, 2024
+            29 - 30 APRIL 2025
           </span>
           <span className="flex items-center gap-3">
-            <FaLocationDot size={18} /> MUSCAT, SULTANATE OF OMAN
+            <FaLocationDot size={18} />RIYADH, KINGDOM OF SAUDI ARABIA
           </span>
         </p>
         <div className="w-full h-auto flex md:flex-row flex-col justify-center items-center md:px-10">

@@ -7,20 +7,20 @@ import "slick-carousel/slick/slick-theme.css";
 const TechChampionsCarousel = () => {
   const champions = [
     {
-      name: "Kawthar Ali Al Hinai",
-      position: "Head of Digital Transformation Programs",
+      name: "",
+      position: "",
       position_two:
-        "General Directorate of Digital Transformation and Empowerment Sector",
+        "",
       organisation:
-        "Ministry of Transport, Communication and Information Technology",
-      bio: "Kawthar Ali Al Hinai is a dynamic leader in digital transformation at the Ministry of Transport, Communication and Information Technology in Oman. With a decade of experience in the tech industry, she has expertise in e-business management, deep analysis, research, digital marketing, and event management. An alumnus of the University of Leeds, UK, with an MSc in data science and analytics, she is a certified scrum master who has completed numerous professional courses in automation of government services and digital marketing. In her current role, she leads projects and initiatives that empower government digital transformation leaders. She also provides consultation and advisory services to government entities, helping them manage their digital transformation roadmap. Her work is shaping the future of Oman and inspiring a new generation of digital enthusiasts worldwide.",
-      image: "/images/speakers/kawthar.png",
+        "",
+      bio: "",
+      image: "",
     },
     {
-      name: "RAMYA SANKARI",
-      position: "Head of Information Technology",
-      bio: "Zawawi Powertech Engineering LLC",
-      image: "/images/speakers/remya.png",
+      name: "",
+      position: "",
+      bio: "",
+      image: "",
     },
   ];
 
@@ -83,7 +83,7 @@ const TechChampionsCarousel = () => {
             <div className="flex gap-10 p-10 flex-col md:flex-row items-center justify-center">
               <div className="md:w-1/3 h-full bg-white rounded-2xl overflow-hidden mb-4 flex justify-center">
                 <Image
-                  src={champion.image}
+                  src={champion.image || "/images/alts/img1.jpg"}
                   alt={champion.name}
                   width={300}
                   height={300}
@@ -95,7 +95,7 @@ const TechChampionsCarousel = () => {
                   className="text-2xl font-semibold text-blue-600"
                   style={{ textTransform: "uppercase" }}
                 >
-                  {champion.name}
+                  {champion.name || "Coming Soon"}
                 </h3>
                 <p className="text-gray-400 text-sm">{champion.position}</p>
                 <p className="text-gray-400 text-sm">

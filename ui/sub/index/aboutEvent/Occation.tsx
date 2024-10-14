@@ -8,16 +8,16 @@ import { zoomIn } from "@/utils/viewMotions";
 function Occation() {
   const cardsData = [
     {
-      number: "$3.56B",
-      title: "Projected Market Reach By 2028",
+      number: "$49.98 B",
+      title: "2040 Market size",
     },
     {
-      number: "11.36 %",
-      title: "CAGR 2029",
+      number: "$81.78",
+      title: "Expected market growth 2029",
     },
     {
-      number: "$2.5B",
-      title: "Digital Investments in 2023 Alone",
+      number: "10.35%",
+      title: "CAGR",
     },
   ];
 
@@ -25,7 +25,7 @@ function Occation() {
     <div>
       <div className="relative h-full w-full flex justify-start px-10 md:mb-10">
         <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
-          WHY OMAN ?
+          WHY SAUDI ?
         </h1>
         <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-fill-transparent"></div>
       </div>
@@ -41,10 +41,10 @@ function Occation() {
           className="relative flex flex-col md:w-1/4 w-full h-[50vh] justify-center items-center p-5 md:mt-[-8rem] mt-[-8rem]"
         >
           <h1 className="md: absolute md:top-0 mt-[-9rem] text-7xl md:m-[-1rem] text-center font-bold text-slate-200 z-10">
-            $5.37B
+            $28.50B
           </h1>
           <p className="font-bold text-1xl text-slate-300 absolute w-full md:px-0 px-10 md:w-[50%] z-10 mt-10 ml-7">
-            Oman’s ICT Market Estimated Current Value
+            Current ICT Market value
           </p>
           <div className="absolute top-0 left-0 w-full h-full z-0 md:flex hidden">
             <video
