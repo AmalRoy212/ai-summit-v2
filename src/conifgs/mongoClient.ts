@@ -1,7 +1,7 @@
 import { MongoClient } from "mongodb";
 
 const url = process.env.MONGODB_CONNECTION_URI || "";
-const dbName = "ai-summit";
+const dbName = "ai-summit-saudi";
 
 let db: any;
 
