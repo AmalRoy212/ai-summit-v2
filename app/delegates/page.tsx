@@ -9,7 +9,12 @@ const EventsPage: React.FC = () => {
   useEffect(() => {
     localStorage.setItem("reloaded", "true");
   }, []);
-  
+
+  return(
+    <div className="h-screen flex justify-center items-center">
+      <p className="text-white">On progress</p>
+    </div>
+  )
 
   return (
     <div className="bg-contain bg-center flex flex-col justify-center items-center">
