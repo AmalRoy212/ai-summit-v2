@@ -86,9 +86,10 @@ function IndexHeader() {
           </motion.div>
           <Counter />
         </div>
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center flex-col items-center">
+          <img src="images/alts/vision.webp" style={{width:"200px", borderRadius:"10px"}}/>
           <h3 className="text-3xl">
-            Driving Digital Economies : Unlocking Oman’s Potential
+          Creating a Digital Legacy: Data, AI & Automation at the Heart of Vision 2030
             {/* <span className="mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
             </span> */}

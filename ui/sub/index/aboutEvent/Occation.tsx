@@ -10,10 +10,11 @@ function Occation() {
     {
       number: "$49.98 B",
       title: "2040 Market size",
+      margin : 20
     },
     {
-      number: "$81.78",
-      title: "Expected market growth 2029",
+      number: "$81.78 B",
+      title: "Expected market growth by 2029",
     },
     {
       number: "10.35%",
@@ -40,7 +41,7 @@ function Occation() {
           whileInView="show"
           className="relative flex flex-col md:w-1/4 w-full h-[50vh] justify-center items-center p-5 md:mt-[-8rem] mt-[-8rem]"
         >
-          <h1 className="md: absolute md:top-0 mt-[-9rem] text-7xl md:m-[-1rem] text-center font-bold text-slate-200 z-10">
+          <h1 className="md: absolute md:top-16 mt-[-9rem] text-6xl md:m-[-1rem] text-center font-bold text-slate-200 z-10">
             $28.50B
           </h1>
           <p className="font-bold text-1xl text-slate-300 absolute w-full md:px-0 px-10 md:w-[50%] z-10 mt-10 ml-7">

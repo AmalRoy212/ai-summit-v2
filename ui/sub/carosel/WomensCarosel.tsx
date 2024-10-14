@@ -67,14 +67,14 @@ const TechChampionsCarousel = () => {
       >
         <h1 className=" `md:text-[28px] lg:text-[34px] text-[21px] text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
           Meet the Women Tech Leaders Shaping the Digital Future of the
-          Sultanate of Oman
+          Saudi Arabia
         </h1>
       </div>
       <p className="text-center text-gray-300 mb-8 mt-8">
         Celebrating and honoring the women tech ambassadors in the fields of AI,
         Cybersecurity, Digital Transformation, Digital Integration, and
         Automation, for their incredible impact on technology and significant
-        contributions to shaping the digital future of the Sultanate of Oman.
+        contributions to shaping the digital future of the Saudi Arabia.
       </p>
 
       <Slider {...settings}>

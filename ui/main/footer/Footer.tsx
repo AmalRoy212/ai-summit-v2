@@ -10,7 +10,7 @@ import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const pathname = usePathname();
-  
+
   return (
     <div
       className={`bg-transparent text-gray-200 shadow-lg p-[15px]  mt-${
@@ -27,9 +27,7 @@ const Footer = () => {
               className="flex flex-row items-center my-[15px] cursor-pointer"
             >
               <RxSewingPin />
-              <span className="text-[15px] ml-[6px]">
-                Muscat, Sultanate Of Oman
-              </span>
+              <span className="text-[15px] ml-[6px]">Riyadh, Saudi Arabia</span>
             </p>
             {/* <div data-aos="fade-right" data-aos-duration={300} className="font-bold text-[16px]">GFES</div> */}
             <a data-aos="fade-right" data-aos-duration={400} href="#hero">

@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Intelligent AI, Data, and Automation Summit',
   icons: logo,
-  description: 'Intelligent AI, Data, and Automation Summit | December 11, 2024 | Muscat, Sultanate of Oman',
+  description: 'Intelligent AI, Data, and Automation Summit | December 11, 2024 | Saudi Arabia',
 }
 
 export default function RootLayout({

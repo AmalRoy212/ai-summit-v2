@@ -7,7 +7,7 @@ function DetailsProvider() {
         data-aos="fade-up-right"
         className="flex p-3 flex-col md:w-2/4 w-full md:h-screen justify-center items-center"
       >
-        <img src="/images/statics/abt-con.jpeg" className="rounded-xl" />
+        <img src="/images/alts/bg-1.png" style={{height:"400px"}} className="rounded-xl w-full object-cover" />
         {/* <div className='flex justify-center items-center p-0 m-0 h-full w-full top-0 relative'>
           <Image
             src="/images/PNGs/AI_no_Bg.png"
