@@ -11,7 +11,7 @@ function Counter() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       const currentDate = Date.now(); // current timestamp in milliseconds
-      const eventDate = new Date("2025-04-29").getTime(); // event date timestamp in milliseconds
+      const eventDate = new Date("2025-05-07").getTime(); // event date timestamp in milliseconds
  
       const timeDifference = eventDate - currentDate;
 
@@ -28,7 +28,7 @@ function Counter() {
   }, []); // Empty dependency array ensures the effect runs only once on mount
 
   return (
-    <div className="w-full h-auto flex justify-center items-center z-20 md:mt-0 mt-12">
+    <div className="w-full md:w-1/2 h-auto flex justify-center items-center z-20 mt-10">
       {seconds > 0 ? (
         <div className="w-full md:h-[130px] h-[120px] rounded-2xl bg-gradient-to-r from-purple-800 to-cyan-00 flex  p-1">
           <div className="w-[25%] h-full rounded-2xl flex flex-col justify-center items-center">

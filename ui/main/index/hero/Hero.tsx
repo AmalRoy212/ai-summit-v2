@@ -7,6 +7,7 @@ import { CiCalendarDate } from "react-icons/ci";
 import { FaLocationDot } from "react-icons/fa6";
 import Counter from "@/ui/sub/counter/Counter";
 import Link from "next/link";
+import SummitTitle from "../../event-title/EventTitle";
 
 function IndexHeader() {
   const pageHeader = useRef<HTMLVideoElement>(null);
@@ -29,7 +30,7 @@ function IndexHeader() {
   }, []);
 
   return (
-    <div className="relative md:overflow-hidden md:h-[110vh]" id="hero">
+    <div className="relative md:overflow-hidden md:h-[130vh]" id="hero">
       <div className="absolute inset-0">
         <video
           autoPlay
@@ -49,7 +50,7 @@ function IndexHeader() {
         {/* <img src="/images/index/homebanner.jpg" className="object-cover w-full h-full" ref={pageHeader} alt="" /> */}
       </div>
 
-      <div className="relative z-10 lg:mt-[5rem] mt-[3rem] flex flex-col items-center justify-center py-24 text-white">
+      <div className="relative z-10 mt-[3rem] flex flex-col items-center justify-center pt-20 text-white">
         {/* <span className="flex justify-center font-extrabold text-transparent text-[24px] bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
           INITIATIVE BY{" "}
           <img
@@ -62,38 +63,48 @@ function IndexHeader() {
         </span> */}
         <p className="md:text-2xl flex gap-x-3 justify-center items-center md:flex-row flex-col">
           <span className="flex items-center gap-3">
-            <CiCalendarDate />
-            29 - 30 APRIL 2025
+            <CiCalendarDate />7 MAY 2025
           </span>
           <span className="flex items-center gap-3">
-            <FaLocationDot size={18} />RIYADH, KINGDOM OF SAUDI ARABIA
+            <FaLocationDot size={18} />
+            RIYADH, KINGDOM OF SAUDI ARABIA
           </span>
         </p>
         <div className="w-full h-auto flex md:flex-row flex-col justify-center items-center md:px-10">
+          <div style={{borderRight:"1px solid white"}} className="w-full h-full flex justify-end items-center p-5">
+            <img
+              src="images/alts/vision.webp"
+              style={{ width: "400px", borderRadius: "10px" }}
+            />
+          </div>
+
           <motion.div
             variants={slideInFromLeft(0.5)}
-            className="relative flex flex-col items-end gap-6 mt-6 text-5xl md:text-6xl text-bold text-white max-w-[600px] w-auto md:h-auto h-[220px]"
+            className="relative flex flex-col items-end gap-6 mt-6 text-5xl md:text-6xl text-bold text-white max-w-[600px] w-auto md:h-auto h-[220px] pl-5"
           >
             <span>
               {/* The Intelligent Data, AI & Automation Summit */}
-              THE INTELLIGENT
+              <span className="text-4xl">THE </span>
+
               <span className="mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
                 {" "}
-                DATA, AI &{" "}
+                INTELLIGENT DATA, AI &{" "}
               </span>
-              AUTOMATION SUMMIT
+              <span className="text-5xl">AUTOMATION SUMMIT</span>
             </span>
           </motion.div>
-          <Counter />
+
+          {/* <Counter /> */}
         </div>
         <div className="w-full flex justify-center flex-col items-center">
-          <img src="images/alts/vision.webp" style={{width:"200px", borderRadius:"10px"}}/>
           <h3 className="text-3xl">
-          Creating a Digital Legacy: Data, AI & Automation at the Heart of Vision 2030
+            Creating a Digital Legacy: Data, AI & Automation at the Heart of
+            Vision 2030
             {/* <span className="mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
             </span> */}
           </h3>
+        <Counter />
         </div>
         <div className="w-full text-s text-center md:px-28 md:mt-10 mt-5">
           <div className="flex-row flex justify-center items-center p-5 w-full z-[999] gap-4">

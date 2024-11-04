@@ -43,7 +43,7 @@ export default function Home() {
         {/* <AwardsProvider /> */}
         {/* <TopicsProvide /> */}
         <WhoIndustries />
-        <Pricing />
+        {/* <Pricing /> */}
         {/* <Sponsors /> */}
         <StartUp />
         <End />
