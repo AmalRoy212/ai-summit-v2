@@ -10,40 +10,40 @@ import Headers from "@/ui/sub/headers/Headers";
 // Profile data array
 const profiles = [
   {
-    name: "Talal Bin Ahmed Bin Amer Al Saadi",
-    title: "Director of the Office of the Undersecretary",
-    company: "Ministry of Interior",
+    name: "Nezar Alturki",
+    title: "Chief Information Officer",
+    company: "Ministry of National Guard",
     organization: "OMAN",
-    image: "/images/speakers/speaker31111.png",
+    image: "/images/speakers/img1.png",
     linkedIn: "#",
     marginTP: 0,
   },
   {
-    name: "DR. SALIM HUMAID AL-SHUAILI",
-    title: "Director of Artificial Intelligence and Advanced Technology Unit",
-    company: " Ministry of Transport, Communication and Information Technology",
+    name: "Ismail A. Almakrami",
+    title: "Vice President of Data Management",
+    company: "Emkan Finance",
     organization: "OMAN",
-    image: "/images/speakers/salim.png",
+    image: "/images/speakers/img2.png",
     linkedIn: "#",
     marginTP: 0,
   },
   {
-    name: "Kawthar Ali Al Hinai",
-    title: "Head of Digital Transformation Programs",
+    name: "Muqbil Almuqbil",
+    title: "Director of Data Management",
     company:
-      "General Directorate of Digital Transformation and Empowerment Sector",
-    com: "Ministry of Transport, Communication and Information Technology",
+      "Saudi Food & Drug Authority (SFDA)",
+    com: "",
     organization: "",
-    image: "/images/speakers/kawthar.png",
+    image: "/images/speakers/img3.png",
     linkedIn: "#",
     marginTP: 0,
   },
   {
-    name: "DR.JIHAD AL WAHSHI",
-    title: "Head of Data Management",
-    company: "Central Bank of Oman",
+    name: "DR.Jalal Alowibdi",
+    title: "Director, Data Analysis & Business Intelligence Center",
+    company: "Ministry of Hajj & Umrah",
     organization: "OMAN",
-    image: "/images/speakers/img8 (2).png",
+    image: "/images/speakers/img4.png",
     linkedIn: "#",
     marginTP: 0,
   },
@@ -51,39 +51,39 @@ const profiles = [
 
 const profilesTwo = [
   {
-    name: "DR.GHALIB ALHOSNI",
-    title: "Chief People Officer",
-    company: "Omantel",
-    com:"Chairperson Omani Society for Human Resource Management (OSHRM)",
+    name: "Ladle Patel",
+    title: "Senior Advisor, Advanced Data Analytics",
+    company: "Arab National Bank",
+    com:"",
     organization: "OMAN",
-    image: "/images/speakers/speaker21.jpeg", // Add correct paths to images
+    image: "/images/speakers/img5.png",
+    linkedIn: "#", 
+    marginTP: 0,
+  },
+  {
+    name: "Ghadah Almalki",
+    title: "Data Director",
+    company: "State Properties General Authority",
+    organization: "OMAN",
+    image: "/images/speakers/img6.png", // Add correct paths to images
     linkedIn: "#", // Replace with actual LinkedIn profile links
     marginTP: 0,
   },
   {
-    name: "FARIS A AL KHARUSI",
-    title: "Chief Innovation & Transformation Officer",
-    company: "Renaissance Services",
+    name: "Mushtaq Khan",
+    title: "General Manager of Automation & Digital Transformation",
+    company: "National Water Company(NWC)",
     organization: "OMAN",
-    image: "/images/speakers/speaker1211.png", // Add correct paths to images
-    linkedIn: "#", // Replace with actual LinkedIn profile links
-    marginTP: 0,
-  },
-  {
-    name: "Sanjeev Madavi",
-    title: "Chief Innovation Officer",
-    company: "Kale Logistics",
-    organization: "OMAN",
-    image: "/images/speakers/Sanjeev_Madavi.png",
+    image: "/images/speakers/img7.png",
     linkedIn: "#",
     marginTP: 0,
   },
   {
-    name: "Saud Al Zakwani",
-    title: "Head of Digital Transformation Petroleum Development Oman",
-    company: "",
+    name: "Sivakumar Seshadri",
+    title: "Chief Digital Officer",
+    company: "General organization of Social Insurance (GOSI)",
     organization: "OMAN",
-    image: "/images/speakers/speaker114.png",
+    image: "/images/speakers/img8.png",
     linkedIn: "#",
     marginTP: 0,
   },
@@ -91,74 +91,74 @@ const profilesTwo = [
 
 const profilesThree = [
   {
-    name: "DAZZA CAMILO",
-    title: "CEO - Founder",
-    company: "Dazza Hodling Group LLC",
+    name: "Waqar Afzal",
+    title: "Head of Data Science",
+    company: " Medgulf Saudi Arabia",
     organization: "OMAN",
-    image: "/images/speakers/speaker91.png",
+    image: "/images/speakers/img9.png",
     linkedIn: "#",
     marginTP: 0,
   },
   {
-    name: "BHUPENDRA PANT",
-    title: "Chief Information Officer & GM of Information Technology",
-    company: "OTE Group",
+    name: "Dauaa Shalabi",
+    title: "Digital Transformation Advisor",
+    company: "Ministry of Transport and Logistic Services",
     organization: "OMAN",
-    image: "/images/speakers/img7.png",
+    image: "/images/speakers/img10.png",
     linkedIn: "#",
     marginTP: 10,
   },
   {
-    name: "NUWANKA KOTTEGODA",
-    title: "Executive Director BPOS Global ",
-    company: "Founder of ENKII AI",
-    com: "Investment Advisor at Mays EV",
+    name: "Nawaf Alghamdi",
+    title: "Director of Data and AI",
+    company: "Council Of Health Insurance",
+    com: "",
     organization: "OMAN",
-    image: "/images/speakers/img-4.png",
+    image: "/images/speakers/img11.png",
     linkedIn: "#",
     marginTP: 0,
   },
   {
-    name: "AMJID ALI",
-    title: "Chief Information Officer",
-    company: "Al Ansari Group",
+    name: "AMJID ALITurki AlMukhlfi",
+    title: "Director of Data Management",
+    company: "National Center for Vegetation Cover",
     organization: "OMAN",
-    image: "/images/speakers/img5 (3).png",
+    image: "/images/speakers/img12.png",
     linkedIn: "#",
     marginTP: 10,
   },
   
 ];
 
-const profilesFour = [
-  {
-    name: "Dr.Haitham Hilal Amur ALHajri",
-    title: "Head - Cyber & Information Security",
-    company: "Oman Housing Bank",
-    organization: "OMAN",
-    image: "/images/speakers/speaker121.png",
-    linkedIn: "#",
-    marginTP: 0,
-  },
-  {
-    name: "FOUAD IBRAHIM",
-    title: "CO - Founder & Technical Director",
-    company: "Falcon Oilfield Services",
-    organization: "OMAN",
-    image: "/images/speakers/img6 (2).png",
-    linkedIn: "#",
-    marginTP: 0,
-  },
-  {
-    name: "RAMYA SANKARI",
-    title: "Head of Information Technology",
-    company: "Zawawi Powertech Engineering LLC",
-    organization: "OMAN",
-    image: "/images/speakers/remya.png",
-    linkedIn: "#",
-    marginTP: 0,
-  },
-];
+// const profilesFour = [
+//   {
+//     name: "Dr.Haitham Hilal Amur ALHajri",
+//     title: "Head - Cyber & Information Security",
+//     company: "Oman Housing Bank",
+//     organization: "OMAN",
+//     image: "/images/speakers/speaker121.png",
+//     linkedIn: "#",
+//     marginTP: 0,
+//   },
+//   {
+//     name: "FOUAD IBRAHIM",
+//     title: "CO - Founder & Technical Director",
+//     company: "Falcon Oilfield Services",
+//     organization: "OMAN",
+//     image: "/images/speakers/img6 (2).png",
+//     linkedIn: "#",
+//     marginTP: 0,
+//   },
+//   {
+//     name: "RAMYA SANKARI",
+//     title: "Head of Information Technology",
+//     company: "Zawawi Powertech Engineering LLC",
+//     organization: "OMAN",
+//     image: "/images/speakers/remya.png",
+//     linkedIn: "#",
+//     marginTP: 0,
+//   },
+// ];
 
 const SpeakerProfiles: React.FC = () => {
   useEffect(() => {
@@ -166,32 +166,17 @@ const SpeakerProfiles: React.FC = () => {
   }, []);
 
   return (
-    <div
-      id="speakers"
-      className="w-full flex flex-col justify-center items-center my-28 px-16 z-10"
-    >
+    <div id="speakers" className="w-full flex flex-col items-center my-28 px-4 md:px-16 z-10">
       <Headers first="OUR ESTEEMED" middle="SPEAKERS" last="" />
-
-      <div className="flex mt-[-5rem] justify-center gap-2  py-10 md:flex-row flex-col">
+      
+      <div className="flex flex-wrap justify-center gap-4 py-10">
         {profiles.map((profile, index) => (
           <ProfileCard item={profile} index={index} />
         ))}
-      </div>
-
-      <div className="flex mt-[-5rem] justify-center gap-2  py-10 md:flex-row flex-col">
         {profilesTwo.map((profile, index) => (
           <ProfileCard item={profile} index={index} />
         ))}
-      </div>
-
-      <div className="flex mt-[-5rem] justify-center gap-2  py-10 md:flex-row flex-col">
         {profilesThree.map((profile, index) => (
-          <ProfileCard item={profile} index={index} />
-        ))}
-      </div>
-
-      <div className="flex mt-[-5rem] justify-center gap-2  py-10 md:flex-row flex-col">
-        {profilesFour.map((profile, index) => (
           <ProfileCard item={profile} index={index} />
         ))}
       </div>

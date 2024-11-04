@@ -2,22 +2,22 @@ import React from "react";
 
 const ProfileCard: React.FC<any> = ({ item, index }) => {
   return (
-    <div style={{minWidth:"300px"}} className="md:w-1/4" key={index}>
-      <div className=" bg-white rounded-lg overflow-hidden shadow-lg">
-        <img
-          src={item.image}
-          alt={item.name}
-          className={`w-full h-64 object-contain pt-${item.marginTP}`}
-          style={{width:"100%"}}
-        />
-      
+    <div 
+      className="flex flex-col items-center w-full md:w-1/4 max-w-xs m-4 bg-white rounded-lg overflow-hidden shadow-lg" 
+      key={index}
+    >
+      <img
+        src={item.image}
+        alt={item.name}
+        className={`w-full h-64 object-cover pt-${item.marginTP}`}
+        style={{ objectFit: "contain", maxHeight: "250px" }}
+      />
+      <div className="p-4 flex flex-col items-center text-center">
+        <h3 className="text-lg font-semibold text-gray-800 uppercase mb-2">{item.name}</h3>
+        <p className="text-gray-600 font-medium">{item.title}</p>
+        <p className="text-gray-600 font-medium">{item.company}</p>
+        {item.com && <p className="text-gray-600 font-medium">{item.com}</p>}
       </div>
-        <div className="p-4">
-          <h3 style={{textTransform:"uppercase"}} className="text-lg font-semibold text-white text-center mb-2 capitalize">{item.name}</h3>
-          <p className="text-white font-medium text-center">{item.title}</p>
-          <p className="text-white font-medium text-center">{item.company}</p>
-          <p className="text-white font-medium text-center">{item?.com}</p>
-        </div>
     </div>
   );
 };

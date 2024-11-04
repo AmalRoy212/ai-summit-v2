@@ -35,7 +35,7 @@ export default function Home() {
         <Hero />
         <DetailsHolder />
         <Card />
-        {/* <SpeakerProfiles /> */}
+        <SpeakerProfiles />
         <CaroselHolder/>
         <Encryption />
         <Cards />
