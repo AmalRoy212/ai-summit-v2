@@ -71,7 +71,7 @@ function IndexHeader() {
           </span>
         </p>
         <div className="w-full h-auto flex md:flex-row flex-col justify-center items-center md:px-10">
-          <div style={{borderRight:"1px solid white"}} className="w-full h-full flex justify-end items-center p-5">
+          <div style={{borderRight:"1px solid white"}} className="w-full md:w-1/3 h-full flex justify-end items-center p-5">
             <img
               src="images/alts/vision.webp"
               style={{ width: "400px", borderRadius: "10px" }}
@@ -80,7 +80,7 @@ function IndexHeader() {
 
           <motion.div
             variants={slideInFromLeft(0.5)}
-            className="relative flex flex-col items-end gap-6 mt-6 text-5xl md:text-6xl text-bold text-white max-w-[600px] w-auto md:h-auto h-[220px] pl-5"
+            className="relative flex flex-col items-end gap-6 mt-6 text-5xl md:text-6xl text-bold text-white max-w-[600px] md:w-1/2 md:h-auto h-[220px] pl-5"
           >
             <span>
               {/* The Intelligent Data, AI & Automation Summit */}
