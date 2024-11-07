@@ -18,6 +18,7 @@ import StarsCanvas from "@/ui/main/starBackground/StarBackground";
 import WhoIndustries from "@/ui/sub/index/WhyIndustries/WhyIndustries";
 import SpeakerProfiles from "../ui/main/speakers/SpeakersSection";
 import CaroselHolder from "@/ui/main/index/caroselHolder/CaroselHolser";
+import NewsLetter from "@/ui/main/index/news/NewsLetter";
 
 export default function Home() {
   
@@ -45,6 +46,7 @@ export default function Home() {
         <WhoIndustries />
         {/* <Pricing /> */}
         {/* <Sponsors /> */}
+        <NewsLetter/>
         <StartUp />
         <End />
         {/* <ContactUs /> */}

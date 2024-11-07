@@ -16,8 +16,11 @@ function BgCards({ data, index }: IBgCard) {
     >
       <div className="flex justify-center items-center p-0 m-0 h-full w-full relative">
         <h1 className={`absolute md:left-13 left-[5rem] md:mt-[-9rem] mt-[-9rem] text-5xl md:m-[-1rem] font-bold text-slate-200`}>
-          {data.number === '25%' && <span className="text-[26px]">CAGR </span>}{data.number}
+          {/* {data.number === '25%' && <span className="text-[26px]">CAGR </span>}{data.number} */}
         </h1>
+        <p className="font-bold text-5xl text-slate-300 absolute md:top-24 top-5">
+          {data.number}
+        </p>
         <p className="font-bold text-1xl text-slate-300 absolute">
           {data.title}
         </p>

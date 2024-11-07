@@ -44,7 +44,7 @@ function Occation() {
           <h1 className="md: absolute md:top-16 mt-[-9rem] text-5xl md:m-[-1rem] text-center font-bold text-slate-200 z-10">
             $28.50B
           </h1>
-          <p className="font-bold text-1xl text-slate-300 absolute w-full md:px-0 px-10 md:w-[50%] z-10 mt-10 ml-7">
+          <p className="font-bold text-1xl text-slate-300 absolute">
             Current ICT Market value
           </p>
           <div className="absolute top-0 left-0 w-full h-full z-0 md:flex hidden">
