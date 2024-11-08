@@ -2,18 +2,29 @@ import React from "react";
 
 const ProfileCard: React.FC<any> = ({ item, index }) => {
   return (
-    <div 
-      className="flex flex-col items-center w-full md:w-1/4 max-w-xs m-4 bg-white rounded-lg overflow-hidden shadow-lg" 
+    <div
+      className="flex flex-col items-center w-full md:w-1/4 max-w-xs m-4 bg-white rounded-lg overflow-hidden shadow-lg"
       key={index}
     >
-      <img
-        src={item.image}
-        alt={item.name}
-        className={`w-full h-64 object-cover pt-${item.marginTP}`}
-        style={{ objectFit: "contain", maxHeight: "250px" }}
-      />
+      <div
+        className="w-[97%] rounded-lg mt-1"
+        style={{
+          backgroundImage: `url(/images/bg/speakers.png)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <img
+          src={item.image}
+          alt={item.name}
+          className={`w-full h-64 object-cover pt-${item.marginTP}`}
+          style={{ objectFit: "contain", maxHeight: "250px" }}
+        />
+      </div>
       <div className="p-4 flex flex-col items-center text-center">
-        <h3 className="text-lg font-semibold text-gray-800 uppercase mb-2">{item.name}</h3>
+        <h3 className="text-lg font-semibold text-gray-800 uppercase mb-2">
+          {item.name}
+        </h3>
         <p className="text-gray-600 font-medium">{item.title}</p>
         <p className="text-gray-600 font-medium">{item.company}</p>
         {item.com && <p className="text-gray-600 font-medium">{item.com}</p>}
