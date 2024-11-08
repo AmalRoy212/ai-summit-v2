@@ -12,10 +12,9 @@ const NewsLetter: React.FC = () => {
         className="text-[40px] font-medium text-center text-gray-200"
       >
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-        News & Articles
+        NEWS & ARTICLES
         {" "}
         </span>
-        JOB TITLE
       </motion.div>
       <div className="flex px-5 md:my-20">
         <div className="flex-1">
