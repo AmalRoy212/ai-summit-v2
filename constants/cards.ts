@@ -36,6 +36,6 @@ export const cardsDataTwo = [
     src: "/images/statics/showcase.png",
     title: "Product Showcase",
     description:
-      "DAAS in Oman will feature many new and advanced technologies poised to revolutionize the country's tech industry. The event will showcase real-life examples of how data, AI, and digital automation can be utilized across various business sectors. By providing these practical demonstrations, companies will gain valuable insights into effectively integrating these technologies into their own industries. This exposure will help businesses understand the potential benefits and applications of data, AI, and digital automation, driving innovation and growth within their respective fields.",
+      "IDAAS in Saudi will feature many new and advanced technologies poised to revolutionize the country's tech industry. The event will showcase real-life examples of how data, AI, and digital automation can be utilized across various business sectors. By providing these practical demonstrations, companies will gain valuable insights into effectively integrating these technologies into their own industries. This exposure will help businesses understand the potential benefits and applications of data, AI, and digital automation, driving innovation and growth within their respective fields.",
   },
 ];

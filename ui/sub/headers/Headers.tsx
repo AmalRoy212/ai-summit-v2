@@ -8,7 +8,7 @@ import Props from './IHeaders'
 
 function Headers({ first, middle, last } : Props) {
   return (
-    <div className="w-[100%] overflow-hidden flex justify-center items-center h-[40vh] z-[9]">
+    <div className="w-[100%] overflow-hidden flex justify-center items-center h-[30vh] z-[9]">
         <motion.div
           variants={slideInFromTop}
           initial='visible'

@@ -6,7 +6,7 @@ import React from "react";
 
 function End() {
   return (
-    <div className="relative md:overflow-hidden h-screen">
+    <div className="relative md:overflow-hidden h-screen mb-20">
       <div className="absolute inset-0">
         <video
           autoPlay

@@ -19,9 +19,10 @@ import WhoIndustries from "@/ui/sub/index/WhyIndustries/WhyIndustries";
 import SpeakerProfiles from "../ui/main/speakers/SpeakersSection";
 import CaroselHolder from "@/ui/main/index/caroselHolder/CaroselHolser";
 import NewsLetter from "@/ui/main/index/news/NewsLetter";
+import WhitePaper from "@/ui/sub/round-table/RoundTableMeeting";
+import EventName from "@/ui/main/event-name/EventName";
 
 export default function Home() {
-  
   useEffect(() => {
     if (localStorage.getItem("reloaded")) {
       localStorage.removeItem("reloaded");
@@ -37,7 +38,7 @@ export default function Home() {
         <DetailsHolder />
         <Card />
         <SpeakerProfiles />
-        <CaroselHolder/>
+        <CaroselHolder />
         <Encryption />
         <Cards />
         <ChartsHolder />
@@ -46,9 +47,13 @@ export default function Home() {
         <WhoIndustries />
         {/* <Pricing /> */}
         {/* <Sponsors /> */}
-        <NewsLetter/>
+        <WhitePaper />
         <StartUp />
         <End />
+        <NewsLetter />
+        <div className="w-full flex justify-center items-center">
+          <EventName />
+        </div>
         {/* <ContactUs /> */}
       </div>
     </main>

@@ -3,13 +3,13 @@ import React from "react";
 const ProfileCard: React.FC<any> = ({ item, index }) => {
   return (
     <div
-      className="flex flex-col items-center w-full md:w-1/4 max-w-xs m-4 bg-white rounded-lg overflow-hidden shadow-lg"
+      className="flex flex-col items-center w-full md:w-1/4 max-w-xs m-4 bg-white rounded-lg overflow-hidden shadow-2xl"
       key={index}
     >
       <div
         className="w-[97%] rounded-lg mt-1"
         style={{
-          backgroundImage: `url(/images/bg/speakers.png)`,
+          backgroundImage: `url(/images/bg/speaker.jpg)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

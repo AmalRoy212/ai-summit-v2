@@ -10,7 +10,7 @@ function Occation() {
     {
       number: "$49.98 B",
       title: "2040 Market size",
-      margin : 20
+      margin: 20,
     },
     {
       number: "$81.78 B",
@@ -18,12 +18,12 @@ function Occation() {
     },
     {
       number: "10.35%",
-      title: "CAGR",
+      title: "CAGR 2029",
     },
   ];
 
   return (
-    <div>
+    <div className="pb-10">
       <div className="relative h-full w-full flex justify-start px-10 md:mb-10">
         <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent">
           WHY SAUDI ?
@@ -39,12 +39,15 @@ function Occation() {
           variants={zoomIn(0.5, 0.7)}
           initial="hidden"
           whileInView="show"
-          className="relative flex flex-col md:w-1/4 w-full h-[50vh] justify-center items-center p-5 md:mt-[-8rem] mt-[-8rem]"
+          className="relative flex flex-col md:w-1/4 w-full h-[50vh] justify-center items-center p-5 md:mt-[-5rem] mt-[-8rem]"
         >
-          <h1 className="md: absolute md:top-16 mt-[-9rem] text-5xl md:m-[-1rem] text-center font-bold text-slate-200 z-10">
+          {/* <h1 className="md: absolute md:top-16 mt-[-9rem] text-5xl md:m-[-1rem] text-center font-bold text-slate-200 z-10">
+            $28.50B
+          </h1> */}
+          <h1 className="font-bold text-6xl text-slate-200 absolute md:top-14 top-5 z-10">
             $28.50B
           </h1>
-          <p className="font-bold text-1xl text-slate-300 absolute">
+          <p className="font-bold text-1xl text-slate-300 absolute z-10">
             Current ICT Market value
           </p>
           <div className="absolute top-0 left-0 w-full h-full z-0 md:flex hidden">

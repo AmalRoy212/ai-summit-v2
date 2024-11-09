@@ -8,24 +8,6 @@ function DetailsProvider() {
         className="flex p-3 flex-col md:w-2/4 w-full md:h-screen justify-center items-center"
       >
         <img src="/images/alts/bg-1.png" style={{height:"400px"}} className="rounded-xl w-full object-cover" />
-        {/* <div className='flex justify-center items-center p-0 m-0 h-full w-full top-0 relative'>
-          <Image
-            src="/images/PNGs/AI_no_Bg.png"
-            alt="Lock top"
-            width={300}
-            height={300}
-            className="absolute"
-          />
-          <video
-              loop
-              muted
-              autoPlay
-              playsInline
-              preload="false"
-              className="w-full md:h-[70%] object-cover"
-              src="/videos/about_background.mp4/"
-            />
-        </div> */}
       </div>
       <div
         data-aos="fade-up-left"
@@ -45,7 +27,7 @@ function DetailsProvider() {
           presentations, product showcases, panel discussions, and informative
           tech talks. Attendees will have the unique opportunity to explore
           cutting-edge technological solutions from global tech leaders and
-          understand their relevance and impact on their organizations
+          understand their relevance and impact on their organizations.
         </p>
       </div>
     </div>

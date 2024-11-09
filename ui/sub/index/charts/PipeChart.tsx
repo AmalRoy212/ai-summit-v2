@@ -63,7 +63,7 @@ const JobFunctionCharts: React.FC = () => {
 
   return (
     <div>
-      <div className="flex justify-around items-end mt-10 flex-col md:flex-row">
+      <div className="flex w-full justify-evenly items-end mt-10 flex-col md:flex-row">
         {jobFunctions.map((job, index) => (
           <JobFunctionChart
             key={index}
