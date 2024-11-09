@@ -55,7 +55,7 @@ const Carousel: React.FC = () => {
   return (
     <div className="overflow-hidden relative w-full">
       <div
-        className="flex transition-transform duration-300 z-10"
+        className="flex transition-transform duration-300"
         style={{ transform: `translateX(${offset}%)` }}
       >
         {items.map((item) => (
@@ -70,7 +70,7 @@ const Carousel: React.FC = () => {
             <div className="bg-opacity-70 text-4xl max-w-[90%] bg-white p-4 text-black absolute bottom-0 right-0 z-20">
               {item?.title}
               <a
-                className="text-sm absolute right-1 bottom-1 px-5 py-2 rounded-xl z-30"
+                className="text-sm absolute right-1 bottom-1 px-5 py-2 rounded-xl"
                 style={{
                   border: "1px solid black",
                   cursor: "pointer",
