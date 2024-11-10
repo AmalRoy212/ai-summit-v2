@@ -6,7 +6,7 @@ import { slideInFromTop } from "@/utils/motion";
 
 const NewsLetter: React.FC = () => {
   return (
-    <div className="md:w-[95%] flex flex-col z-10 bg-[#030621] md:mx-auto pt-5 md:px-5 rounded-2xl">
+    <div className="md:w-[95%] flex flex-col bg-[#030621] md:mx-auto pt-5 md:px-5 rounded-2xl">
       <motion.div
         variants={slideInFromTop}
         className="text-[40px] font-medium text-center text-gray-200"
@@ -15,7 +15,7 @@ const NewsLetter: React.FC = () => {
           NEWS & ARTICLES{" "}
         </span>
       </motion.div>
-      <div className="flex flex-col md:flex-row px-5 md:my-20">
+      <div className="flex flex-col md:flex-row px-5 md:my-20  z-10">
         <div className="flex-1">
           <Carousel />
         </div>
