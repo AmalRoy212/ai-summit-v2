@@ -44,7 +44,7 @@ function Occation() {
           {/* <h1 className="md: absolute md:top-16 mt-[-9rem] text-5xl md:m-[-1rem] text-center font-bold text-slate-200 z-10">
             $28.50B
           </h1> */}
-          <h1 className="font-bold text-6xl text-slate-200 absolute md:top-14 top-5 z-10">
+          <h1 className="font-bold text-6xl text-slate-200 absolute top-36 md:top-14 z-10">
             $28.50B
           </h1>
           <p className="font-bold text-1xl text-slate-300 absolute z-10">

@@ -62,13 +62,13 @@ const Carousel: React.FC = () => {
         {items.map((item) => (
           <div
             key={item?.id}
-            className="w-full md:h-[450px] flex-none bg-cover bg-center text-white relative"
+            className="w-full h-[70vh] md:h-[450px] flex-none bg-cover bg-center text-white relative"
             style={{ backgroundImage: `url(${item?.imageUrl})` }}
           >
             <div className="bg-opacity-70 text-sm font-thin bg-black p-4">
               {item?.content}
             </div>
-            <div className="bg-opacity-70 text-5xl max-w-[90%] bg-white p-4 text-black absolute bottom-0 right-0 font-bold">
+            <div className="bg-opacity-70 text-3xl md:text-5xl max-w-[90%] bg-white p-4 text-black absolute bottom-0 right-0 font-bold">
               {item?.title}
               <a
                 className="text-sm z-10 px-5 py-2 rounded-xl absolute bottom-1 right-1"
