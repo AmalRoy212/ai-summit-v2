@@ -4,7 +4,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cardsDataOne, cardsDataTwo } from "@/constants/cards";
-import Cards from "@/ui/sub/index/card/Cards";
 import { staggerContainer } from "@/utils/viewMotions";
 import Headers from "@/ui/sub/headers/Headers";
 import TestCards from "../../cards/TestCards";

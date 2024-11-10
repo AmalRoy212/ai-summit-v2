@@ -166,7 +166,7 @@ const SpeakerProfiles: React.FC = () => {
   }, []);
 
   return (
-    <div id="speakers" className="w-full flex flex-col items-center my-28 px-4 md:px-16 z-10">
+    <div id="speakers" className="w-full flex flex-col items-center mb-28 px-4 md:px-16 z-10">
       <Headers first="OUR ESTEEMED" middle="SPEAKERS" last="" />
       
       <div className="flex flex-wrap justify-center gap-4 py-10 bg-white shadow-2xl rounded-2xl">

@@ -22,7 +22,8 @@ const items = [
   },
   {
     id: 3,
-    title: "‘To the Future’: Saudi Arabia spends big to become an AI superpower",
+    title:
+      "‘To the Future’: Saudi Arabia spends big to become an AI superpower",
     content: `More than 200,000 people converged at the conference, including Adam Selipsky, CEO of Amazon’s cloud computing division, who announced a $5.3 billion investment in Saudi Arabia for data centers and artificial intelligence technology.`,
     imageUrl:
       "https://images.deccanherald.com/deccanherald%2F2024-04%2F1ee87693-3cb6-4188-a3a0-5a21e520a5cc%2F2022newsmlRC2H8X9QJ95S27591129.jpeg?auto=format%2Ccompress&fmt=webp&fit=max&format=webp&q=70&w=900&dpr=1.5",
@@ -64,23 +65,22 @@ const Carousel: React.FC = () => {
             className="w-full md:h-[450px] flex-none bg-cover bg-center text-white relative"
             style={{ backgroundImage: `url(${item?.imageUrl})` }}
           >
-            <div className="bg-opacity-70 max-w-[80%] bg-black p-4">
+            <div className="bg-opacity-70 text-sm font-thin bg-black p-4">
               {item?.content}
             </div>
-            <div className="bg-opacity-70 text-4xl max-w-[90%] bg-white p-4 text-black absolute bottom-0 right-0 z-20">
+            <div className="bg-opacity-70 text-5xl max-w-[90%] bg-white p-4 text-black absolute bottom-0 right-0 font-bold">
               {item?.title}
               <a
-                className="text-sm absolute right-1 bottom-1 px-5 py-2 rounded-xl"
+                className="text-sm z-10 px-5 py-2 rounded-xl absolute bottom-1 right-1"
                 style={{
                   border: "1px solid black",
                   cursor: "pointer",
                   backgroundColor: "white",
                 }}
                 href={item?.link}
-                target="_blank" // Opens in a new tab
-                rel="noopener noreferrer"
+                target="_blank"
               >
-                Load More
+                Read More
               </a>
             </div>
           </div>
