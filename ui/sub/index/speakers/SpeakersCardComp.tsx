@@ -3,7 +3,7 @@ import React from "react";
 const ProfileCard: React.FC<any> = ({ item, index }) => {
   return (
     <div
-      className="flex flex-col items-center w-full md:w-1/4 max-w-xs m-4 bg-white rounded-lg overflow-hidden shadow-2xl"
+      className="flex flex-col items-center w-full md:w-1/4 max-w-xs m-4 rounded-lg overflow-hidden"
       key={index}
     >
       <div
@@ -22,11 +22,11 @@ const ProfileCard: React.FC<any> = ({ item, index }) => {
         />
       </div>
       <div className="p-4 flex flex-col items-center text-center">
-        <h3 className="text-lg font-semibold text-gray-800 uppercase mb-2">
+        <h3 className="text-xl font-bold text-gray-800 uppercase mb-2">
           {item.name}
         </h3>
-        <p className="text-gray-600 font-medium">{item.title}</p>
-        <p className="text-gray-600 font-medium">{item.company}</p>
+        <p className="text-gray-600 text-base font-medium">{item.title}</p>
+        <p className="text-gray-600 text-base font-medium">{item.company}</p>
         {item.com && <p className="text-gray-600 font-medium">{item.com}</p>}
       </div>
     </div>

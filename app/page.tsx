@@ -51,9 +51,9 @@ export default function Home() {
         <StartUp />
         <End />
         <NewsLetter />
-        <div className="w-full flex justify-center items-center">
+        {/* <div className="w-full flex justify-center items-center">
           <EventName />
-        </div>
+        </div> */}
         {/* <ContactUs /> */}
       </div>
     </main>

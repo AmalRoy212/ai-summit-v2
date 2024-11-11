@@ -5,7 +5,7 @@ const ExecutiveRoundtable = () => {
     <section className="bg-darkBlue text-white py-10 mb-20">
       <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:justify-center">
         {/* Left Image Section */}
-        <div className="flex justify-center lg:order-1 lg:w-1/3">
+        {/* <div className="flex justify-center lg:order-1 lg:w-1/3">
           <div
             className="p-6 rounded-lg shadow-lg w-64 lg:w-72 flex justify-center items-center"
             style={{ animationDelay: "0.2s" }}
@@ -16,18 +16,15 @@ const ExecutiveRoundtable = () => {
               className="w-80 lg:w-96"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Right Content Section */}
-        <div className="lg:w-1/2 px-6 mt-10 lg:mt-0">
+        <div className="lg:w-2/3 px-10 mt-10 lg:mt-0 bg-[#030621] py-20 rounded-2xl shadow-2xl">
           <div className="text-center lg:text-left">
-            <div className="mb-4">
-              <span className="text-lightBlue uppercase tracking-wide text-sm text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-                Roundtable
-              </span>
-            </div>
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-end">
-              The Executive <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">Roundtable</span>{" "}
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              The Executive
+              <br />
+               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">Roundtable</span>{" "}
               Dialogue
             </h2>
             <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
