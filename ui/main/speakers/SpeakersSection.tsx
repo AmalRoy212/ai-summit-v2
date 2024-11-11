@@ -118,15 +118,15 @@ const profilesThree = [
     linkedIn: "#",
     marginTP: 0,
   },
-  {
-    name: "AMJID ALITurki AlMukhlfi",
-    title: "Director of Data Management",
-    company: "National Center for Vegetation Cover",
-    organization: "OMAN",
-    image: "/images/speakers/img12.png",
-    linkedIn: "#",
-    marginTP: 10,
-  },
+  // {
+  //   name: "AMJID ALITurki AlMukhlfi",
+  //   title: "Director of Data Management",
+  //   company: "National Center for Vegetation Cover",
+  //   organization: "OMAN",
+  //   image: "/images/speakers/img12.png",
+  //   linkedIn: "#",
+  //   marginTP: 10,
+  // },
   
 ];
 
