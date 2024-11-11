@@ -20,6 +20,13 @@ const newsItems = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGSh1AKmDllp5VjcBc2IvRS8fT1ymYQjdrLQWg-fQeLq8TFRssCgjKriasyVs6ml1cpjA&usqp=CAU",
     link: "https://www.arabnews.com/node/2530096",
   },
+  {
+    id: 4,
+    title: "Presight signs deal to enhance emergency management through AI, Big Data analytics",
+    imageUrl:
+      "https://static.zawya.com/view/acePublic/alias/contentid/Nzc2NmRkMjgtOWZiZC00/37/1464561797.webp?f=3%3A2&q=0.75&w=1080",
+    link: "https://www.zawya.com/en/business/technology-and-telecom/presight-signs-deal-to-enhance-emergency-management-through-ai-big-data-analytics-q3s6428u",
+  },
 ];
 
 const NewsTicker: React.FC = () => {

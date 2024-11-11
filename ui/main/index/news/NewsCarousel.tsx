@@ -38,6 +38,51 @@ const items = [
       "https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2024/09/25/4527997-288834617.jpg?itok=0UB1JEDl",
     link: "https://www.arabnews.com/node/2572737/saudi-arabia",
   },
+  {
+    id: 5,
+    title:
+      "Saudi Arabia Big Data Market Outlook, Trends by Offerings, Data Type, Enterprise Size, Application, and End User 2024-2030",
+    content: `Report Ocean has released a new report on the Saudi Arabia Big Data market, offering a comprehensive analysis of various factors, including market restraints, drivers, and opportunities. The report provides an in-depth review of industry developments and trends that are influencing the growth of the Saudi Arabia Big Data market. Additionally, the report includes a thorough analysis and estimation of the Saudi Arabia Big Data market.`,
+    imageUrl:
+      "https://nz.eragroup.com/wp-content/uploads/2018/01/business-meeting-with-iPad-1.jpg",
+    link: "https://taiwannews.com.tw/news/5919330",
+  },
+  {
+    id: 6,
+    title:
+      "Saudi Arabia Plans $40 Billion Push Into Artificial Intelligence",
+    content: `The Middle Eastern country is creating a gigantic fund to invest in A.I. technology, potentially becoming the largest player in the hot market.`,
+    imageUrl:
+      "https://static01.nyt.com/images/2024/03/19/multimedia/00SAUDI-AI-FUND-01-mtjb/00SAUDI-AI-FUND-01-mtjb-jumbo.jpg?quality=75&auto=webp",
+    link: "https://www.nytimes.com/2024/03/19/business/saudi-arabia-investment-artificial-intelligence.html",
+  },
+  {
+    id: 7,
+    title:
+      "‘To the Future’: Saudi Arabia Spends Big to Become an A.I. Superpower",
+    content: `The oil-rich kingdom is plowing money into glitzy events, computing power and artificial intelligence research, putting it in the middle of an escalating U.S.-China struggle for technological influence.`,
+    imageUrl:
+      "https://static01.nyt.com/images/2024/04/19/multimedia/SAUDI-AI-09-vtlj/SAUDI-AI-09-vtlj-superJumbo.jpg?quality=75&auto=webp",
+    link: "https://www.nytimes.com/2024/04/25/technology/saudi-arabia-ai.html",
+  },
+  {
+    id: 8,
+    title:
+      "Saudi Arabia’s AI adoption ignites technological advancement and economic growth",
+    content: `RIYADH: As artificial intelligence gains global attention and becomes a buzzword, Saudi Arabia is positioned for accelerated adoption to enhance efficiency across its industries.`,
+    imageUrl:
+      "https://www.arabnews.pk/sites/default/files/styles/n_670_395/public/2024/04/18/4324406-212207675.jpg?itok=t9zfm1pP",
+    link: "https://www.arabnews.pk/node/2495391/business-economy",
+  },
+  {
+    id: 7,
+    title:
+      "‘To the Future’: Saudi Arabia Spends Big to Become an A.I. Superpower",
+    content: `The oil-rich kingdom is plowing money into glitzy events, computing power and artificial intelligence research, putting it in the middle of an escalating U.S.-China struggle for technological influence.`,
+    imageUrl:
+      "https://static01.nyt.com/images/2024/04/19/multimedia/SAUDI-AI-09-vtlj/SAUDI-AI-09-vtlj-superJumbo.jpg?quality=75&auto=webp",
+    link: "https://www.nytimes.com/2024/04/25/technology/saudi-arabia-ai.html",
+  },
 ];
 
 const Carousel: React.FC = () => {
