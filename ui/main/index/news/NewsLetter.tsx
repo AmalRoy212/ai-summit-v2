@@ -16,10 +16,10 @@ const NewsLetter: React.FC = () => {
         </span>
       </motion.div>
       <div className="flex flex-col md:flex-row px-5 md:my-20  z-10">
-        <div className="flex-1">
+        <div className="w-2/3">
           <Carousel />
         </div>
-        <div className="w-96">
+        <div className="w-1/3">
           <NewsTicker />
         </div>
       </div>
