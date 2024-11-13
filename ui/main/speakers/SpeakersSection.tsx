@@ -118,47 +118,56 @@ const profilesThree = [
     linkedIn: "#",
     marginTP: 0,
   },
-  // {
-  //   name: "AMJID ALITurki AlMukhlfi",
-  //   title: "Director of Data Management",
-  //   company: "National Center for Vegetation Cover",
-  //   organization: "OMAN",
-  //   image: "/images/speakers/img12.png",
-  //   linkedIn: "#",
-  //   marginTP: 10,
-  // },
+  {
+    name: "Dr. Mohammed Al Dighriri",
+    title: "General Director of Data Modeling and Analysis",
+    company: "National Center for Environmental Compliance (NCECKSA)",
+    organization: "OMAN",
+    image: "/images/speakers/speaker33.png",
+    linkedIn: "#",
+    marginTP: 10,
+  },
   
 ];
 
-// const profilesFour = [
-//   {
-//     name: "Dr.Haitham Hilal Amur ALHajri",
-//     title: "Head - Cyber & Information Security",
-//     company: "Oman Housing Bank",
-//     organization: "OMAN",
-//     image: "/images/speakers/speaker121.png",
-//     linkedIn: "#",
-//     marginTP: 0,
-//   },
-//   {
-//     name: "FOUAD IBRAHIM",
-//     title: "CO - Founder & Technical Director",
-//     company: "Falcon Oilfield Services",
-//     organization: "OMAN",
-//     image: "/images/speakers/img6 (2).png",
-//     linkedIn: "#",
-//     marginTP: 0,
-//   },
-//   {
-//     name: "RAMYA SANKARI",
-//     title: "Head of Information Technology",
-//     company: "Zawawi Powertech Engineering LLC",
-//     organization: "OMAN",
-//     image: "/images/speakers/remya.png",
-//     linkedIn: "#",
-//     marginTP: 0,
-//   },
-// ];
+const profilesFour = [
+  {
+    name: "Turki AlMukhlfi",
+    title: "Director of the Data Management",
+    company: "Confidential",
+    organization: "OMAN",
+    image: "/images/speakers/img12.png",
+    linkedIn: "#",
+    marginTP: 10,
+  },
+  {
+    name: "Dr. Jihad Al Wahshi ",
+    title: "Head of Data Management",
+    company: "Central Bank of Oman (CBO)",
+    organization: "OMAN",
+    image: "/images/speakers/speaker32.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Filip Nekvinda",
+    title: "Chief Information & Digital Officer",
+    company: "Abdul Latif Jameel Enterprises",
+    organization: "OMAN",
+    image: "/images/speakers/speaker31.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  // {
+  //   name: "RAMYA SANKARI",
+  //   title: "Head of Information Technology",
+  //   company: "Zawawi Powertech Engineering LLC",
+  //   organization: "OMAN",
+  //   image: "/images/speakers/remya.png",
+  //   linkedIn: "#",
+  //   marginTP: 0,
+  // },
+];
 
 const SpeakerProfiles: React.FC = () => {
   useEffect(() => {
@@ -177,6 +186,9 @@ const SpeakerProfiles: React.FC = () => {
           <ProfileCard item={profile} index={index} />
         ))}
         {profilesThree.map((profile, index) => (
+          <ProfileCard item={profile} index={index} />
+        ))}
+        {profilesFour.map((profile, index) => (
           <ProfileCard item={profile} index={index} />
         ))}
       </div>

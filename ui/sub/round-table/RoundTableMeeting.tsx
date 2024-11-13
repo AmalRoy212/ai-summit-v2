@@ -19,25 +19,41 @@ const ExecutiveRoundtable = () => {
         </div> */}
 
         {/* Right Content Section */}
-        <div className="lg:w-2/3 px-10 mt-10 lg:mt-0 bg-[#030621] py-20 rounded-2xl shadow-2xl">
-          <div className="text-center lg:text-left">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              The Executive
-              <br />
-               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">Roundtable</span>{" "}
-              Dialogue
-            </h2>
-            <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
-              The Executive Roundtable Discussion at our conference serves as a
-              paramount platform for top-level decision-makers to converge and
-              engage in high-level strategic dialogues. This exclusive session
-              brings together C-suite executives, industry leaders, and
-              visionaries to explore critical issues, share insights, and chart
-              the course for the future of the industry. With a focus on
-              fostering collaboration and driving innovation, the Executive
-              Roundtable promises to deliver thought-provoking discussions,
-              actionable insights, and unparalleled networking opportunities.
-            </p>
+        <div className="relative lg:w-2/3 px-10 mt-10 lg:mt-0 rounded-2xl shadow-2xl overflow-hidden">
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+          >
+            <source src="/videos/vidoe23.mp4" type="video/mp4" />
+          </video>
+
+          <div className="absolute inset-0 bg-black opacity-60"></div>
+
+          <div className="relative z-10  py-20 px-6 lg:px-10 rounded-2xl shadow-2xl">
+            <div className="text-center lg:text-left">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+                The Executive
+                <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+                  Roundtable
+                </span>{" "}
+                Dialogue
+              </h2>
+              <p className="text-gray-300 leading-relaxed text-sm lg:text-base">
+                The Executive Roundtable Discussion at our conference serves as
+                a paramount platform for top-level decision-makers to converge
+                and engage in high-level strategic dialogues. This exclusive
+                session brings together C-suite executives, industry leaders,
+                and visionaries to explore critical issues, share insights, and
+                chart the course for the future of the industry. With a focus on
+                fostering collaboration and driving innovation, the Executive
+                Roundtable promises to deliver thought-provoking discussions,
+                actionable insights, and unparalleled networking opportunities.
+              </p>
+            </div>
           </div>
         </div>
       </div>
