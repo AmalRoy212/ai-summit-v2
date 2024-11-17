@@ -30,8 +30,7 @@ const profiles = [
   {
     name: "Muqbil Almuqbil",
     title: "Director of Data Management",
-    company:
-      "Saudi Food & Drug Authority (SFDA)",
+    company: "Saudi Food & Drug Authority (SFDA)",
     com: "",
     organization: "",
     image: "/images/speakers/img3.png",
@@ -54,10 +53,10 @@ const profilesTwo = [
     name: "Ladle Patel",
     title: "Senior Advisor, Advanced Data Analytics",
     company: "Arab National Bank",
-    com:"",
+    com: "",
     organization: "OMAN",
     image: "/images/speakers/img5.png",
-    linkedIn: "#", 
+    linkedIn: "#",
     marginTP: 0,
   },
   {
@@ -127,7 +126,6 @@ const profilesThree = [
     linkedIn: "#",
     marginTP: 10,
   },
-  
 ];
 
 const profilesFour = [
@@ -158,15 +156,15 @@ const profilesFour = [
     linkedIn: "#",
     marginTP: 0,
   },
-  // {
-  //   name: "RAMYA SANKARI",
-  //   title: "Head of Information Technology",
-  //   company: "Zawawi Powertech Engineering LLC",
-  //   organization: "OMAN",
-  //   image: "/images/speakers/remya.png",
-  //   linkedIn: "#",
-  //   marginTP: 0,
-  // },
+  {
+    name: "Neeti Khatri",
+    title: "Associate Vice President",
+    company: "Data & Insights Public Investment Fund (PIF)",
+    organization: "OMAN",
+    image: "/images/speakers/speaker34.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
 ];
 
 const SpeakerProfiles: React.FC = () => {
@@ -175,9 +173,12 @@ const SpeakerProfiles: React.FC = () => {
   }, []);
 
   return (
-    <div id="speakers" className="w-full flex flex-col items-center mb-28 px-4 md:px-16 z-10">
+    <div
+      id="speakers"
+      className="w-full flex flex-col items-center mb-28 px-4 md:px-16 z-10"
+    >
       <Headers first="OUR ESTEEMED" middle="SPEAKERS" last="" />
-      
+
       <div className="flex flex-wrap justify-center gap-4 py-10 bg-white shadow-2xl rounded-2xl">
         {profiles.map((profile, index) => (
           <ProfileCard item={profile} index={index} />
