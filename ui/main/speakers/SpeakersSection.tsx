@@ -158,8 +158,8 @@ const profilesFour = [
   },
   {
     name: "Neeti Khatri",
-    title: "Associate Vice President",
-    company: "Data & Insights Public Investment Fund (PIF)",
+    title: "Associate Vice President Data & Insights",
+    company: "Public Investment Fund (PIF)",
     organization: "OMAN",
     image: "/images/speakers/speaker34.png",
     linkedIn: "#",

@@ -61,7 +61,7 @@ function IndexHeader() {
         </span> */}
         <p className="md:text-2xl flex gap-x-3 justify-center items-center md:flex-row flex-col">
           <span className="flex items-center gap-3">
-            <CiCalendarDate />7 MAY 2025
+            <CiCalendarDate />7-8 MAY 2025
           </span>
           <span className="flex items-center gap-3">
             <FaLocationDot size={18} />

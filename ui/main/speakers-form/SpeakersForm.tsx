@@ -317,8 +317,8 @@ const SpeakersEnquiryForm: React.FC = () => {
             ]}
           >
             <Checkbox>
-              I agree to my contact details being shared with the event's
-              sponsors/partners.
+              I agree to be contacted via phone call or WhatsApp for further
+              discussions.
             </Checkbox>
           </Form.Item>
 
