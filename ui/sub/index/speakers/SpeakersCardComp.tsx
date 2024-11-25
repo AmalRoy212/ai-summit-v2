@@ -17,8 +17,10 @@ const ProfileCard: React.FC<any> = ({ item, index }) => {
         <img
           src={item.image}
           alt={item.name}
-          className={`w-full h-64 pt-${item?.marginTP} object-contain`}
-          style={{ objectFit: "contain", maxHeight: "250px" }}
+          className={`w-full h-64 pt-${item?.marginTP} object-${
+            item?.fit || "contain"
+          }`}
+          // style={{ objectFit: "contain", maxHeight: "250px" }}
         />
       </div>
       <div className="p-4 flex flex-col items-center text-center">
