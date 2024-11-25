@@ -17,6 +17,7 @@ const profiles = [
     image: "/images/speakers/img1.png",
     linkedIn: "#",
     marginTP: 0,
+    fit: "cover",
   },
   {
     name: "Ismail A. Almakrami",
@@ -26,6 +27,7 @@ const profiles = [
     image: "/images/speakers/img2.png",
     linkedIn: "#",
     marginTP: 0,
+    fit: "cover",
   },
   {
     name: "Muqbil Almuqbil",
@@ -45,6 +47,7 @@ const profiles = [
     image: "/images/speakers/img4.png",
     linkedIn: "#",
     marginTP: 0,
+    fit: "cover",
   },
 ];
 
@@ -58,6 +61,7 @@ const profilesTwo = [
     image: "/images/speakers/img5.png",
     linkedIn: "#",
     marginTP: 0,
+    fit: "cover",
   },
   {
     name: "Ghadah Almalki",
@@ -67,6 +71,7 @@ const profilesTwo = [
     image: "/images/speakers/img6.png", // Add correct paths to images
     linkedIn: "#", // Replace with actual LinkedIn profile links
     marginTP: 0,
+    fit: "cover",
   },
   {
     name: "Mushtaq Khan",
@@ -76,6 +81,7 @@ const profilesTwo = [
     image: "/images/speakers/img7.png",
     linkedIn: "#",
     marginTP: 0,
+    fit: "cover",
   },
   {
     name: "Sivakumar Seshadri",
@@ -85,6 +91,7 @@ const profilesTwo = [
     image: "/images/speakers/img8.png",
     linkedIn: "#",
     marginTP: 0,
+    fit: "cover",
   },
 ];
 
@@ -105,7 +112,8 @@ const profilesThree = [
     organization: "OMAN",
     image: "/images/speakers/img10.png",
     linkedIn: "#",
-    marginTP: 10,
+    marginTP: 0,
+    fit: "cover",
   },
   {
     name: "Nawaf Alghamdi",
@@ -116,6 +124,7 @@ const profilesThree = [
     image: "/images/speakers/img11.png",
     linkedIn: "#",
     marginTP: 0,
+    fit: "cover",
   },
   {
     name: "Dr. Mohammed Al Dighriri",
@@ -124,7 +133,8 @@ const profilesThree = [
     organization: "OMAN",
     image: "/images/speakers/speaker33.png",
     linkedIn: "#",
-    marginTP: 10,
+    marginTP: 0,
+    fit: "cover",
   },
 ];
 
@@ -146,6 +156,7 @@ const profilesFour = [
     image: "/images/speakers/speaker32.png",
     linkedIn: "#",
     marginTP: 0,
+    fit: "cover",
   },
   {
     name: "Filip Nekvinda",
@@ -164,6 +175,16 @@ const profilesFour = [
     image: "/images/speakers/speaker34.png",
     linkedIn: "#",
     marginTP: 0,
+  },
+  {
+    name: "Abbasi Poonawala",
+    title: "Executive Director Enterprise Architecture",
+    company: "Alinma Bank",
+    organization: "OMAN",
+    image: "/images/speakers/speaker35.png",
+    linkedIn: "#",
+    marginTP: 0,
+    fit: "cover",
   },
 ];
 
