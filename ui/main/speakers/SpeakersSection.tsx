@@ -175,6 +175,34 @@ const profilesFour = [
     marginTP: 0,
     fit: "cover",
   },
+  {
+    name: "Louai Alarabi",
+    title: "Chief Data Analytics Engineer",
+    company: "SITE",
+    organization: "OMAN",
+    image: "/images/speakers/speaker36.png",
+    linkedIn: "#",
+    marginTP: 0,
+    fit: "cover",
+  },
+  {
+    name: "Muhammad Zohaib",
+    title: "Director BI & Data Analytics",
+    company: "Salam Mobile",
+    organization: "OMAN",
+    image: "/images/speakers/speaker37.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Dr. Debashis Dutta",
+    title: "Senior Advisor -Risk Group",
+    company: "Saudi EXIIM Bank",
+    organization: "OMAN",
+    image: "/images/speakers/speaker38.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
 ];
 
 const SpeakerProfiles: React.FC = () => {
