@@ -37,15 +37,15 @@ const profiles = [
     linkedIn: "#",
     marginTP: 0,
   },
-  {
-    name: "DR.Jalal Alowibdi",
-    title: "Director, Data Analysis & Business Intelligence Center",
-    company: "Ministry of Hajj & Umrah",
-    organization: "OMAN",
-    image: "/images/speakers/img4.png",
-    linkedIn: "#",
-    marginTP: 0,
-  },
+  // {
+  //   name: "DR.Jalal Alowibdi",
+  //   title: "Director, Data Analysis & Business Intelligence Center",
+  //   company: "Ministry of Hajj & Umrah",
+  //   organization: "OMAN",
+  //   image: "/images/speakers/img4.png",
+  //   linkedIn: "#",
+  //   marginTP: 0,
+  // },
 ];
 
 const profilesTwo = [
@@ -176,7 +176,7 @@ const profilesFour = [
     fit: "cover",
   },
   {
-    name: "Louai Alarabi",
+    name: "DR. Louai Alarabi",
     title: "Chief Data Analytics Engineer",
     company: "SITE",
     organization: "OMAN",
@@ -202,6 +202,16 @@ const profilesFour = [
     image: "/images/speakers/speaker38.png",
     linkedIn: "#",
     marginTP: 0,
+  },
+  {
+    name: "MOHAMMAD SHALAN",
+    title: "VP of Professional Development & Training",
+    company: "PMI KSA Chapter",
+    organization: "OMAN",
+    image: "/images/speakers/speaker39.png",
+    linkedIn: "#",
+    marginTP: 0,
+    fit: "cover",
   },
 ];
 
