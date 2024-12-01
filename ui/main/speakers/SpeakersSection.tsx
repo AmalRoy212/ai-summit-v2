@@ -213,6 +213,36 @@ const profilesFour = [
     marginTP: 0,
     fit: "cover",
   },
+  {
+    name: "Ángel Narciso",
+    title: "Senior Director  Data , Analytics & AI",
+    company: "Takamol Holding",
+    organization: "OMAN",
+    image: "/images/speakers/speaker40.png",
+    linkedIn: "#",
+    marginTP: 0,
+    // fit: "cover",
+  },
+  {
+    name: "Mohammad Alomair",
+    title: "Chief Data Officer",
+    company: "Saudi Irrigation Orgnaization",
+    organization: "OMAN",
+    image: "/images/speakers/speaker41.png",
+    linkedIn: "#",
+    marginTP: 0,
+    // fit: "cover",
+  },
+  {
+    name: "Ayub Aldakael",
+    title: "Director of Enterprise Management",
+    company: "Confidential Government",
+    organization: "OMAN",
+    image: "/images/speakers/speaker42.png",
+    linkedIn: "#",
+    marginTP: 0,
+    // fit: "cover",
+  },
 ];
 
 const SpeakerProfiles: React.FC = () => {

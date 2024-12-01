@@ -44,7 +44,7 @@ export default function Home() {
         <ChartsHolder />
         {/* <AwardsProvider /> */}
         {/* <TopicsProvide /> */}
-        <WhoIndustries />
+        {/* <WhoIndustries /> */}
         {/* <Pricing /> */}
         {/* <Sponsors /> */}
         <WhitePaper />
