@@ -21,6 +21,7 @@ import CaroselHolder from "@/ui/main/index/caroselHolder/CaroselHolser";
 import NewsLetter from "@/ui/main/index/news/NewsLetter";
 import WhitePaper from "@/ui/sub/round-table/RoundTableMeeting";
 import EventName from "@/ui/main/event-name/EventName";
+import RoundHolder from "@/ui/main/who/RoundHolder";
 
 export default function Home() {
   useEffect(() => {
@@ -41,7 +42,8 @@ export default function Home() {
         <CaroselHolder />
         <Encryption />
         <Cards />
-        <ChartsHolder />
+        <RoundHolder/>
+        {/* <ChartsHolder /> */}
         {/* <AwardsProvider /> */}
         {/* <TopicsProvide /> */}
         {/* <WhoIndustries /> */}
