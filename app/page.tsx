@@ -50,8 +50,8 @@ export default function Home() {
         {/* <Pricing /> */}
         {/* <Sponsors /> */}
         <WhitePaper />
-        <StartUp />
-        <End />
+        {/* <StartUp /> */}
+        {/* <End /> */}
         <NewsLetter />
         {/* <div className="w-full flex justify-center items-center">
           <EventName />

@@ -1,6 +1,8 @@
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const ExecutiveRoundtable = () => {
+  const router = useRouter();
   return (
     <section className="bg-darkBlue text-white py-10 mb-20">
       <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:justify-center">
@@ -53,6 +55,14 @@ const ExecutiveRoundtable = () => {
                 Roundtable promises to deliver thought-provoking discussions,
                 actionable insights, and unparalleled networking opportunities.
               </p>
+              <div className="w-full flex justify-center">
+                <button
+                  onClick={() => router.push("/delegates")}
+                  className="cursor-pointer  w-auto px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500"
+                >
+                  Register now
+                </button>
+              </div>
             </div>
           </div>
         </div>
