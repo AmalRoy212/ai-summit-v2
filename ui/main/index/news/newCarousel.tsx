@@ -109,7 +109,7 @@ const items = [
     id: 4,
     title:
       "Presight signs deal to enhance emergency management through AI, Big Data analytics",
-      content : "The partnership aims to revolutionise crisis, emergency, and disaster management through the integration of advanced data analytics and AI into emergency response systems",
+      content : "The partnership aims to revolutionise crisis, emergency, and disaster management through the integration of advanced data analytics and AI into ...",
     imageUrl:
       "https://static.zawya.com/view/acePublic/alias/contentid/Nzc2NmRkMjgtOWZiZC00/37/1464561797.webp?f=3%3A2&q=0.75&w=1080",
     link: "https://www.zawya.com/en/business/technology-and-telecom/presight-signs-deal-to-enhance-emergency-management-through-ai-big-data-analytics-q3s6428u",

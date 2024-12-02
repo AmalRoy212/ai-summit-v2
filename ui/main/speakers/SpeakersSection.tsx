@@ -243,6 +243,16 @@ const profilesFour = [
     marginTP: 0,
     // fit: "cover",
   },
+  {
+    name: "Mushtaq Ahmed",
+    title: "Director Enterprise Architecture & Digital Strategy",
+    company: "Saudi Post (SPL)",
+    organization: "OMAN",
+    image: "/images/speakers/speaker43.png",
+    linkedIn: "#",
+    marginTP: 0,
+    // fit: "cover",
+  },
 ];
 
 const SpeakerProfiles: React.FC = () => {
