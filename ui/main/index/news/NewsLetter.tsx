@@ -1,10 +1,28 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Carousel from "./NewsCarousel";
 import NewsTicker from "./NewsTicker";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
+import NewCarousel from "./newCarousel";
 
 const NewsLetter: React.FC = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (scrollRef.current) {
+        const maxScrollLeft =
+          scrollRef.current.scrollWidth - scrollRef.current.clientWidth;
+        if (scrollRef.current.scrollLeft < maxScrollLeft) {
+          scrollRef.current.scrollLeft += 10;
+        } else {
+          scrollRef.current.scrollLeft = 0;
+        }
+      }
+    }, 100);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div className="md:w-[95%] flex flex-col bg-[#030621] md:mx-auto pt-5 md:px-5 rounded-2xl">
       <motion.div
@@ -15,12 +33,17 @@ const NewsLetter: React.FC = () => {
           NEWS & ARTICLES{" "}
         </span>
       </motion.div>
-      <div className="flex flex-col md:flex-row px-5 md:my-20  z-10">
+      {/* <div className="flex flex-col md:flex-row px-5 md:my-20  z-10">
         <div className="w-2/3">
           <Carousel />
         </div>
         <div className="w-1/3">
           <NewsTicker />
+        </div>
+      </div> */}
+      <div className="flex flex-col md:flex-row md:my-20 z-10 gap-x-5">
+        <div className="w-full">
+          <NewCarousel />
         </div>
       </div>
     </div>
