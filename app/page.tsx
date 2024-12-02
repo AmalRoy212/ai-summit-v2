@@ -21,7 +21,6 @@ import CaroselHolder from "@/ui/main/index/caroselHolder/CaroselHolser";
 import NewsLetter from "@/ui/main/index/news/NewsLetter";
 import WhitePaper from "@/ui/sub/round-table/RoundTableMeeting";
 import EventName from "@/ui/main/event-name/EventName";
-import CardContainer from "@/ui/main/index/news/TryNewsCard";
 
 export default function Home() {
   useEffect(() => {
@@ -51,7 +50,6 @@ export default function Home() {
         <WhitePaper />
         <StartUp />
         <End />
-        <CardContainer/>
         <NewsLetter />
         {/* <div className="w-full flex justify-center items-center">
           <EventName />
