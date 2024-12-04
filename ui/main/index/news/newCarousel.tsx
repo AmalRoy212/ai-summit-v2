@@ -141,7 +141,7 @@ const NewCarousel: React.FC = () => {
         {items.map((item) => (
           <div
             key={item.id}
-            className="md:w-1/4 w-full px-20 flex-none h-[70vh] md:h-[450px] bg-cover bg-center ml-2 text-white relative rounded-xl overflow-hidden"
+            className="w-1/4 flex-none h-[70vh] md:h-[450px] bg-cover bg-center ml-2 text-white relative rounded-xl overflow-hidden"
             style={{
               border: "1px solid gray",
             }}
