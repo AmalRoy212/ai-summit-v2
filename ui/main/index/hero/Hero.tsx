@@ -40,7 +40,8 @@ function IndexHeader() {
           ref={pageHeader}
         >
           <source
-            src="https://www.globalblockchainshow.com/wp-content/uploads/2024/03/GBS_Website-Cover-compressed.mp4"
+            // src="https://www.globalblockchainshow.com/wp-content/uploads/2024/03/GBS_Website-Cover-compressed.mp4"
+            src="/videos/bg-vid01.mp4"
             type="video/webm"
           />
           {/* <source src="/videos/blackhole.webm" type="video/webm" /> */}

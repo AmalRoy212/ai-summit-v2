@@ -9,6 +9,7 @@ import React from "react";
 interface Topic {
   data: {
     img: string;
+    title: string;
     dis: string;
   };
   index: number;
@@ -57,7 +58,8 @@ function Topics({ data, index }: Topic) {
           height={120}
         />
       </div>
-      <div className="absolute bottom-0 text-slate-300 flex justify-center items-center w-full h-[50%]">
+      <div className="absolute bottom-0 text-slate-300 flex justify-center flex-col items-center w-full h-[35%]">
+        <h1 className="text-[18px] text-center">{data.title}</h1>
         <p className="text-[13px] text-center">{data.dis}</p>
       </div>
       <Link href="/dashboard">Learn More</Link>

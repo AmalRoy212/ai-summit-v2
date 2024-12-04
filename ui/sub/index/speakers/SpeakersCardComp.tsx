@@ -3,7 +3,7 @@ import React from "react";
 const ProfileCard: React.FC<any> = ({ item, index }) => {
   return (
     <div
-      className="flex flex-col items-center w-full md:w-1/4 max-w-xs m-4 rounded-lg overflow-hidden"
+      className="flex flex-col items-center w-full md:w-1/4 max-w-xs m-4 rounded-lg overflow-hidden relative h-[400px]"
       key={index}
     >
       <div
@@ -23,13 +23,13 @@ const ProfileCard: React.FC<any> = ({ item, index }) => {
           // style={{ objectFit: "contain", maxHeight: "250px" }}
         />
       </div>
-      <div className="p-4 flex flex-col items-center text-center">
-        <h3 className="text-xl font-bold text-gray-800 uppercase mb-2">
+      <div className="p-4 flex flex-col items-center text-center absolute ml-8 bottom-0 left-0 bg-white min-h-[170px] w-[90%] px-5 bg-gradient-to-r from-purple-500 to-cyan-500">
+        <h3 className="text-xl font-bold text-white uppercase mb-2">
           {item.name}
         </h3>
-        <p className="text-gray-600 text-base font-medium">{item.title}</p>
-        <p className="text-gray-600 text-base font-medium">{item.company}</p>
-        {item.com && <p className="text-gray-600 font-medium">{item.com}</p>}
+        <p className="text-white text-base font-medium">{item.title}</p>
+        <p className="text-white text-base font-medium">{item.company}</p>
+        {item.com && <p className="text-white font-medium">{item.com}</p>}
       </div>
     </div>
   );

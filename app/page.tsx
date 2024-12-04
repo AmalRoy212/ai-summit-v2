@@ -45,7 +45,7 @@ export default function Home() {
         <RoundHolder/>
         {/* <ChartsHolder /> */}
         {/* <AwardsProvider /> */}
-        {/* <TopicsProvide /> */}
+        <TopicsProvide />
         {/* <WhoIndustries /> */}
         {/* <Pricing /> */}
         {/* <Sponsors /> */}

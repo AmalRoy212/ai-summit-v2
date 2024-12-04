@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import { ThreeDCard } from "../index/3dCards/3D_Speaker";
 import ProfileCard from "@/ui/sub/index/speakers/SpeakersCardComp";
 import Headers from "@/ui/sub/headers/Headers";
+import NewProfileCard from "@/ui/sub/index/speakers/NewSpeaker";
 
 // Profile data array
 const profiles = [
@@ -267,7 +268,7 @@ const SpeakerProfiles: React.FC = () => {
     >
       <Headers first="OUR ESTEEMED" middle="SPEAKERS" last="" />
 
-      <div className="flex flex-wrap justify-center gap-4 py-10 bg-white shadow-2xl rounded-2xl">
+      <div className="flex flex-wrap justify-center gap-4 py-10 shadow-2xl rounded-2xl">
         {profiles.map((profile, index) => (
           <ProfileCard item={profile} index={index} />
         ))}

@@ -2,19 +2,19 @@ import React from "react";
 
 const data = [
   {
-    dis: "CXOs - CIOs, CTOs, CAIOs, CDOs, CISOs",
+    dis: "CIOs, CTOS, CAIOS, CDOs, CISOs, CXOs",
   },
   {
-    dis: "VPs & Heads of Digital Transformation, Business Intelligence, Data Science, Data Engineering",
+    dis: "VPs & Heads of Digital Transformation, Business Intelligence, Data Integration, Enterprise Architecture",
   },
   {
-    dis: "VPs & Heads of Data Analytics, Governance, Modeling & Mining, Architects, CRM, Privacy & Analysts",
+    dis: "VPs & Heads of Data Analytics, Governance, Data Science, Data Management, Data Modelling & Mining, Data Architecture & Engineering, CRM",
   },
   {
     dis: "VPs & Heads of Predictive Analytics, Marketing, Customer Experience, Digital & Strategy",
   },
   {
-    dis: "Directors of AI, Machine Learning, Robotics, Predictive Analytics",
+    dis: "VPs & Directors of Al, Machine Learning, Robotics, Predictive Analytics",
   },
 ];
 

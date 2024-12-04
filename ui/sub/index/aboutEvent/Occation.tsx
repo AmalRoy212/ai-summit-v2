@@ -9,7 +9,7 @@ function Occation() {
   const cardsData = [
     {
       number: "$49.98 B",
-      title: "2040 Market size",
+      title: "2024 Market size",
       margin: 20,
     },
     {
