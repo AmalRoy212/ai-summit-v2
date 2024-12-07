@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +8,18 @@
 
 .cursive {
   font-family: "Cedarville Cursive", cursive;
+}
+
+@font-face {
+  font-family: 'TickingTimebombBB';
+  src: url('/font-styles/ticking-timebomb-bb.regular.ttf') format('truetype');
+}
+.z-impo {
+  z-index: 90 !important;
+}
+
+.text-tick {
+  font-family: 'TickingTimebombBB', sans-serif;
 }
 
 .Welcome-text {

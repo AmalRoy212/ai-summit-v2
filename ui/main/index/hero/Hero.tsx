@@ -28,7 +28,10 @@ function IndexHeader() {
   }, []);
 
   return (
-    <div className="relative md:overflow-hidden md:h-[110vh]" id="hero">
+    <div
+      className="h-[100vh] relative md:overflow-hidden md:h-full flex justify-center"
+      id="hero"
+    >
       <div className="absolute inset-0">
         <video
           autoPlay
@@ -73,7 +76,7 @@ function IndexHeader() {
         <div className="w-full h-auto flex md:flex-row flex-col justify-center items-center md:px-10">
           <div
             style={{ borderRight: "1px solid white" }}
-            className="w-full md:w-1/3 h-full flex justify-end items-center p-5"
+            className="w-full md:w-1/3 h-full flex md:justify-end items-center md:p-5  justify-center"
           >
             <img
               src="images/alts/Saudi.png"
@@ -82,10 +85,14 @@ function IndexHeader() {
             />
           </div>
           {/* <EventName /> */}
-          <img className="w-[500px]" src="/images/event/Event-Logo.png" alt="" />
+          <img
+            className="md:w-[500px] w-[400px]"
+            src="/images/event/Event-Logo.png"
+            alt=""
+          />
         </div>
         <div className="w-full flex justify-center flex-col items-center">
-          <h3 className="md:text-2xl text-center mt-2">
+          <h3 className="md:text-2xl px-10 md:px-0 text-center mt-2">
             Creating a Digital Legacy: Data, AI & Automation at the Heart of
             Vision 2030
             {/* <span className="mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -94,7 +101,7 @@ function IndexHeader() {
           </h3>
           <Counter />
         </div>
-        <div className="w-full text-s text-center md:px-28 md:mt-2 mt-5">
+        <div className="w-full text-s text-center md:px-28 md:mt-2 mt-[-2rem]">
           <div className="flex-row flex justify-center items-center p-5 w-full z-[999] gap-4">
             <Link
               href={"/sponsors"}

@@ -15,7 +15,7 @@ const Footer = () => {
     <div
       className={`bg-transparent text-gray-200 shadow-lg p-[15px]  mt-${
         pathname === "/delegates" ? 0 : 10
-      } z-[10] mb-10 cursor-pointer`}
+      }mb-10 cursor-pointer z-[50]`}
     >
       <div className="w-full rounded-xl p-10 flex flex-col items-center justify-center m-auto bg-slate-900">
         <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">

@@ -58,9 +58,9 @@ function Topics({ data, index }: Topic) {
           height={120}
         />
       </div>
-      <div className="absolute bottom-0 text-slate-300 flex justify-center flex-col items-center w-full h-[35%]">
-        <h1 className="text-[18px] text-center">{data.title}</h1>
-        <p className="text-[13px] text-center">{data.dis}</p>
+      <div className="absolute bottom-0 flex justify-between flex-col items-center w-full h-[35%]">
+        <h1 className="text-[19px] text-center text-white">{data.title}</h1>
+        <p className="text-[11px] text-center text-gray-400 mt-3">{data.dis}</p>
       </div>
       <Link href="/dashboard">Learn More</Link>
     </motion.div>
