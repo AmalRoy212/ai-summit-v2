@@ -71,7 +71,7 @@ const items = [
     link: "https://www.arabnews.pk/node/2495391/business-economy",
   },
   {
-    id: 7,
+    id: 9,
     title:
       "‘To the Future’: Saudi Arabia Spends Big to Become an A.I. Superpower",
     content: `The oil-rich kingdom is plowing money into glitzy events, computing power and artificial intelligence research, putting it in the middle of an escalating ...`,
@@ -80,7 +80,7 @@ const items = [
     link: "https://www.nytimes.com/2024/04/25/technology/saudi-arabia-ai.html",
   },
   {
-    id: 1,
+    id: 10,
     title:
       "Informatica launches AI-powered Data Management Cloud in Saudi Arabia",
     content:
@@ -89,7 +89,7 @@ const items = [
     link: "https://w.media/informatica-launches-ai-powered-data-management-cloud-in-saudi-arabia/",
   },
   {
-    id: 2,
+    id: 11,
     title:
       "LinkedIn data shows KSA workforce rapidly adopting digital skills as the hiring.",
     content:
@@ -98,7 +98,7 @@ const items = [
     link: "https://hrme.economictimes.indiatimes.com/news/linkedin-data-shows-ksa-workforce-rapidly-adopting-digital-skills-as-the-hiring-of-ai-talent-grows-24-in-one-year/110784895",
   },
   {
-    id: 3,
+    id: 12,
     title: "AI, analytics and the future of Saudi Arabia’s workforce",
     content : "Saudi Arabia is making significant strides in the world of artificial intelligence, in pursuit of its ambitious initiatives to position the Kingdom as a global leader in AI.",
     imageUrl:
@@ -106,7 +106,7 @@ const items = [
     link: "https://www.arabnews.com/node/2530096",
   },
   {
-    id: 4,
+    id: 13,
     title:
       "Presight signs deal to enhance emergency management through AI, Big Data analytics",
       content : "The partnership aims to revolutionise crisis, emergency, and disaster management through the integration of advanced data analytics and AI into ...",
@@ -115,7 +115,7 @@ const items = [
     link: "https://www.zawya.com/en/business/technology-and-telecom/presight-signs-deal-to-enhance-emergency-management-through-ai-big-data-analytics-q3s6428u",
   },
   {
-    id: 5,
+    id: 14,
     title:
       "Saudi’s Aramco Digital announces multiple AI partnerships",
       content : "Aramco Digital Company and Groq, a major name in the field of artificial intelligence (AI) inference, ...",
@@ -124,7 +124,7 @@ const items = [
     link: "https://developingtelecoms.com/telecom-technology/data-centres-networks/17321-saudi-s-aramco-digital-announces-multiple-ai-partnerships.html",
   },
   {
-    id: 6,
+    id: 15,
     title:
       "SDAIA partners with IBM for Gen AI centre of excellence in KSA and Arabic LLM",
       content : "Unveiled at the Global AI Summit in Riyadh, the Saudi Data and AI Authority has inked a memorandum of understanding, ...",
@@ -133,7 +133,7 @@ const items = [
     link: "https://www.consultancy-me.com/news/9411/sdaia-partners-with-ibm-for-gen-ai-centre-of-excellence-in-ksa-and-arabic-llm",
   },
   {
-    id: 7,
+    id: 16,
     title:
       "Saudi Arabia’s data, AI authority partners with Microsoft to advance innovation in GenAI",
       content : "The Saudi Data and Artificial Intelligence Authority (SDAIA) recently signed a memorandum of understanding (MoU), ...",
@@ -142,7 +142,7 @@ const items = [
     link: "https://economymiddleeast.com/news/saudi-sdaia-partners-with-microsoft-to-advance-innovation-in-genai/",
   },
   {
-    id: 7,
+    id: 17,
     title:
       "Saudi Arabia’s Riyadh Air Leads Digital Transformation in Aviation with Cloud-Based Operations and AI, Setting New Standards for Global Travel Security and Innovation",
       content : "",
@@ -151,16 +151,16 @@ const items = [
     link: "https://www.travelandtourworld.com/news/article/saudi-arabias-riyadh-air-leads-digital-transformation-in-aviation-with-cloud-based-operations-and-ai-setting-new-standards-for-global-travel-security-and-innovation/",
   },
   {
-    id: 8,
+    id: 18,
     title:
       "NetApp to Open Regional Headquarters in Riyadh, Reinforcing Commitment to Saudi Arabia’s Vision for AI and Digital Transformation",
-      content : "Dubai, UAE –   NetApp® (NASDAQ: NTAP), the intelligent data infrastructure company,  ...",
+      content : "",
     imageUrl:
-      "https://www.apnnews.com/wp-content/uploads/2024/11/George-Kurian-1097x1536.jpg",
+      "https://new.apnnews.com/wp-content/uploads/2024/07/logo-2.png",
     link: "https://www.apnnews.com/netapp-to-open-regional-headquarters-in-riyadh-reinforcing-commitment-to-saudi-arabias-vision-for-ai-and-digital-transformation/",
   },
   {
-    id: 9,
+    id: 19,
     title:
       "Almarai partners with Google Cloud to power its digital transformation journey",
       content : "This strategic partnership aims to empower Almarai to elevate its operational efficiency, drive sustainable growth, and deliver exceptional customer experiences amidst a rapidly evolving marketplace,  ...",
