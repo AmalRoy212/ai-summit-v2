@@ -114,6 +114,60 @@ const items = [
       "https://static.zawya.com/view/acePublic/alias/contentid/Nzc2NmRkMjgtOWZiZC00/37/1464561797.webp?f=3%3A2&q=0.75&w=1080",
     link: "https://www.zawya.com/en/business/technology-and-telecom/presight-signs-deal-to-enhance-emergency-management-through-ai-big-data-analytics-q3s6428u",
   },
+  {
+    id: 5,
+    title:
+      "Saudi’s Aramco Digital announces multiple AI partnerships",
+      content : "Aramco Digital Company and Groq, a major name in the field of artificial intelligence (AI) inference, ...",
+    imageUrl:
+      "https://developingtelecoms.com/images/stories/Places/Riyadh_600.jpg",
+    link: "https://developingtelecoms.com/telecom-technology/data-centres-networks/17321-saudi-s-aramco-digital-announces-multiple-ai-partnerships.html",
+  },
+  {
+    id: 6,
+    title:
+      "SDAIA partners with IBM for Gen AI centre of excellence in KSA and Arabic LLM",
+      content : "Unveiled at the Global AI Summit in Riyadh, the Saudi Data and AI Authority has inked a memorandum of understanding, ...",
+    imageUrl:
+      "https://www.consultancy-me.com/illustrations/news/detail/2024-10-08-092234616-SDAIA_partners_with_IBM_for_Gen_AI_centre_of_excellence_in_KSA_and_Arabic_LLM.jpg",
+    link: "https://www.consultancy-me.com/news/9411/sdaia-partners-with-ibm-for-gen-ai-centre-of-excellence-in-ksa-and-arabic-llm",
+  },
+  {
+    id: 7,
+    title:
+      "Saudi Arabia’s data, AI authority partners with Microsoft to advance innovation in GenAI",
+      content : "The Saudi Data and Artificial Intelligence Authority (SDAIA) recently signed a memorandum of understanding (MoU), ...",
+    imageUrl:
+      "https://economymiddleeast.com/cdn-cgi/imagedelivery/Xfg_b7GtigYi5mxeAzkt9w/economymiddleeast.com/2024/09/SDAIA-Microsoft.jpg/w=1200,h=800",
+    link: "https://economymiddleeast.com/news/saudi-sdaia-partners-with-microsoft-to-advance-innovation-in-genai/",
+  },
+  {
+    id: 7,
+    title:
+      "Saudi Arabia’s Riyadh Air Leads Digital Transformation in Aviation with Cloud-Based Operations and AI, Setting New Standards for Global Travel Security and Innovation",
+      content : "",
+    imageUrl:
+      "https://www.travelandtourworld.com/wp-content/uploads/2024/11/Somudranil_Sarkar_Create_a_cinematic_photo_of_Saudi_Arabias_Riyadh_5a770395-238d-447c-a548-6757e1e8ca70.jpg",
+    link: "https://www.travelandtourworld.com/news/article/saudi-arabias-riyadh-air-leads-digital-transformation-in-aviation-with-cloud-based-operations-and-ai-setting-new-standards-for-global-travel-security-and-innovation/",
+  },
+  {
+    id: 8,
+    title:
+      "NetApp to Open Regional Headquarters in Riyadh, Reinforcing Commitment to Saudi Arabia’s Vision for AI and Digital Transformation",
+      content : "Dubai, UAE –   NetApp® (NASDAQ: NTAP), the intelligent data infrastructure company,  ...",
+    imageUrl:
+      "https://www.apnnews.com/wp-content/uploads/2024/11/George-Kurian-1097x1536.jpg",
+    link: "https://www.apnnews.com/netapp-to-open-regional-headquarters-in-riyadh-reinforcing-commitment-to-saudi-arabias-vision-for-ai-and-digital-transformation/",
+  },
+  {
+    id: 9,
+    title:
+      "Almarai partners with Google Cloud to power its digital transformation journey",
+      content : "This strategic partnership aims to empower Almarai to elevate its operational efficiency, drive sustainable growth, and deliver exceptional customer experiences amidst a rapidly evolving marketplace,  ...",
+    imageUrl:
+      "https://www.cio.com/wp-content/uploads/2024/11/3599800-0-09713000-1730878556-original.jpg?resize=1536%2C864&quality=50&strip=all",
+    link: "https://www.cio.com/article/3599800/almarai-partners-with-google-cloud-to-power-its-digital-transformation-journey.html",
+  },
 ];
 
 const NewCarousel: React.FC = () => {

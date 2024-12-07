@@ -254,6 +254,16 @@ const profilesFour = [
     marginTP: 0,
     // fit: "cover",
   },
+  {
+    name: "Ali Hummadi",
+    title: "Executive Director of Digitalization",
+    company: "ARASCO",
+    organization: "OMAN",
+    image: "/images/speakers/speaker44.png",
+    linkedIn: "#",
+    marginTP: 0,
+    // fit: "cover",
+  },
 ];
 
 const SpeakerProfiles: React.FC = () => {
