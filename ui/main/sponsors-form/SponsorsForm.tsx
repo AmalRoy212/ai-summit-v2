@@ -226,7 +226,7 @@ const SponsorEnquiryForm: React.FC = () => {
             rules={[{ required: true, message: "You must accept the terms" }]}
           >
             <Checkbox>
-              I agree to the Terms and Conditions and Privacy Policy .
+              I agree to the Terms and Conditions and <a className="text-blue-800" href="/privacy-policy">Privacy Policy</a> .
             </Checkbox>
           </Form.Item>
 

@@ -329,7 +329,7 @@ const SpeakersEnquiryForm: React.FC = () => {
             rules={[{ required: true, message: "You must accept the terms" }]}
           >
             <Checkbox>
-              I agree to the Terms and Conditions and Privacy Policy .
+              I agree to the <a className="text-blue-700" href="/terms-conditions">Terms and Conditions</a> and <a className="text-blue-700" href="/privacy-policy">Privacy Policy</a> .
             </Checkbox>
           </Form.Item>
 

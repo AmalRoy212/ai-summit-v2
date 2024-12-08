@@ -2,11 +2,62 @@
 
 import React, { useState } from "react";
 import "antd/dist/reset.css";
-import { Form, Input, Button, Select, Checkbox, message, Spin } from "antd";
+import {
+  Form,
+  Input,
+  Button,
+  Select,
+  Checkbox,
+  message,
+  Spin,
+  CheckboxOptionType,
+} from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 import { validateEmail } from "@/utils/emailValidator";
 
 const { Option } = Select;
+
+const TPOptions: CheckboxOptionType[] = [
+  {
+    label: (
+      <p>
+        By filling up this form, I agree to the above{" "}
+        <a className="text-blue-500" href="/terms-conditions">
+          terms and conditions
+        </a>
+        . I officially and formally mark my acceptance to participate at the
+        event.
+      </p>
+    ),
+    value: "terms1", // Each option needs a unique value
+  },
+  {
+    label:
+      "I approve organizers to share the contact information and/or other details filled in this form with its sponsors/partners for marketing purposes.",
+    value: "marketingConsent",
+  },
+  {
+    label:
+      "(CONSENT) I provide my consent to organizers to send me latest updates via email with information related to their events and activities.",
+    value: "emailUpdatesConsent",
+  },
+  {
+    label: (
+      <p>
+        I agree to the general{" "}
+        <a className="text-blue-500" href="/terms-conditions">
+          Terms and conditions
+        </a>{" "}
+        and{" "}
+        <a className="text-blue-500" href="/privacy-policy">
+          Privacy policy
+        </a>
+        . of organizers.
+      </p>
+    ),
+    value: "generalTermsPrivacy",
+  },
+];
 
 export default function DelegateRegistration() {
   const [form] = Form.useForm();
@@ -106,7 +157,10 @@ export default function DelegateRegistration() {
       >
         <div className="flex flex-col md:flex-row w-full md:gap-2">
           {/* Delegate Pass */}
-          <Form.Item label="Enter Registration Code (If any)" className="md:w-1/2 font-bold">
+          <Form.Item
+            label="Enter Registration Code (If any)"
+            className="md:w-1/2 font-bold"
+          >
             <Input className="h-[40px]" />
           </Form.Item>
 
@@ -268,7 +322,9 @@ export default function DelegateRegistration() {
             className="md:w-1/2 font-bold"
             label="Country"
             name="country"
-            rules={[{ required: true, message: "Please enter your country name" }]}
+            rules={[
+              { required: true, message: "Please enter your country name" },
+            ]}
           >
             <Input className="h-[40px]" />
           </Form.Item>
@@ -563,14 +619,7 @@ export default function DelegateRegistration() {
           name="confirmation"
           label="Confirmation"
         >
-          <Checkbox.Group
-            options={[
-              " By filling up this form, I agree to the above terms and conditions. I officially and formally mark my acceptance to participate at the event.",
-              " I approve organizers to share the contact information and/or other details filled in this form with its sponsors/partners for marketing purposes.",
-              "(CONSENT) I provide my consent to organizers to send me latest updates via email with information related to their events and activities. purposes.",
-              "I agree to the general Terms and conditions and Privacy policy of organizers.",
-            ]}
-          />
+          <Checkbox.Group options={TPOptions} />
         </Form.Item>
 
         {/* Confirmation */}
