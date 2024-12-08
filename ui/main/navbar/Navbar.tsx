@@ -40,43 +40,24 @@ function Navbar() {
         <div className="w-[800px] h-full hidden md:flex flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             <a
-              href={
-                pathname === "/"
-                  ? "#about-us"
-                  : "/"
-              }
+              href={pathname === "/" ? "#about-us" : "/"}
               className="cursor-pointer text-sm"
             >
               ABOUT
             </a>
             <a
-              href={
-                pathname === "/"
-                  ? "#happening"
-                  : "/"
-              }
+              href={pathname === "/" ? "#happening" : "/"}
               className="cursor-pointer text-sm"
             >
               HAPPENINGS
             </a>
             <a
-              href={
-                pathname === "/"
-                  ? "#speakers"
-                  : "/"
-              }
+              href={pathname === "/" ? "#speakers" : "/"}
               className="cursor-pointer text-sm"
             >
               SPEAKERS
             </a>
-            <a
-              href={
-                pathname === "/"
-                  ? "#topics"
-                  : "/"
-              }
-              className="cursor-pointer text-sm"
-            >
+            <a href="/agenda" className="cursor-pointer text-sm">
               AGENDA
             </a>
             <a
