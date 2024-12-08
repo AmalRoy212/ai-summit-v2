@@ -3,6 +3,9 @@ import React from "react";
 const ProfileCard: React.FC<any> = ({ item, index }) => {
   return (
     <div
+      data-aos="fade-up"
+      data-aos-delay="200" // You can increase this delay for a slower start
+      data-aos-duration="1200" // Increase duration for a slower fade
       className="flex flex-col items-center w-full md:w-1/4 max-w-xs m-4 rounded-lg overflow-hidden relative h-[400px]"
       key={index}
     >
