@@ -57,7 +57,7 @@ function Navbar() {
             >
               SPEAKERS
             </a>
-            <a href="/agenda" className="cursor-pointer text-sm">
+            <a href="/agendas" className="cursor-pointer text-sm">
               AGENDA
             </a>
             <a
