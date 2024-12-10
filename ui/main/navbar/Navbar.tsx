@@ -20,16 +20,16 @@ function Navbar() {
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
         <a
           href="https://saudi.idasummit.com/"
-          className="h-auto w-auto flex flex-row items-center"
+          className="h-auto flex flex-row items-center"
         >
           <Image
             data-aos="flip-right"
             data-aos-duration={600}
-            src="/logo.png"
+            src="/images/logos/logo-bg.jpg"
             alt="logo"
             width={90}
             height={90}
-            className="cursor-pointer hover:animate-slowspin"
+            className="cursor-pointer hover:animate-slowspin rounded-lg"
           />
 
           {/* <span className="font-bold ml-[10px] hidden md:block text-gray-300">
@@ -37,36 +37,52 @@ function Navbar() {
           </span> */}
         </a>
 
-        <div className="w-[800px] h-full hidden md:flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
+        <div className="w-2/4 h-full hidden md:flex flex-row items-center justify-between">
+          <div className="flex items-center justify-between w-full h-auto mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             <a
               href={pathname === "/" ? "#about-us" : "/"}
-              className="cursor-pointer text-sm"
+              className="cursor-pointer text-xs"
             >
               ABOUT
             </a>
             <a
               href={pathname === "/" ? "#happening" : "/"}
-              className="cursor-pointer text-sm"
+              className="cursor-pointer text-xs"
             >
               HAPPENINGS
             </a>
             <a
               href={pathname === "/" ? "#speakers" : "/"}
-              className="cursor-pointer text-sm"
+              className="cursor-pointer text-xs"
             >
               SPEAKERS
             </a>
-            <a href="/agendas" className="cursor-pointer text-sm">
+            <a href="/agendas" className="cursor-pointer text-xs">
               AGENDA
             </a>
             <a
               href={pathname === "/" ? "#" : "/#"}
-              className="cursor-pointer text-sm"
+              className="cursor-pointer text-xs"
             >
               SPONSORS & PARTNERS
             </a>
           </div>
+        </div>
+        <div className="flex justify-center items-center h-full gap-3">
+          {/* <div className="flex-row flex justify-center items-center p-5 w-full z-[999] gap-4"> */}
+          <Link
+            href={"/sponsors"}
+            className="cursor-pointer  w-autp px-2 py-2 text-white shadow-md shadow-[#7042f861]/50 border rounded-xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 text-[10px] hover:from-cyan-500 hover:to-purple-500"
+          >
+            SPONSORS ENQUIRY
+          </Link>
+          <Link
+            href={"/speakers"}
+            className="cursor-pointer w-autp px-2 py-2 text-white shadow-md shadow-[#7042f861]/50 border rounded-xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 text-[10px] hover:from-cyan-500 hover:to-purple-500"
+          >
+            SPEAKERS ENQUIRY
+          </Link>
+          {/* </div> */}
         </div>
         {popup ? (
           <button

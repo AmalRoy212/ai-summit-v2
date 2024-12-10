@@ -62,7 +62,7 @@ const SponsorEnquiryForm: React.FC = () => {
 
   return (
     <div
-      className="flex justify-center items-center rounded-2xl"
+      className="flex justify-center items-center rounded-2xl md:w-2/3 w-full"
       style={{
         borderWidth: 1,
         backgroundImage: 'url("images/statics/delegate.jpg")',
@@ -214,8 +214,7 @@ const SponsorEnquiryForm: React.FC = () => {
             ]}
           >
             <Checkbox>
-              I agree to my contact details being shared with the event's
-              sponsors/partners.
+            I consent to my contact details being shared with the event's sponsors and partners. I understand that I may be contacted via email, phone call, or WhatsApp by Capstone or its affiliates for follow-up on my inquiry.
             </Checkbox>
           </Form.Item>
 
@@ -226,7 +225,7 @@ const SponsorEnquiryForm: React.FC = () => {
             rules={[{ required: true, message: "You must accept the terms" }]}
           >
             <Checkbox>
-              I agree to the Terms and Conditions and <a className="text-blue-800" href="/privacy-policy">Privacy Policy</a> .
+              I agree to the <a className="text-blue-800" href="/terms-conditions">Terms and Conditions</a> and <a className="text-blue-800" href="/privacy-policy">Privacy Policy</a> .
             </Checkbox>
           </Form.Item>
 
