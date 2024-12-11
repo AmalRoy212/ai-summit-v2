@@ -83,7 +83,7 @@ function TopicsProvide() {
   // ];
 
   return (
-    <div id="topics" className="mt-20">
+    <div id="topics" className="mt-20 bg-[#030621] py-10">
       <DetailHeading
         nanoHeading=""
         mainHeading="KEY TOPICS OF DISCUSSION"

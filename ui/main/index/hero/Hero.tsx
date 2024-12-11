@@ -75,7 +75,6 @@ function IndexHeader() {
         </p>
         <div className="w-full h-auto flex md:flex-row flex-col justify-center items-center md:px-10">
           <div
-            style={{ borderRight: "1px solid white" }}
             className="w-full md:w-1/3 h-full flex md:justify-end items-center md:p-5  justify-center"
           >
             <img
@@ -84,6 +83,7 @@ function IndexHeader() {
               // className="md:w-[250px]"
             />
           </div>
+          <div style={{ borderRight: "1px solid white", height:"60%" }}></div>
           {/* <EventName /> */}
           <img
             className="md:w-[500px] w-[400px]"

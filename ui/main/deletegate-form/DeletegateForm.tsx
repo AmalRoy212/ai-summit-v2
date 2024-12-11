@@ -23,7 +23,7 @@ const TPOptions: CheckboxOptionType[] = [
       <p>
         By filling up this form, I agree to the above{" "}
         <a className="text-blue-500" href="/terms-conditions">
-          terms and conditions
+          Terms and Conditions
         </a>
         . I officially and formally mark my acceptance to participate at the
         event.
