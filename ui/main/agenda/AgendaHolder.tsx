@@ -340,9 +340,8 @@ function AgendaHolder() {
         },
         {
           time: "12:00 PM – 12:30 PM",
-          header: "Philosophy of AI",
           title:
-            "Navigating Current Trends and Future Directions",
+            "Philosophy of AI:Navigating Current Trends and Future Directions",
           details: [
             "What does the philosophy of AI encompass?",
             "How do current trends in AI reflect its evolution toward more advanced and autonomous systems?",
@@ -355,9 +354,8 @@ function AgendaHolder() {
         },
         {
           time: "12:30 PM – 1:30 PM",
-          header: "Orchestrating Privacy at Scale",
           title:
-            "Unveiling Risks, Seizing Opportunities, and Tackling Challenges within Saudi Arabia's Personal Data Protection Landscape",
+            "Orchestrating Privacy at Scale:Unveiling Risks, Seizing Opportunities, and Tackling Challenges within Saudi Arabia's Personal Data Protection Landscape",
           details: [
             "How can organizations effectively scale their privacy management frameworks to align with Saudi Arabia’s Personal Data Protection Law?",
             "What are the key risks businesses face in ensuring compliance with privacy regulations, and how can they mitigate them?",
