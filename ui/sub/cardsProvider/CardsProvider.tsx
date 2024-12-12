@@ -10,7 +10,7 @@ import { PiVideoCameraFill } from "react-icons/pi";
 import { FaAvianex, FaStumbleuponCircle } from "react-icons/fa6";
 import { TbTruckDelivery, TbVacuumCleaner } from "react-icons/tb";
 import { IoMdConstruct } from "react-icons/io";
-import { MdAgriculture, MdCastForEducation } from "react-icons/md";
+import { MdAgriculture, MdCastForEducation, MdSportsBaseball } from "react-icons/md";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 
@@ -59,8 +59,8 @@ const itemsOne = [
     element: <FaStumbleuponCircle size={45} />,
   },
   {
-    title: "MEDIA",
-    element: <PiVideoCameraFill size={45} />,
+    title: "SPORTS",
+    element: <MdSportsBaseball size={45} />,
   },
   {
     title: "AVIATION",

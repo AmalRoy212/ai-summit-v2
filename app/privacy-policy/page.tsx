@@ -22,7 +22,7 @@ const Page: React.FC = () => {
         className="bg-black bg-opacity-60 w-full md:h-[400px] h-[300px] flex justify-center"
       >
         <div className="bg-black bg-opacity-60 w-full md:py-24 flex justify-center">
-          <Headers first="" middle="Privacy & " last="Policy" />
+          <Headers first="" middle="Privacy " last="Policy" />
         </div>
       </div>
 
