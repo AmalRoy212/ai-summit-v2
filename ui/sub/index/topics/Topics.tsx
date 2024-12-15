@@ -36,7 +36,7 @@ function Topics({ data, index }: Topic) {
       custom={index}
       transition={{ delay: index * animationDelay }}
       key={index}
-      className="relative w-full md:w-1/6 flex flex-col-reverse justify-center items-center border-gradient-blue-purple m-3 p-5 z-[20] rounded-full topic-card"
+      className="relative w-full md:w-1/6 flex flex-col-reverse justify-center items-center border-gradient-blue-purple m-3 p-5 z-[20] topic-card"
       style={{ height: "270px" }}
     >
       {/* Rotating Circle */}

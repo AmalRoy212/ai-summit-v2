@@ -25,10 +25,10 @@ function Navbar() {
           <Image
             data-aos="flip-right"
             data-aos-duration={600}
-            src="/images/logos/logo-bg.jpg"
+            src="/images/logos/logo.png"
             alt="logo"
-            width={90}
-            height={90}
+            width={120}
+            height={120}
             className="cursor-pointer hover:animate-slowspin rounded-lg"
           />
 
@@ -72,15 +72,15 @@ function Navbar() {
           {/* <div className="flex-row flex justify-center items-center p-5 w-full z-[999] gap-4"> */}
           <Link
             href={"/sponsors"}
-            className="cursor-pointer  w-autp px-2 py-2 text-white shadow-md shadow-[#7042f861]/50 border rounded-xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 text-[10px] hover:from-cyan-500 hover:to-purple-500"
+            className="md:flex hidden cursor-pointer  w-autp px-2 py-2 text-white shadow-md shadow-[#7042f861]/50 border rounded-xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 text-[10px] hover:from-cyan-500 hover:to-purple-500"
           >
             SPONSORS ENQUIRY
           </Link>
           <Link
-            href={"/speakers"}
-            className="cursor-pointer w-autp px-2 py-2 text-white shadow-md shadow-[#7042f861]/50 border rounded-xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 text-[10px] hover:from-cyan-500 hover:to-purple-500"
+            href={"/delegates"}
+            className="md:flex hidden cursor-pointer w-autp px-2 py-2 text-white shadow-md shadow-[#7042f861]/50 border rounded-xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 text-[10px] hover:from-cyan-500 hover:to-purple-500"
           >
-            SPEAKERS ENQUIRY
+            DELEGATES ENQUIRY
           </Link>
           {/* </div> */}
         </div>

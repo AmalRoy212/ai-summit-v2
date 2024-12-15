@@ -63,27 +63,30 @@ function IndexHeader() {
             alt="DITS Logo"
           />
         </span> */}
-        <p className="md:text-2xl flex gap-x-3 justify-center items-center md:flex-row flex-col">
+        <p className="flex gap-x-3 justify-center items-center md:flex-row flex-col mb-5">
           <span className="flex items-center gap-3">
-            <CiCalendarDate /> 28-29 April 2025
+            <span className="md:font-bold md:text-5xl flex gap-x-2 font-semibold text-2xl justify-center items-center">
+              <CiCalendarDate /> 28-29
+            </span>{" "}
+            April <br className="md:flex hidden" /> 2025
             {/* 7-8 MAY 2025 */}
           </span>
           <span className="flex items-center gap-3">
-            <FaLocationDot size={18} />
-            RIYADH, KINGDOM OF SAUDI ARABIA
+            <span className="font-bold text-4xl flex gap-x-2">
+              <FaLocationDot /> RIYADH,
+            </span>{" "}
+            KINGDOM OF <br /> SAUDI ARABIA
           </span>
         </p>
         <div className="w-full h-auto flex md:flex-row flex-col justify-center items-center md:px-10">
-          <div
-            className="w-full md:w-1/3 h-full flex md:justify-end items-center md:p-5  justify-center"
-          >
+          <div className="w-full md:w-1/3 h-full flex md:justify-end items-center md:p-5  justify-center">
             <img
               src="images/alts/Saudi.png"
               style={{ width: "250px", borderRadius: "10px" }}
               // className="md:w-[250px]"
             />
           </div>
-          <div style={{ borderRight: "1px solid white", height:"60%" }}></div>
+          <div style={{ borderRight: "1px solid white", height: "60%" }}></div>
           {/* <EventName /> */}
           <img
             className="md:w-[500px] w-[400px]"
@@ -92,9 +95,9 @@ function IndexHeader() {
           />
         </div>
         <div className="w-full flex justify-center flex-col items-center">
-          <h3 className="md:text-2xl px-10 md:px-0 text-center mt-2">
-            Creating a Digital Legacy: Data, AI & Automation at the Heart of
-            Vision 2030
+          <h3 className="md:text-xl font-semibold px-10 md:px-0 text-center mt-2">
+            CREATING A DIGITAL LEGACY - <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-cyan-200 text-3xl font-bold">DATA, AI & AUTOMATION</span> AT
+            THE HEART OF VISION 2030
             {/* <span className="mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
             </span> */}

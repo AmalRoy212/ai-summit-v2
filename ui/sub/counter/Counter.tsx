@@ -35,7 +35,7 @@ function Counter() {
   return (
     <div className="flex justify-center items-center w-full h-auto mt-3">
       {loading ? (
-        <div className="flex items-center justify-center w-1/3 h-[120px] bg-gradient-to-r from-purple-800 to-cyan-00 p-1 rounded-2xl">
+        <div className="flex items-center justify-center w-1/3 h-[120px] p-1 rounded-2xl gap-x-3">
           <ClipLoader color="#ffffff" loading={loading} size={20} />
           <div className="text-white">Loading...</div>
         </div>
@@ -49,7 +49,7 @@ function Counter() {
           ))}
         </div>
       ) : (
-        <div className="flex items-center justify-center w-full h-[120px] bg-gradient-to-r from-purple-800 to-cyan-00 p-1 rounded-2xl">
+        <div className="flex items-center justify-center w-full h-[120px] p-1 rounded-2xl">
           <h1 className="text-white text-[15px] border p-2">EVENT STARTED</h1>
         </div>
       )}

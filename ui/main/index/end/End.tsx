@@ -142,8 +142,11 @@ function End() {
               actionable insights, and unparalleled networking opportunities.
             </p>
             <div className="w-full flex justify-center">
-              <button onClick={() => router.push('/sponsors')} className="cursor-pointer  w-auto px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500">
-                Register now
+              <button
+                onClick={() => router.push("/sponsors")}
+                className="cursor-pointer  w-auto px-10 py-2 shadow-md shadow-[#7042f861]/50 border rounded-3xl border-[#7042f861] bg-gradient-to-r from-purple-500 to-cyan-500 mt-4 text-[10px] hover:from-cyan-500 hover:to-purple-500"
+              >
+                Enquire Now
               </button>
             </div>
           </div>

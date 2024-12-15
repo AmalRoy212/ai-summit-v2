@@ -7,20 +7,28 @@ import "slick-carousel/slick/slick-theme.css";
 const TechChampionsCarousel = () => {
   const champions = [
     {
-      name: "",
-      position: "",
+      name: "Ghadah Almalki",
+      position: "Data Director",
       position_two:
         "",
       organisation:
-        "",
+        "State Properties General Authority",
       bio: "",
-      image: "",
+      image: "/images/speakers/img6.png",
     },
     {
-      name: "",
-      position: "",
+      name: "Neeti Khatri",
+      position: "AVP Data & Insights",
+      organisation: "Public Investment Fund (PIF)",
       bio: "",
-      image: "",
+      image: "/images/speakers/speaker34.png",
+    },
+    {
+      name: "Manal AlNemari",
+      position: "Digital Technology Advisor",
+      organisation: "Ministry of Health",
+      bio: "",
+      image: "/images/speakers/speaker45.png",
     },
   ];
 

@@ -33,7 +33,7 @@ const Page: React.FC = () => {
           backgroundBlendMode: "overlay",
           backgroundColor: "rgba(0, 0, 0, 0.53)",
         }}
-        className="w-full bg-contain py-20 flex flex-col md:flex-row justify-center items-start min-h-screen"
+        className="w-full bg-contain py-20 flex justify-center items-start min-h-screen"
       >
        <AgendaHolder/>
       </div>

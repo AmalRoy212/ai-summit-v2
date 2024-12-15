@@ -17,7 +17,7 @@ function Session({ session, isLast }: any) {
       data-aos="fade-up"
       data-aos-delay="200" // You can increase this delay for a slower start
       data-aos-duration="1200" // Increase duration for a slower fade
-      className="flex items-start session-item"
+      className="flex md:flex-row flex-col items-start session-item"
     >
       <div
         className="max-w-[300px] min-w-[300px] flex justify-center items-center py-2 rounded-lg shadow-2xl
@@ -28,7 +28,7 @@ function Session({ session, isLast }: any) {
         {session?.header}
       </div>
       <div className="timeline mx-5">
-        <div className="h-4 w-4 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full"></div>
+        <div className="md:flex hidden h-4 w-4 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full"></div>
         {!isLast && <div className="line"></div>}
       </div>
       <div className="p-4 rounded-lg space-y-2 mb-4 flex-grow shadow-lg text-white">
