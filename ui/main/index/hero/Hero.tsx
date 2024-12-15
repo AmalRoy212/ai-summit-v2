@@ -96,8 +96,8 @@ function IndexHeader() {
         </div>
         <div className="w-full flex justify-center flex-col items-center">
           <h3 className="md:text-xl font-semibold px-10 md:px-0 text-center mt-2">
-            CREATING A DIGITAL LEGACY - <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-200 to-cyan-200 text-3xl font-bold">DATA, AI & AUTOMATION</span> AT
-            THE HEART OF VISION 2030
+            CREATING A DIGITAL LEGACY - DATA, AI & AUTOMATION AT THE HEART OF
+            VISION 2030
             {/* <span className="mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
             </span> */}
