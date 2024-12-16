@@ -115,7 +115,7 @@ const profiles = [
   {
     name: "DR. Louai Alarabi",
     title: "Chief Data Analytics Engineer",
-    company: "SITE",
+    company: "Confidential",
     organization: "OMAN",
     image: "/images/speakers/speaker36.png",
     linkedIn: "#",
