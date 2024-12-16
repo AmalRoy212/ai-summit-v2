@@ -8,11 +8,9 @@ const TechChampionsCarousel = () => {
   const champions = [
     {
       name: "Ghadah Almalki",
-      position: "Data Director",
-      position_two:
-        "",
-      organisation:
-        "State Properties General Authority",
+      position: "Director of Data & AI",
+      position_two: "",
+      organisation: "Confidential Government",
       bio: "",
       image: "/images/speakers/img6.png",
     },
@@ -74,8 +72,8 @@ const TechChampionsCarousel = () => {
         className="w-full h-[10vh] flex justify-center items-center z-[19]"
       >
         <h1 className=" `md:text-[28px] lg:text-[34px] text-[21px] text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-20">
-          Meet the Women Tech Leaders Shaping the Digital Future of the
-          Saudi Arabia
+          Meet the Women Tech Leaders Shaping the Digital Future of the Saudi
+          Arabia
         </h1>
       </div>
       <p className="text-center text-gray-300 mb-8 mt-8">

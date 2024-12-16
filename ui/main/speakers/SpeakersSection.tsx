@@ -30,8 +30,8 @@ const profiles = [
   },
   {
     name: "Ghadah Almalki",
-    title: "Data Director",
-    company: "State Properties General Authority",
+    title: "Director of Data & AI",
+    company: "Confidential Government",
     organization: "OMAN",
     image: "/images/speakers/img6.png", // Add correct paths to images
     linkedIn: "#", // Replace with actual LinkedIn profile links
