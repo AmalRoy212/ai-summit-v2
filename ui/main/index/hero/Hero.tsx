@@ -82,7 +82,7 @@ function IndexHeader() {
           <div className="w-full md:w-1/3 h-full flex md:justify-end items-center md:p-5  justify-center">
             <img
               src="images/alts/Saudi.png"
-              style={{ width: "250px", borderRadius: "10px" }}
+              style={{ width: "250px" }}
               // className="md:w-[250px]"
             />
           </div>
@@ -95,8 +95,8 @@ function IndexHeader() {
           />
         </div>
         <div className="w-full flex justify-center flex-col items-center">
-          <h3 className="md:text-xl font-semibold px-10 md:px-0 text-center mt-2">
-            CREATING A DIGITAL LEGACY - DATA, AI & AUTOMATION AT THE HEART OF
+          <h3 className="md:text-2xl font-semibold px-10 md:px-0 text-center mt-2">
+            CREATING A DIGITAL LEGACY : DATA, AI & AUTOMATION AT THE HEART OF
             VISION 2030
             {/* <span className="mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               {" "}
