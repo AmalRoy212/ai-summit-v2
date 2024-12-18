@@ -238,6 +238,24 @@ const profiles = [
     linkedIn: "#",
     marginTP: 0,
   },
+  {
+    name: "Dr. Fahad Almoqhim",
+    title: "Chief Information Officer",
+    company: "Saudi Accreditation Center",
+    organization: "OMAN",
+    image: "/images/speakers/speaker46.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Aamir Khalid Pirzada",
+    title: "Chief Information Officer",
+    company: "National Metal Manufacturing and Casting Company (Maadaniyah)",
+    organization: "OMAN",
+    image: "/images/speakers/speaker47.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
 ];
 
 // const profilesTwo = [
