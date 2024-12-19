@@ -256,6 +256,24 @@ const profiles = [
     linkedIn: "#",
     marginTP: 0,
   },
+  {
+    name: "Suzan Katamoura",
+    title: "Head of Data Management",
+    company: "King Abdullah City for Atomic and Renewable Energy (KACARE)",
+    organization: "OMAN",
+    image: "/images/speakers/speaker_plc.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Ruba Al Dhalaan",
+    title: "Director of Data Management & Statistics",
+    company: "King Saud Medical City (KSMC)",
+    organization: "OMAN",
+    image: "/images/speakers/speaker_plc.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
 ];
 
 // const profilesTwo = [
