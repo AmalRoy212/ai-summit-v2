@@ -67,7 +67,7 @@ const profiles = [
     marginTP: 0,
   },
   {
-    name: "Manal AlNemari",
+    name: "DR. Manal AlNemari",
     title: "Digital Technology Advisor",
     company: "Ministry of Health",
     com: "",
