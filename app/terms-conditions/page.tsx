@@ -1,5 +1,6 @@
 "use client";
 
+import FooterHolder from "@/ui/main/footer/FooterHolder";
 import TermsAndConditionsPage from "@/ui/main/terms-and-condtions/GeneralTerms";
 import Headers from "@/ui/sub/headers/Headers";
 import React, { useEffect } from "react";
@@ -36,6 +37,7 @@ const Page: React.FC = () => {
       >
         <TermsAndConditionsPage />
       </div>
+      <FooterHolder/>
     </div>
   );
 };

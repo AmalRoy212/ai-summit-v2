@@ -1,6 +1,7 @@
 "use client";
 
 import DelegateRegistration from "@/ui/main/deletegate-form/DeletegateForm";
+import FooterHolder from "@/ui/main/footer/FooterHolder";
 import Headers from "@/ui/sub/headers/Headers";
 import React, { useEffect } from "react";
 
@@ -64,6 +65,7 @@ const EventsPage: React.FC = () => {
           </Link>
         </div> */}
       </div>
+      <FooterHolder/>
     </div>
   );
 };

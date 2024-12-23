@@ -1,5 +1,6 @@
 "use client";
 
+import FooterHolder from "@/ui/main/footer/FooterHolder";
 import PrivacyPage from "@/ui/main/privacy-policy/PrivacyPage";
 import Headers from "@/ui/sub/headers/Headers";
 import React, { useEffect } from "react";
@@ -37,6 +38,7 @@ const Page: React.FC = () => {
       >
        <PrivacyPage/>
       </div>
+      <FooterHolder/>
     </div>
   );
 };

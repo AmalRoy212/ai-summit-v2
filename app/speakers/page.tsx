@@ -1,5 +1,6 @@
 "use client";
 
+import FooterHolder from "@/ui/main/footer/FooterHolder";
 import SpeakersEnquiryForm from "@/ui/main/speakers-form/SpeakersForm";
 import Headers from "@/ui/sub/headers/Headers";
 import React, { useEffect } from "react";
@@ -38,6 +39,7 @@ const sponsorsPage: React.FC = () => {
       >
         <SpeakersEnquiryForm/>
       </div>
+      <FooterHolder/>
     </div>
   );
 };
