@@ -274,6 +274,15 @@ const profiles = [
     linkedIn: "#",
     marginTP: 0,
   },
+  {
+    name: "Mansour Al Dammas",
+    title: "Chief Information Officer",
+    company: "King Khaled Eye Specialist Hospital (KKESH)",
+    organization: "OMAN",
+    image: "/images/speakers/speaker48.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
 ];
 
 // const profilesTwo = [
@@ -305,7 +314,6 @@ const profiles = [
 //     marginTP: 0,
 //   },
 // ];
-
 
 const SpeakerProfiles: React.FC = () => {
   useEffect(() => {
