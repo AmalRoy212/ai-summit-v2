@@ -283,6 +283,15 @@ const profiles = [
     linkedIn: "#",
     marginTP: 0,
   },
+  {
+    name: "Sarah Koshak",
+    title: "Data Expert",
+    company: "General Authority For Statistics",
+    organization: "OMAN",
+    image: "/images/speakers/speaker49.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
 ];
 
 // const profilesTwo = [
