@@ -42,6 +42,12 @@ const TechChampionsCarousel = () => {
         A passionate advocate for empowering women in technology, Suzan has represented Saudi Arabia at numerous international forums. She is dedicated to fostering diversity and innovation, inspiring the next generation of women leaders in intelligent data and automation.
         `,
       image: "/images/speakers/speaker_plc.png",
+    },  {
+      name: "Ruba Al Dhalaan",
+      position: "Director of Data Management & Statistics",
+      organisation: "King Saud Medical City (KSMC)",
+      bio: "",
+      image: "/images/speakers/speaker_plc.png",
     },
     {
       name: "Sarah Koshak",
