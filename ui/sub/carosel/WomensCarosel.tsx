@@ -44,17 +44,6 @@ const TechChampionsCarousel = () => {
       image: "/images/speakers/speaker_plc.png",
     },
     {
-      name: "Suzan Katamoura",
-      position: "Head of Data Management",
-      organisation:
-        "King Abdullah City for Atomic and Renewable Energy (KACARE)",
-      bio: `Suzan Katamoura is the Head of the Data Management Office at King Abdullah City for Atomic and Renewable Energy (K.A.CARE), where she leads strategic initiatives in data management and governance, fostering collaboration with both national and international stakeholders. With over a decade of experience in data science spanning measurement, analysis, quality, and automation—she has made significant contributions to transformative projects such as the Saudi Arabia Renewable Resource Atlas and the Uranium Program. Her diverse career includes impactful roles in academia, healthcare, and the energy sector.
-        Suzan holds a bachelor’s degree in computer science from Effat University and a master’s degree in computer science from King Abdullah University of Science and Technology (KAUST). She is currently pursuing a Ph.D. in Data Science at King Saud University.
-        A passionate advocate for empowering women in technology, Suzan has represented Saudi Arabia at numerous international forums. She is dedicated to fostering diversity and innovation, inspiring the next generation of women leaders in intelligent data and automation.
-        `,
-      image: "/images/speakers/speaker_plc.png",
-    },
-    {
       name: "Sarah Koshak",
       position: "Data Expert",
       organisation: "General Authority For Statistics",
