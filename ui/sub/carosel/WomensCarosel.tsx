@@ -26,8 +26,50 @@ const TechChampionsCarousel = () => {
       name: "Manal AlNemari",
       position: "Digital Technology Advisor",
       organisation: "Ministry of Health",
-      bio: "",
+      bio: `Manal Mansour Al Nemari is a visionary leader in digital health transformation, Manal Mansour Al Nemari has nearly two decades of experience driving healthcare innovation. A recognized Women Leader 2030 honoree, she has pioneered projects such as the Middle East’s first centralized robotic system and managed initiatives with budgets exceeding 33 million riyals.
+        Currently pursuing an Executive MBA at Prince Mohammed Bin Salman College, Manal blends her technical expertise with strategic business insights, focusing on entrepreneurship and leadership in healthcare. Her leadership spans digital transformation, AI integration, and robotic technology to improve patient outcomes and healthcare efficiency. Notable projects include the NPHIES Project, enhancing patient data accessibility across Saudi Arabia, and the Telehealth Initiative for SEHA Virtual Hospital, expanding critical care via telemedicine.
+        Manal has received multiple awards for excellence in pharmacy automation and innovation and frequently shares her thought leadership as a speaker at top industry conferences.
+        `,
       image: "/images/speakers/speaker45.png",
+    },
+    {
+      name: "Suzan Katamoura",
+      position: "Head of Data Management",
+      organisation:
+        "King Abdullah City for Atomic and Renewable Energy (KACARE)",
+      bio: `Suzan Katamoura is the Head of the Data Management Office at King Abdullah City for Atomic and Renewable Energy (K.A.CARE), where she leads strategic initiatives in data management and governance, fostering collaboration with both national and international stakeholders. With over a decade of experience in data science spanning measurement, analysis, quality, and automation—she has made significant contributions to transformative projects such as the Saudi Arabia Renewable Resource Atlas and the Uranium Program. Her diverse career includes impactful roles in academia, healthcare, and the energy sector.
+        Suzan holds a bachelor’s degree in computer science from Effat University and a master’s degree in computer science from King Abdullah University of Science and Technology (KAUST). She is currently pursuing a Ph.D. in Data Science at King Saud University.
+        A passionate advocate for empowering women in technology, Suzan has represented Saudi Arabia at numerous international forums. She is dedicated to fostering diversity and innovation, inspiring the next generation of women leaders in intelligent data and automation.
+        `,
+      image: "/images/speakers/speaker_plc.png",
+    },
+    {
+      name: "Suzan Katamoura",
+      position: "Head of Data Management",
+      organisation:
+        "King Abdullah City for Atomic and Renewable Energy (KACARE)",
+      bio: `Suzan Katamoura is the Head of the Data Management Office at King Abdullah City for Atomic and Renewable Energy (K.A.CARE), where she leads strategic initiatives in data management and governance, fostering collaboration with both national and international stakeholders. With over a decade of experience in data science spanning measurement, analysis, quality, and automation—she has made significant contributions to transformative projects such as the Saudi Arabia Renewable Resource Atlas and the Uranium Program. Her diverse career includes impactful roles in academia, healthcare, and the energy sector.
+        Suzan holds a bachelor’s degree in computer science from Effat University and a master’s degree in computer science from King Abdullah University of Science and Technology (KAUST). She is currently pursuing a Ph.D. in Data Science at King Saud University.
+        A passionate advocate for empowering women in technology, Suzan has represented Saudi Arabia at numerous international forums. She is dedicated to fostering diversity and innovation, inspiring the next generation of women leaders in intelligent data and automation.
+        `,
+      image: "/images/speakers/speaker_plc.png",
+    },
+    {
+      name: "Sarah Koshak",
+      position: "Data Expert",
+      organisation: "General Authority For Statistics",
+      bio: `Sarah Koshak is an experienced Senior Data Manager with over 10 years of expertise in data analytics and business optimization. Holding an MBA, she excels in translating complex data into actionable insights and driving business growth through data-driven strategies. Sarah has a proven track record of leading cross-functional teams and collaborating with key stakeholders to identify KPIs and align strategies with organizational goals.
+        Notable achievements include leading the innovative API project at the Royal Commission for Riyadh City (RCRC), enabling data access within the SDAIA framework and contributing to the comprehensive job forecast for Riyadh city by 2030. She also directed the establishment of the Open Innovation sector, utilizing open data to address social challenges in Riyadh.
+        With expertise in statistical analysis, data modeling, and machine learning, Sarah is proficient in data governance, open data policy development, and managing data models, architectures, and ETL processes. Her collaborative approach and strategic mindset have consistently driven transformative outcomes.
+        `,
+      image: "/images/speakers/speaker49.png",
+    },
+    {
+      name: "ENG. DAUAA SHALABI",
+      position: " Digital Transformation Advisor",
+      organisation: " Ministry of Transport and Logistic Services",
+      bio: "",
+      image: "/images/speakers/speaker51.png",
     },
   ];
 
