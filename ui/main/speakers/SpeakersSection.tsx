@@ -310,6 +310,15 @@ const profiles = [
     linkedIn: "#",
     marginTP: 0,
   },
+  {
+    name: "Mohammed Khalid",
+    title: "Group Chief Information & Digital Officer",
+    company: "Al Bassami International Business Group Co.",
+    organization: "OMAN",
+    image: "/images/speakers/speaker53.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
 ];
 
 // const profilesTwo = [

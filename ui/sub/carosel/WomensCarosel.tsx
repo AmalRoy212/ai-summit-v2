@@ -23,7 +23,7 @@ const TechChampionsCarousel = () => {
       image: "/images/speakers/speaker34.png",
     },
     {
-      name: "Manal AlNemari",
+      name: "DR. Manal AlNemari",
       position: "Digital Technology Advisor",
       organisation: "Ministry of Health",
       bio: `Manal Mansour Al Nemari is a visionary leader in digital health transformation, Manal Mansour Al Nemari has nearly two decades of experience driving healthcare innovation. A recognized Women Leader 2030 honoree, she has pioneered projects such as the Middle East’s first centralized robotic system and managed initiatives with budgets exceeding 33 million riyals.
