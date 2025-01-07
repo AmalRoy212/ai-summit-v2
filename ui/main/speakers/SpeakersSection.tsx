@@ -304,9 +304,9 @@ const profiles = [
   {
     name: "ENG. DAUAA SHALABI",
     title: " Digital Transformation Advisor",
-    company: " Ministry of Transport and Logistic Services",
+    company: "Confidential Government",
     organization: "OMAN",
-    image: "/images/speakers/speaker51.png",
+    image: "/images/speakers/speaker52.png",
     linkedIn: "#",
     marginTP: 0,
   },

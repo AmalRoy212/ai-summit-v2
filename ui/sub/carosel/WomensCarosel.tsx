@@ -42,7 +42,8 @@ const TechChampionsCarousel = () => {
         A passionate advocate for empowering women in technology, Suzan has represented Saudi Arabia at numerous international forums. She is dedicated to fostering diversity and innovation, inspiring the next generation of women leaders in intelligent data and automation.
         `,
       image: "/images/speakers/speaker_plc.png",
-    },  {
+    },
+    {
       name: "Ruba Al Dhalaan",
       position: "Director of Data Management & Statistics",
       organisation: "King Saud Medical City (KSMC)",
@@ -62,9 +63,9 @@ const TechChampionsCarousel = () => {
     {
       name: "ENG. DAUAA SHALABI",
       position: " Digital Transformation Advisor",
-      organisation: " Ministry of Transport and Logistic Services",
-      bio: "",
-      image: "/images/speakers/speaker51.png",
+      organisation: "Confidential Government",
+      bio: "With over 18 years of experience, Dauaa is a seasoned technology leader with deep expertise in AI, Data Science, and emerging technologies. Holding two Master's degrees, she has consistently led the implementation of cutting-edge solutions across multiple sectors. Dauaa is also a passionate advocate for women in STEM, frequently sharing her knowledge and insights through publications and on various online platforms. Her commitment to driving innovation and empowering others is at the core of her work.",
+      image: "/images/speakers/speaker52.png",
     },
   ];
 
