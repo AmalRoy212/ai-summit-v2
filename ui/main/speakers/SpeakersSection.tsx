@@ -11,6 +11,15 @@ import NewProfileCard from "@/ui/sub/index/speakers/NewSpeaker";
 // Profile data array
 const profiles = [
   {
+    name: "Dr.Khaled Alqahtani",
+    title: "Executive Director of Data & Statistics",
+    company: "NEOM",
+    organization: "OMAN",
+    image: "/images/speakers/speaker54.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
     name: "Ismail A. Almakrami",
     title: "Vice President of Data Management",
     company: "Emkan Finance",
