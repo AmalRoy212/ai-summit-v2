@@ -27,7 +27,7 @@ function Occation() {
     {
       amount: "14",
       description:
-        "regulations and policies related to data and AI published by SDAIA.",
+        "Regulations and policies related to data and AI published by SDAIA.",
       source: "SDAIA",
       year: "2024",
     },
@@ -47,35 +47,35 @@ function Occation() {
     {
       amount: "75%",
       description:
-        "of the Saudi population is knowledgeable about AI's concept, and 64% knowledgeable about AI use cases and their applications.",
+        "Of the Saudi population is knowledgeable about AI's concept, and 64% knowledgeable about AI use cases and their applications.",
       source: "SDAIA Public Awareness Survey",
       year: "2024",
     },
     {
       amount: "320+",
       description:
-        "government systems integrated in NDB National Data Lake, resulting in 100TB+ of total stored data volume provided by 60+ government entities.",
+        "Government systems integrated in NDB National Data Lake, resulting in 100TB+ of total stored data volume provided by 60+ government entities.",
       source: "SDAIA",
       year: "2024",
     },
     {
       amount: "8.7K+",
       description:
-        "datasets hosted in the NDB Open Data Platform from 249+ government and private entities.",
+        "Datasets hosted in the NDB Open Data Platform from 249+ government and private entities.",
       source: "SDAIA",
       year: "2024",
     },
     {
       amount: "39%",
       description:
-        "of Saudi government entities are using or experimenting with AI.",
+        "Of Saudi government entities are using or experimenting with AI.",
       source: "SDAIA Readiness & Adoption Survey",
       year: "2024",
     },
     {
       amount: "81%",
       description:
-        "of Saudi government entities using or experimenting AI reported that AI has significantly enhanced their service delivery.",
+        "Of Saudi government entities using or experimenting AI reported that AI has significantly enhanced their service delivery.",
       source: "SDAIA Readiness & Adoption Survey",
       year: "2024",
     },
@@ -95,35 +95,35 @@ function Occation() {
     {
       amount: "1st",
       description:
-        "place globally in the pillar of government strategy for AI.",
+        "Place globally in the pillar of government strategy for AI.",
       source: "The Global AI Index - Tortoise",
       year: "2023",
     },
     {
       amount: "2nd",
       description:
-        "place in MENA government readiness for AI implementation in public services delivery.",
+        "Place in MENA government readiness for AI implementation in public services delivery.",
       source: "Oxford AI Readiness Index",
       year: "2023",
     },
     {
       amount: "Full Score",
       description:
-        "in open government data along with 10 other countries—out of 193 countries—by United Nations.",
+        "In open government data along with 10 other countries—out of 193 countries—by United Nations.",
       source: "OGDI",
       year: "2022",
     },
     {
       amount: "2nd",
       description:
-        "place globally in terms of positivity and optimism towards AI products and services.",
+        "Place globally in terms of positivity and optimism towards AI products and services.",
       source: "Stanford AI Index",
       year: "2023",
     },
     {
       amount: "5th",
       description:
-        "of Saudi Arabia's cities are among the top 100 smart cities around the world.",
+        "Of Saudi Arabia's cities are among the top 100 smart cities around the world.",
       source: "IMD Smart City Index",
       year: "2024",
     },
@@ -168,7 +168,10 @@ function Occation() {
           </div>
         </motion.div>
       </div>
-
+      <h1 className="text-5xl font-bold text-center bg-gradient-to-r from-purple-500 to-cyan-500 bg-clip-text text-transparent py-8">
+        OVERVIEW
+      </h1>
+      <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-fill-transparent"></div>
       <p className="text-white md:px-20 px-4 text-base text-center">
         Saudi Arabia, under its transformative Vision 2030, is rapidly
         positioning itself as a global leader in artificial intelligence (AI) by
@@ -191,7 +194,7 @@ function Occation() {
         harness AI to enhance economic performance, increase productivity, and
         improve the quality of life for its citizens.{" "}
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4 md:px-10">
         {fundData.map((data, index) => (
           <FundBox
             key={index}
