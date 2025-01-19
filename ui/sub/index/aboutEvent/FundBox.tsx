@@ -9,10 +9,10 @@ interface FundBoxProps {
 
 const FundBox: React.FC<FundBoxProps> = ({ amount, description, source, year }) => {
     return (
-        <div className="bg-purple-500 text-white p-6 rounded-lg shadow-lg">
-            <p className="text-6xl">{amount}</p>
-            <p>{description}</p>
-            <p className="text-sm opacity-75">{source}, {year}</p>
+        <div className=" text-white p-6 rounded-lg shadow-lg">
+            <p className="bg-gradient-to-r from-purple-500 to-cyan-500 text-4xl p-2 rounded-xl">{amount}</p>
+            <p className='px-2 '>{description}</p>
+            <p className="text-sm opacity-75 px-2">{source}, {year}</p>
         </div>
     );
 };
