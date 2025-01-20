@@ -205,7 +205,7 @@ function Occation() {
           />
         ))}
       </div>
-      <div className="w-full flex flex-row py-5 px-10">
+      <div className="w-full flex flex-col md:flex-row py-5 px-10">
         <div className="w-1/5 flex justify-center flex-col items-center">
           <h1 className="text-white text-tick text-6xl">
             25<span className="text-3xl">th</span>
