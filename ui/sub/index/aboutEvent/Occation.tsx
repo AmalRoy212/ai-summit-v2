@@ -121,7 +121,7 @@ function Occation() {
       year: "2023",
     },
     {
-      amount: "5th",
+      amount: "5",
       description:
         "Of Saudi Arabia's cities are among the top 100 smart cities around the world.",
       source: "IMD Smart City Index",
@@ -204,6 +204,43 @@ function Occation() {
             year={data.year}
           />
         ))}
+      </div>
+      <div className="w-full flex flex-row py-5 px-10">
+        <div className="w-1/5 flex justify-center flex-col items-center">
+          <h1 className="text-white text-tick text-6xl">
+            25<span className="text-3xl">th</span>
+          </h1>
+          <div className="bg-gradient-to-r from-purple-500 to-cyan-500 h-[5px] w-1/3 mb-2 rounded-2xl"></div>
+          <p className="text-white text-tick">Riyadh</p>
+        </div>
+        <div className="w-1/5 flex justify-center flex-col items-center">
+          <h1 className="text-white text-tick text-6xl">
+            52<span className="text-3xl">ND</span>
+          </h1>
+          <div className="bg-gradient-to-r from-purple-500 to-cyan-500 h-[5px] w-1/3 mb-2 rounded-2xl"></div>
+          <p className="text-white text-tick">Makkah</p>
+        </div>
+        <div className="w-1/5 flex justify-center flex-col items-center">
+          <h1 className="text-white text-tick text-6xl">
+            55<span className="text-3xl">th</span>
+          </h1>
+          <div className="bg-gradient-to-r from-purple-500 to-cyan-500 h-[5px] w-1/3 mb-2 rounded-2xl"></div>
+          <p className="text-white text-tick">Jeddah</p>
+        </div>
+        <div className="w-1/5 flex justify-center flex-col items-center">
+          <h1 className="text-white text-tick text-6xl">
+            77<span className="text-3xl">th</span>
+          </h1>
+          <div className="bg-gradient-to-r from-purple-500 to-cyan-500 h-[5px] w-1/3 mb-2 rounded-2xl"></div>
+          <p className="text-white text-tick">Medina</p>
+        </div>
+        <div className="w-1/5 flex justify-center flex-col items-center">
+          <h1 className="text-white text-tick text-6xl">
+            99<span className="text-3xl">th</span>
+          </h1>
+          <div className="bg-gradient-to-r from-purple-500 to-cyan-500 h-[5px] w-1/3 mb-2 rounded-2xl"></div>
+          <p className="text-white text-tick">Al-Khobar</p>
+        </div>
       </div>
     </div>
   );

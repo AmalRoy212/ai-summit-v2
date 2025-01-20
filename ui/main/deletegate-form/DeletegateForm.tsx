@@ -14,6 +14,7 @@ import {
 } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 import { validateEmail } from "@/utils/emailValidator";
+import sendNotificationMail from "@/utils/emailjs";
 
 const { Option } = Select;
 
@@ -29,7 +30,7 @@ const TPOptions: CheckboxOptionType[] = [
         event.
       </p>
     ),
-    value: "terms1", // Each option needs a unique value
+    value: "terms1",
   },
   {
     label:
@@ -66,31 +67,26 @@ export default function DelegateRegistration() {
   const onFinish = async (values: any) => {
     setLoading(true);
 
-    // Check if nomination field is empty and set a default value
     if (!values.nomination) {
       values.nomination = "nomination not added";
     }
 
-    // Check if the first letter is already capital, if not, capitalize it
     const ensureFirstLetterCapitalized = (name: string) => {
-      if (!name) return name; // Return if name is undefined or null
-      // If the first letter is not uppercase, capitalize it
+      if (!name) return name;
       if (name.charAt(0) !== name.charAt(0).toUpperCase()) {
         return name.charAt(0).toUpperCase() + name.slice(1);
       }
-      return name; // Return unchanged if already capitalized
+      return name;
     };
 
     if (values.title) {
       values.title = ensureFirstLetterCapitalized(values.title);
     }
 
-    // Ensure first letter of firstName is capitalized
     if (values.firstName) {
       values.firstName = ensureFirstLetterCapitalized(values.firstName);
     }
 
-    // Ensure first letter of lastName is capitalized
     if (values.lastName) {
       values.lastName = ensureFirstLetterCapitalized(values.lastName);
     }
@@ -101,37 +97,39 @@ export default function DelegateRegistration() {
       values.jobTitle = ensureFirstLetterCapitalized(values.jobTitle);
     }
 
-    // Combine firstName and lastName into fullName
     if (values.firstName && values.lastName) {
       values.fullName = `${values.firstName} ${values.lastName}`;
     }
 
+    const emailParams = {
+      firstName: values.firstName,
+      email: values.email,
+      type: "Delegate",
+      link: "https://docs.google.com/spreadsheets/d/1Xh6Km0TuWxBFU9qncjK8Zfl32xRXH4rjEoAEBN72_ug/edit?gid=0#gid=0",
+    };
+
     try {
-      // Make a POST request to the API
       const response = await fetch("/api/delegates/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(values), // Convert form values to JSON string
+        body: JSON.stringify(values),
       });
 
-      // Check if the request was successful
+      await sendNotificationMail(emailParams);
+
       if (response.ok) {
-        await response.json();
         message.success(
           "Thank you for registering. Please consider this message as confirmation of your registration. Our event steering committee will review your submission, and you will receive an official confirmation email within the next 48 hours.!"
         );
+
         form.resetFields();
-        // You can display a success message or handle it as needed
       } else {
-        const error = await response.json();
         message.error("Error happend while saving your request");
-        // You can display an error message or handle it as needed
       }
     } catch (error) {
       console.error("Request failed:", error);
-      // Handle network or request errors
     }
     setLoading(false);
   };
@@ -156,7 +154,6 @@ export default function DelegateRegistration() {
         autoComplete="off"
       >
         <div className="flex flex-col md:flex-row w-full md:gap-2">
-          {/* Delegate Pass */}
           <Form.Item
             label="Enter Registration Code (If any)"
             className="md:w-1/2 font-bold"
@@ -164,7 +161,6 @@ export default function DelegateRegistration() {
             <Input className="h-[40px]" />
           </Form.Item>
 
-          {/* Title, First Name, Last Name */}
           <Form.Item
             className="md:w-1/2 font-bold"
             label="Title"
@@ -205,7 +201,6 @@ export default function DelegateRegistration() {
         </div>
 
         <div className="flex flex-col md:flex-row w-full md:gap-2">
-          {/* Job Title, Company Name */}
           <Form.Item
             className="md:w-1/2 font-bold"
             label="Job Title"
@@ -230,7 +225,6 @@ export default function DelegateRegistration() {
         </div>
 
         <div className="flex flex-col md:flex-row w-full md:gap-2">
-          {/* Email, Mobile */}
           <Form.Item
             className="md:w-1/2 font-bold"
             label="Email"
@@ -240,11 +234,11 @@ export default function DelegateRegistration() {
               { type: "email", message: "Please enter a valid email!" },
               {
                 validator: (_, value) => {
-                  const validationResult = validateEmail(value); // Call validateEmail
+                  const validationResult = validateEmail(value);
                   if (validationResult) {
-                    return Promise.reject(new Error(validationResult)); // If there is an error message, reject the promise
+                    return Promise.reject(new Error(validationResult));
                   }
-                  return Promise.resolve(); // Otherwise, resolve the promise
+                  return Promise.resolve();
                 },
               },
             ]}
@@ -261,7 +255,7 @@ export default function DelegateRegistration() {
               {
                 validator: (_, value) => {
                   if (!value || /^[0-9]*$/.test(value)) {
-                    return Promise.resolve(); // valid input, resolve the promise
+                    return Promise.resolve();
                   }
                   return Promise.reject(
                     new Error("Mobile number must contain only numbers!")
@@ -275,7 +269,7 @@ export default function DelegateRegistration() {
               onChange={(e) => {
                 const { value } = e.target;
                 if (!/^[0-9]*$/.test(value)) {
-                  e.target.value = value.replace(/\D/g, ""); // Remove any non-digit characters
+                  e.target.value = value.replace(/\D/g, "");
                 }
               }}
             />
@@ -283,7 +277,6 @@ export default function DelegateRegistration() {
         </div>
 
         <div className="flex flex-col md:flex-row w-full md:gap-2">
-          {/* Industry, Country */}
           <Form.Item
             className="md:w-1/2 font-bold"
             label="Industry"
@@ -331,7 +324,6 @@ export default function DelegateRegistration() {
         </div>
 
         <div className="flex flex-col md:flex-row w-full md:gap-2">
-          {/* Number of employ, Solution */}
           <Form.Item
             className="md:w-1/2 font-bold"
             label="What is your role/authority while dealing with solution providers for your organisation? *"

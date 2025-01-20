@@ -11,6 +11,7 @@ import {
 } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 import { validateEmail } from "@/utils/emailValidator";
+import sendNotificationMail from "@/utils/emailjs";
 
 const { Option } = Select;
 
@@ -32,6 +33,12 @@ const SponsorEnquiryForm: React.FC = () => {
 
   // Handle form submission using fetch API
   const onFinish = async (values: SponsorFormValues) => {
+    const emailParams = {
+      firstName: values.firstName,
+      email: values.email,
+      type: "Sponsors",
+      link: "https://docs.google.com/spreadsheets/d/11JRCjubmZuv0jinMG-yFG-gnjxPU28J1Bz5Py3nWWO4/edit?gid=0#gid=0",
+    };
     try {
       const response = await fetch("/api/sponsors/register", {
         method: "POST",
@@ -40,6 +47,8 @@ const SponsorEnquiryForm: React.FC = () => {
         },
         body: JSON.stringify(values),
       });
+
+      await sendNotificationMail(emailParams);
 
       if (response.ok) {
         message.success("Form submitted successfully!");
@@ -214,7 +223,10 @@ const SponsorEnquiryForm: React.FC = () => {
             ]}
           >
             <Checkbox>
-            I consent to my contact details being shared with the event's sponsors and partners. I understand that I may be contacted via email, phone call, or WhatsApp by Capstone or its affiliates for follow-up on my inquiry.
+              I consent to my contact details being shared with the event's
+              sponsors and partners. I understand that I may be contacted via
+              email, phone call, or WhatsApp by Capstone or its affiliates for
+              follow-up on my inquiry.
             </Checkbox>
           </Form.Item>
 
@@ -225,7 +237,15 @@ const SponsorEnquiryForm: React.FC = () => {
             rules={[{ required: true, message: "You must accept the terms" }]}
           >
             <Checkbox>
-              I agree to the <a className="text-blue-800" href="/terms-conditions">Terms and Conditions</a> and <a className="text-blue-800" href="/privacy-policy">Privacy Policy</a> .
+              I agree to the{" "}
+              <a className="text-blue-800" href="/terms-conditions">
+                Terms and Conditions
+              </a>{" "}
+              and{" "}
+              <a className="text-blue-800" href="/privacy-policy">
+                Privacy Policy
+              </a>{" "}
+              .
             </Checkbox>
           </Form.Item>
 

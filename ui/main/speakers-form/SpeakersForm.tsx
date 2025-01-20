@@ -3,6 +3,7 @@ import { Form, Input, Button, Select, Checkbox, message, Spin } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 import { validateEmail } from "@/utils/emailValidator";
 import Uploader from "@/ui/sub/uploader/Uploader";
+import sendNotificationMail from "@/utils/emailjs";
 
 const { Option } = Select;
 
@@ -12,25 +13,31 @@ type SponsorFormValues = {
   jobTitle: string;
   companyName: string;
   email: string;
-  mobile: string; // This should match the form field
+  mobile: string; 
   directLine: string;
-  city?: string; // City is optional in the form, so it should be marked as optional
+  city?: string; 
   country: string;
   industry: string;
-  twitter?: string; // Optional in the form
-  linkedin?: string; // Optional in the form
-  professionalBio?: string; // Optional in the form
+  twitter?: string; 
+  linkedin?: string;
+  professionalBio?: string;
   consent: boolean;
   terms: boolean;
 };
 
 const SpeakersEnquiryForm: React.FC = () => {
-  const [form] = Form.useForm(); // Ant Design's useForm hook
+  const [form] = Form.useForm(); 
   const [loading, setLoading] = useState<boolean>(false);
 
   // Handle form submission using fetch API
   const onFinish = async (values: SponsorFormValues) => {
     setLoading(true);
+    const emailParams = {
+      firstName: values.firstName,
+      email: values.email,
+      type: "Speaker",
+      link: "https://docs.google.com/spreadsheets/d/1EbmerRH4oa82icZldCDVr903_HFNbx_6N0Wt0wk1QgE/edit?gid=0#gid=0",
+    };
     try {
       const response = await fetch("/api/speakers/register", {
         method: "POST",
@@ -39,6 +46,8 @@ const SpeakersEnquiryForm: React.FC = () => {
         },
         body: JSON.stringify(values),
       });
+
+      await sendNotificationMail(emailParams);
 
       if (response.ok) {
         message.success("Form submitted successfully!");
