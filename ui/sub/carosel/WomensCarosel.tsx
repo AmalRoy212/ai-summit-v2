@@ -14,14 +14,14 @@ const TechChampionsCarousel = () => {
     //   bio: "",
     //   image: "/images/speakers/img6.png",
     // },
-    {
-      name: "Neeti Khatri",
-      position: "AVP Data & Insights",
-      position_two: "",
-      organisation: "Public Investment Fund (PIF)",
-      bio: "",
-      image: "/images/speakers/speaker34.png",
-    },
+    // {
+    //   name: "Neeti Khatri",
+    //   position: "AVP Data & Insights",
+    //   position_two: "",
+    //   organisation: "Public Investment Fund (PIF)",
+    //   bio: "",
+    //   image: "/images/speakers/speaker34.png",
+    // },
     {
       name: "DR. Manal AlNemari",
       position: "Digital Technology Advisor",
@@ -143,9 +143,9 @@ const TechChampionsCarousel = () => {
                   {champion.name || "Coming Soon"}
                 </h3>
                 <p className="text-gray-400 text-sm">{champion.position}</p>
-                <p className="text-gray-400 text-sm">
+                {/* <p className="text-gray-400 text-sm">
                   {champion?.position_two}
-                </p>
+                </p> */}
                 <p className="text-gray-400 text-sm">
                   {champion?.organisation}
                 </p>
