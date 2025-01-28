@@ -50,16 +50,16 @@ const TechChampionsCarousel = () => {
       bio: "",
       image: "/images/speakers/speaker_plc.png",
     },
-    {
-      name: "Sarah Koshak",
-      position: "Data Expert",
-      organisation: "General Authority For Statistics",
-      bio: `Sarah Koshak is an experienced Senior Data Manager with over 10 years of expertise in data analytics and business optimization. Holding an MBA, she excels in translating complex data into actionable insights and driving business growth through data-driven strategies. Sarah has a proven track record of leading cross-functional teams and collaborating with key stakeholders to identify KPIs and align strategies with organizational goals.
-        Notable achievements include leading the innovative API project at the Royal Commission for Riyadh City (RCRC), enabling data access within the SDAIA framework and contributing to the comprehensive job forecast for Riyadh city by 2030. She also directed the establishment of the Open Innovation sector, utilizing open data to address social challenges in Riyadh.
-        With expertise in statistical analysis, data modeling, and machine learning, Sarah is proficient in data governance, open data policy development, and managing data models, architectures, and ETL processes. Her collaborative approach and strategic mindset have consistently driven transformative outcomes.
-        `,
-      image: "/images/speakers/speaker49.png",
-    },
+    // {
+    //   name: "Sarah Koshak",
+    //   position: "Data Expert",
+    //   organisation: "General Authority For Statistics",
+    //   bio: `Sarah Koshak is an experienced Senior Data Manager with over 10 years of expertise in data analytics and business optimization. Holding an MBA, she excels in translating complex data into actionable insights and driving business growth through data-driven strategies. Sarah has a proven track record of leading cross-functional teams and collaborating with key stakeholders to identify KPIs and align strategies with organizational goals.
+    //     Notable achievements include leading the innovative API project at the Royal Commission for Riyadh City (RCRC), enabling data access within the SDAIA framework and contributing to the comprehensive job forecast for Riyadh city by 2030. She also directed the establishment of the Open Innovation sector, utilizing open data to address social challenges in Riyadh.
+    //     With expertise in statistical analysis, data modeling, and machine learning, Sarah is proficient in data governance, open data policy development, and managing data models, architectures, and ETL processes. Her collaborative approach and strategic mindset have consistently driven transformative outcomes.
+    //     `,
+    //   image: "/images/speakers/speaker49.png",
+    // },
     {
       name: "ENG. DAUAA SHALABI",
       position: " Digital Transformation Advisor",
