@@ -355,6 +355,15 @@ const profiles = [
     linkedIn: "#",
     marginTP: 0,
   },
+  {
+    name: "Saleh Al Robah",
+    title: "Digital and Technology Director",
+    company: "AWJ Holding Company",
+    organization: "OMAN",
+    image: "/images/speakers/speaker58.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
 ];
 
 // const profilesTwo = [
