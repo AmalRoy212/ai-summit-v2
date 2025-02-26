@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { RiInstagramFill } from "react-icons/ri";
 import { FaLinkedin } from "react-icons/fa";
 import React from "react";
 
@@ -48,6 +46,15 @@ function MobileNav({ setPopup }: any) {
         >
           Agenda
         </a>
+        <a
+          onClick={() => setPopup(false)}
+          href="/#speakers"
+          data-aos="fade-left"
+          data-aos-duration={500}
+          className="cursor-pointer text-[18px] text-center py-2  w-full mx-15 my-2 rounded-lg text-white bg-gradient-to-r from-purple-500 to-cyan-500"
+        >
+          Speakers
+        </a>
         <Link
           href={"/sponsors"}
           data-aos="fade-left"
@@ -86,15 +93,6 @@ function MobileNav({ setPopup }: any) {
             href="https://www.linkedin.com/company/capstonemena"
           >
             <FaLinkedin size={40} />
-          </a>
-          <a
-            onClick={() => setPopup(false)}
-            href="/#speakers"
-            data-aos="fade-left"
-            data-aos-duration={500}
-            className="cursor-pointer text-[18px] text-center py-2  w-auto mx-15 my-2 rounded-lg text-white bg-gradient-to-r from-purple-500 to-cyan-500"
-          >
-            Speakers
           </a>
         </div>
       </div>

@@ -20,7 +20,7 @@ function Sponsors() {
     cssEase: "linear",
   };
   return (
-    <div className="mainContainer">
+    <div id="sponsors&partners" className="mainContainer">
       <motion.div
         variants={slideInFromTop}
         className="text-[40px] font-medium text-center text-gray-200 mb-10"
@@ -35,7 +35,7 @@ function Sponsors() {
         {/* from the Recent Past */}
       </motion.div>
       <h3 className="text-transparent text-xl text-center text-white">
-        EXHIBITING PARTNER
+        GOLD SPONSOR
       </h3>
       <div className="w-full flex md:flex-row flex-col justify-center min-h-52">
         {sponsorsDataProvider.map(

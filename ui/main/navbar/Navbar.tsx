@@ -61,7 +61,7 @@ function Navbar() {
               AGENDA
             </a>
             <a
-              href={pathname === "/" ? "#" : "/#"}
+              href={pathname === "/" ? "#sponsors&partners" : "/#"}
               className="cursor-pointer text-xs"
             >
               SPONSORS & PARTNERS
