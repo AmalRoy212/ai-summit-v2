@@ -43,7 +43,7 @@ function Sponsors() {
         )}
       </div>
       <h3 className="text-transparent text-xl text-center text-white">
-        HOST SPONSOR
+        HOST PARTNER
       </h3>
       <div className="w-full flex md:flex-row flex-col justify-center min-h-52">
         <img className="object-cover md:w-[300px] md:h-[300px] w-[200px] h-[200px]" src="/images/sponsors/mena.jpg" />
