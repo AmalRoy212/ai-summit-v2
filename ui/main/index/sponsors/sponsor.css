@@ -35,7 +35,7 @@ h2 {
 
 .mainContainer {
   margin: 10px;
-  z-index: 999 !important;
+  z-index: 9 !important;
 }
 
 .mainContainer .container {
