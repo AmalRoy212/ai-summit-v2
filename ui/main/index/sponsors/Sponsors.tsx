@@ -126,6 +126,19 @@ function Sponsors() {
           </div>
         </div>
       </div>
+      <div className="w-full flex flex-row justify-center items-center gap-x-6 mt-10">
+        <div>
+          <h3 className="text-transparent text-xl text-center text-white mb-5">
+            EXHIBITING SPONSOR
+          </h3>
+          <div className="w-full flex md:flex-row flex-col justify-center min-h-52">
+            <img
+              className="object-contain w-[200px] h-[206px] bg-slate-400 rounded-lg"
+              src="/images/sponsors/zoho.png"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
