@@ -1,1 +1,1 @@
-export const sponsorsDataProvider = ["UIC.png"];
+export const managingSponsors = ["plan.jpg"];

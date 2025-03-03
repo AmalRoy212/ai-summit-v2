@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./sponsor.css";
-import { sponsorsDataProvider } from "@/constants/sponsorsDataProvider";
+import { managingSponsors } from "@/constants/sponsorsDataProvider";
 import SponsordsData from "@/ui/sub/index/sponsors/SponsordsData";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
@@ -31,10 +31,7 @@ function ModalComponent() {
         style={{ zIndex: 99 }}
         className="w-full flex items-center md:flex-row flex-col justify-center min-h-52 cursor-pointer"
       >
-        <img
-          className="object-contain h-12 w-18"
-          src="/images/sponsors/UIC.png"
-        />
+        <SponsordsData imgSrc="uic.jpg" />
       </div>
       <Modal
         title="UIC"
@@ -97,46 +94,41 @@ function Sponsors() {
         PARTNERS
         {/* from the Recent Past */}
       </motion.div>
-      {/* <h3 className="text-transparent text-xl text-center text-white">
-        GOLD SPONSOR
+      <h3 className="text-transparent text-xl text-center text-white">
+        MANAGED BY
       </h3>
       <div className="w-full flex md:flex-row flex-col justify-center min-h-52">
-        {sponsorsDataProvider.map(
-          (img) => img && <SponsordsData imgSrc={img} />
-        )}
-      </div> */}
+        {managingSponsors.map((img) => img && <SponsordsData imgSrc={img} />)}
+      </div>
       <div className="w-full flex flex-row justify-center items-center gap-x-6">
-        <div className="flex flex-col justify-end">
-          <h3 className="text-transparent text-xl text-center text-white mb-5">
-            GOLD SPONSOR
-          </h3>
-          <div className="flex items-center md:flex-row w-[200px] h-[200px] overflow-hidden bg-slate-400 rounded-lg flex-col justify-center min-h-52">
-            <ModalComponent />
-          </div>
-        </div>
         <div>
-          <h3 className="text-transparent text-xl text-center text-white mb-5">
+          <h3 className="text-transparent text-xl text-center text-white">
             HOST PARTNER
           </h3>
-          <div className="w-full flex md:flex-row flex-col justify-center min-h-52">
-            <img
-              className="object-cover w-[200px] h-[206px] bg-slate-400 rounded-lg"
-              src="/images/sponsors/mena.png"
-            />
+          <SponsordsData imgSrc="almena.jpg" />
+        </div>
+      </div>
+      <div className="w-full flex flex-row justify-center items-center gap-x-6">
+        <div>
+          <h3 className="text-xl text-center text-white">GOLD SPONSOR</h3>
+          <ModalComponent />
+        </div>
+      </div>
+      <div className="w-full flex flex-row justify-center items-center gap-x-6">
+        <div>
+          <h3 className="text-xl text-center text-white">EXHIBITING SPONSOR</h3>
+          <div className="ml-2">
+            <SponsordsData imgSrc="zoho.jpg" />
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-row justify-center items-center gap-x-6 mt-10">
-        <div>
-          <h3 className="text-transparent text-xl text-center text-white mb-5">
-            EXHIBITING SPONSOR
-          </h3>
-          <div className="w-full flex md:flex-row flex-col justify-center min-h-52">
-            <img
-              className="object-contain w-[200px] h-[206px] bg-slate-400 rounded-lg"
-              src="/images/sponsors/zoho.png"
-            />
-          </div>
+      <div className="w-full flex flex-col justify-center items-center gap-x-6">
+        <h3 className="text-transparent text-xl text-center text-white">
+          MEDIA PARTNER
+        </h3>
+        <div className="w-full flex flex-row justify-center items-center gap-x-6">
+          <SponsordsData imgSrc="mid.jpg" />
+          <SponsordsData imgSrc="ai-time.jpg" />
         </div>
       </div>
     </div>
