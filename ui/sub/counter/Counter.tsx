@@ -9,7 +9,7 @@ function Counter() {
   const [loading, setLoading] = useState(true);
 
   const currentDate = Date.now();
-  const eventDate = new Date("2025-05-07").getTime();
+  const eventDate = new Date("2025-07-02").getTime();
   let timeDifference = eventDate - currentDate;
 
   useEffect(() => {
