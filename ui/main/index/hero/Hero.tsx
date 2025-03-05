@@ -66,9 +66,9 @@ function IndexHeader() {
         <p className="flex gap-x-3 justify-center items-center md:flex-row flex-col mb-5">
           <span className="flex items-center gap-3">
             <span className="md:font-bold md:text-5xl flex gap-x-2 font-semibold text-2xl justify-center items-center">
-              <CiCalendarDate /> 28-29
+              <CiCalendarDate /> 2-3
             </span>{" "}
-            April <br className="md:flex hidden" /> 2025
+            July <br className="md:flex hidden" /> 2025
             {/* 7-8 MAY 2025 */}
           </span>
           <span className="flex items-center gap-3">
