@@ -336,9 +336,9 @@ export default function DelegateRegistration() {
             ]}
           >
             <Select className="h-[40px]">
-              <Option value="Final dicision maker">Final dicision maker</Option>
+              <Option value="Final dicision maker">Final decision maker</Option>
               <Option value="One of the final dicision maker">
-                One of the final dicision maker
+              One of the final decision maker
               </Option>
               <Option value="I reffer and influence the decision">
                 I refer and influence the decision
