@@ -9,16 +9,13 @@ const AllSpeakers: React.FC = () => {
         {/* <h2 className="text-6xl md:text-7xl font-bold mb-10">Speakers</h2> */}
 
         <p className="text-lg md:text-xl text-white mb-4">
-          All Speakers/Advisory Board Members are password protected. Please{" "}
-          <Link href="/speakers" className="text-red-500 underline">
-            register here
-          </Link>{" "}
-          to get the password.
+          This content is password protected. To view it please enter your
+          password below:
         </p>
 
-        <p className="mb-4 text-md md:text-lg">
+        {/* <p className="mb-4 text-md md:text-lg">
           To view, please enter your password below.
-        </p>
+        </p> */}
 
         <form className="flex flex-col items-center space-y-4">
           <input

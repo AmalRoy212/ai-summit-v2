@@ -397,6 +397,56 @@ const profiles = [
 //   },
 // ];
 
+const newSpearks = [
+  {
+    name: "Dr.Khaled Alqahtani",
+    title: "Executive Director of Data & Statistics",
+    company: "NEOM",
+    organization: "OMAN",
+    image: "/images/speakers/speaker54.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Umran Rafi",
+    title: "Director of Data & AI",
+    company: "NEOM",
+    organization: "OMAN",
+    image: "/images/speakers/speaker50.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Ismail A. Almakrami",
+    title: "Vice President of Data Management",
+    company: "Emkan Finance",
+    organization: "OMAN",
+    image: "/images/speakers/img2.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Nawaf Alghamdi",
+    title: "Director of Data and AI",
+    company: "Council Of Health Insurance",
+    com: "",
+    organization: "OMAN",
+    image: "/images/speakers/img11.png",
+    linkedIn: "#",
+    marginTP: 0,
+  },
+  {
+    name: "Ali Hummadi",
+    title: "Executive Director of Digitalization",
+    company: "ARASCO",
+    organization: "OMAN",
+    image: "/images/speakers/speaker44.png",
+    linkedIn: "#",
+    marginTP: 0,
+    // fit: "cover",
+  },
+];
+
 const SpeakerProfiles: React.FC = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -408,7 +458,81 @@ const SpeakerProfiles: React.FC = () => {
       className="w-full flex flex-col items-center mb-28 px-4 md:px-16 z-10"
     >
       <Headers first="OUR ESTEEMED" middle="SPEAKERS" last="" />
-      <Link className="text-white font-bold" href="/all-speakers">All Speakers</Link>
+      <div className="w-full overflow-x-auto py-5 px-2 hide-scrollbar">
+        <div className="flex justify-center items-center gap-4 w-max">
+          {newSpearks.map((item, index) => (
+            // <ProfileCard item={profile} index={index} key={1} />
+            <>
+              <div className="w-[500px] relative min-w-[300px] rounded-lg shadow-md">
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="200" // You can increase this delay for a slower start
+                  data-aos-duration="1200" // Increase duration for a slower fade
+                  className="flex flex-col items-center m-4 rounded-lg overflow-hidden relative h-[400px]"
+                  key={index}
+                >
+                  <div
+                    className="w-[97%] rounded-lg mt-1"
+                    style={{
+                      backgroundImage: `url(/images/bg/speaker.jpg)`,
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className={`w-full h-64 pt-${
+                        item?.marginTP
+                      } object-${"contain"}`}
+                      // style={{ objectFit: "contain", maxHeight: "250px" }}
+                    />
+                  </div>
+                  <div className="p-4 flex flex-col items-center rounded-lg text-center absolute ml-8 bottom-0 left-0 bg-white min-h-[170px] w-[90%] px-5 bg-gradient-to-r from-purple-500 to-cyan-500">
+                    <h3 className="text-xl font-bold text-white uppercase mb-2">
+                      {item.name}
+                    </h3>
+                    <p className="text-white text-base font-medium">
+                      {item.title}
+                    </p>
+                    <p className="text-white text-base font-medium">
+                      {item.company}
+                    </p>
+                    {item.com && (
+                      <p className="text-white font-medium">{item.com}</p>
+                    )}
+                  </div>
+                </div>
+              </div>
+              {index === 4 && (
+                <Link href="/all-speakers" className="flex justify-end h-[150px] w-[150px] rounded-full mt-4 px-2 bg-gradient-to-r from-purple-500 to-cyan-500">
+                  <div className="flex items-center gap-2 text-white font-semibold hover:underline transition-all duration-200">
+                    View More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="currentColor"
+                      className="w-5 h-5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17.25 8.25L21 12l-3.75 3.75M3 12h18"
+                      />
+                    </svg>
+                  </div>
+                </Link>
+              )}
+            </>
+          ))}
+        </div>
+      </div>
+
+      <Link className="text-white font-bold bg-gradient-to-r from-purple-500 to-cyan-500 py-2 px-16 rounded-xl" href="/all-speakers">
+        See All Speakers
+      </Link>
       {/* <div className="flex flex-wrap justify-center gap-4 py-10 shadow-2xl rounded-2xl">
         {profiles.map((profile, index) => (
           <ProfileCard item={profile} index={index} />

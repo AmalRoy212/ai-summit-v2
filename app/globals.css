@@ -1,37 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 .cursive {
   font-family: "Cedarville Cursive", cursive;
 }
 
 @font-face {
-  font-family: 'TickingTimebombBB';
-  src: url('/font-styles/ticking-timebomb-bb.regular.ttf') format('truetype');
+  font-family: "TickingTimebombBB";
+  src: url("/font-styles/ticking-timebomb-bb.regular.ttf") format("truetype");
 }
 .z-impo {
   z-index: 90 !important;
 }
 
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 .text-tick {
-  font-family: 'TickingTimebombBB', sans-serif;
+  font-family: "TickingTimebombBB", sans-serif;
 }
 
 .Welcome-text {
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.4)),
+      rgba(255, 255, 255, 0.4)
+    ),
     linear-gradient(90.01deg, #e59cff 0.01%, #ba9cff 50.01%, #9cb2ff 100%);
   background-blend-mode: normal, screen;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  
 }
 
 .Welcome-box {
@@ -51,17 +59,21 @@
 }
 
 .button-primary {
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+      180deg,
       rgba(60, 8, 126, 0) 0%,
-      rgba(60, 8, 126, 0.32) 100%),
+      rgba(60, 8, 126, 0.32) 100%
+    ),
     rgba(113, 47, 255, 0.12);
   box-shadow: inset 0 0 12px #bf97ff3d;
 }
 
 .button-primary:hover {
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+      180deg,
       rgba(60, 8, 126, 0) 0%,
-      rgba(60, 8, 126, 0.42) 100%),
+      rgba(60, 8, 126, 0.42) 100%
+    ),
     rgba(113, 47, 255, 0.24);
   box-shadow: inset 0 0 12px #bf97ff70;
 }
@@ -136,7 +148,7 @@ html {
   }
 } */
 
-.test{
+.test {
   background-color: rgba(0, 0, 0, 0.53);
 }
 
@@ -147,8 +159,8 @@ html {
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 /* Initial color for the dots */
