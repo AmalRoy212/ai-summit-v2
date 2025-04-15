@@ -7,6 +7,7 @@ import { ThreeDCard } from "../index/3dCards/3D_Speaker";
 import ProfileCard from "@/ui/sub/index/speakers/SpeakersCardComp";
 import Headers from "@/ui/sub/headers/Headers";
 import NewProfileCard from "@/ui/sub/index/speakers/NewSpeaker";
+import Link from "next/link";
 
 // Profile data array
 const profiles = [
@@ -407,15 +408,12 @@ const SpeakerProfiles: React.FC = () => {
       className="w-full flex flex-col items-center mb-28 px-4 md:px-16 z-10"
     >
       <Headers first="OUR ESTEEMED" middle="SPEAKERS" last="" />
-
-      <div className="flex flex-wrap justify-center gap-4 py-10 shadow-2xl rounded-2xl">
+      <Link className="text-white font-bold" href="/all-speakers">All Speakers</Link>
+      {/* <div className="flex flex-wrap justify-center gap-4 py-10 shadow-2xl rounded-2xl">
         {profiles.map((profile, index) => (
           <ProfileCard item={profile} index={index} />
         ))}
-        {/* {profilesTwo.map((profile, index) => (
-          <ProfileCard item={profile} index={index} />
-        ))} */}
-      </div>
+      </div> */}
     </div>
   );
 };
