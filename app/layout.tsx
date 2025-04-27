@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Intelligent AI, Data, and Automation Summit",
   icons: logo,
   description:
-    "Intelligent AI, Data, and Automation Summit | 28-29 April 2025 | Saudi Arabia",
+    "Intelligent AI, Data, and Automation Summit | 2-3 july 2025 | Saudi Arabia",
 };
 
 export default function RootLayout({
