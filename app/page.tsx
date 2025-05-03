@@ -50,7 +50,7 @@ export default function Home() {
         <TopicsProvide />
         {/* <WhoIndustries /> */}
         {/* <Pricing /> */}
-        <Sponsors />
+        {/* <Sponsors /> */}
         <WhitePaper />
         {/* <StartUp /> */}
         {/* <End /> */}

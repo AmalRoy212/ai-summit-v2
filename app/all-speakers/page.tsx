@@ -5,7 +5,7 @@ const AllSpeakers: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-purple-900 to-black text-white flex flex-col items-center justify-center px-4">
       <main className="text-center">
-        <h1 className="text-6xl md:text-7xl font-bold mb-6">SPEAKERS</h1>
+        <h1 className="text-6xl md:text-7xl font-bold mb-6">SPEAKERS AND PARTNERS</h1>
         {/* <h2 className="text-6xl md:text-7xl font-bold mb-10">Speakers</h2> */}
 
         <p className="text-lg md:text-xl text-white mb-4">
