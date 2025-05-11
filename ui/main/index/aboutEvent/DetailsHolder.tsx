@@ -23,7 +23,7 @@ const Encryption = () => {
         </motion.div>
       </div>
       <DetailsProvider />
-      <Occation />
+      {/* <Occation /> */}
     </div>
   );
 };

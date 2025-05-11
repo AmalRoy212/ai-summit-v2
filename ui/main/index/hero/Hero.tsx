@@ -73,7 +73,7 @@ function IndexHeader() {
           </span>
           <span className="flex items-center gap-3">
             <span className="font-bold text-4xl flex gap-x-2">
-              <FaLocationDot /> RIYADH,
+              <FaLocationDot /> BAHRAIN,
             </span>{" "}
             KINGDOM OF <br /> SAUDI ARABIA
           </span>
@@ -88,11 +88,19 @@ function IndexHeader() {
           </div>
           <div style={{ borderRight: "1px solid white", height: "60%" }}></div>
           {/* <EventName /> */}
-          <img
+          {/* <img
             className="md:w-[500px] w-[400px]"
             src="/images/event/Event-Logo.png"
             alt=""
-          />
+          /> */}
+          <div className="ml-3 flex flex-row justify-end items-end">
+            <div>
+              <h1 className="text-6xl">Bahrain </h1>
+              <h1 className="text-6xl">Fintech </h1>
+              <h1 className="text-6xl">Summit </h1>
+            </div>
+            <h1 className="text-8xl">2025</h1>
+          </div>
         </div>
         <div className="w-full flex justify-center flex-col items-center">
           <h3 className="md:text-2xl font-semibold px-10 md:px-0 text-center mt-2">
