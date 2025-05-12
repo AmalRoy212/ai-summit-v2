@@ -2,7 +2,7 @@
 
 import AgendaHolder from "@/ui/main/agenda/AgendaHolder";
 import FooterHolder from "@/ui/main/footer/FooterHolder";
-import Headers from "@/ui/sub/headers/Headers";
+import Headers from "@/ui/sub/headers/Typograpy";
 import React, { useEffect } from "react";
 
 const Page: React.FC = () => {

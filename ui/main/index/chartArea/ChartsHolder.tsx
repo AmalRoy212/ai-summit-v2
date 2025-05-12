@@ -1,10 +1,10 @@
 "use client";
-import SubHeadings from "@/ui/sub/headers/SubHeadings";
-import JobFunctionCharts from "@/ui/sub/index/charts/PipeChart";
-import ApexChart from "@/ui/sub/index/charts/PolarChart";
-import { slideInFromTop } from "@/utils/motion";
-import { motion } from "framer-motion";
 import React from "react";
+import { motion } from "framer-motion";
+import { slideInFromTop } from "@/utils/motion";
+import SubHeadings from "@/ui/sub/headers/SubHeadings";
+import ApexChart from "@/ui/sub/index/charts/PolarChart";
+import JobFunctionCharts from "@/ui/sub/index/charts/PipeChart";
 
 function ChartsHolder() {
   return (

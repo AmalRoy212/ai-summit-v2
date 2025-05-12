@@ -2,7 +2,7 @@
 
 import DelegateRegistration from "@/ui/main/deletegate-form/DeletegateForm";
 import FooterHolder from "@/ui/main/footer/FooterHolder";
-import Headers from "@/ui/sub/headers/Headers";
+import Headers from "@/ui/sub/headers/Typograpy";
 import React, { useEffect } from "react";
 
 const EventsPage: React.FC = () => {

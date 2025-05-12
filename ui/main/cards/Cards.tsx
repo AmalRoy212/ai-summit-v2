@@ -1,12 +1,9 @@
 import React from "react";
 import CardsProvider from "@/ui/sub/cardsProvider/CardsProvider";
-import { CircularProgressChildren } from "@/ui/sub/progressBar/CircleProgress";
-import ProgressBar from "../index/progressbar/bar/ProgressBar";
-import SubHeadings from "@/ui/sub/headers/SubHeadings";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 
-function Cards() {
+export default function IndustryCards() {
   const progressData = [
     {
       value: 45,
@@ -61,51 +58,16 @@ function Cards() {
     <>
       <motion.div
         variants={slideInFromTop}
-        className="text-[40px] font-medium text-center text-gray-200 mb-10"
+        className="w-full mx-auto max-w-7xl flex justify-start"
       >
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-          BY{" "}
-        </span>
-        INDUSTRY
+        <div className="w-[400px] shadow-xl bg-gradient-to-r from-[#1c0069] to-[#0000] ml-5 tracking-wider px-5 py-1 rounded-xl text-[30px] font-medium text-start mr-5 text-gray-200">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            BY{" "}
+          </span>
+          INDUSTRY
+        </div>
       </motion.div>
       <CardsProvider />
-      {/* <div className="md:flex justify-center items-center gap-5">
-        <div className="md:w-1/2 h-full">
-          <SubHeadings fontSize={10} heading="INDUSTRIES" />
-          <div className="flex flex-row justify-center items-center h-auto w-full md:w-full gap-5 p-5">
-            {progressData.slice(0, 2).map((data, index) => (
-              <CircularProgressChildren
-                color={data.color}
-                key={index}
-                index={index}
-                value={data.value}
-                title={data.title}
-              />
-            ))}
-          </div>
-          <div className="flex flex-row justify-center items-center h-auto w-full md:w-full gap-5 p-5">
-            {progressData.slice(2).map((data, index) => (
-              <CircularProgressChildren
-                color={data.color}
-                key={index + 2}
-                index={index + 2}
-                value={data.value}
-                title={data.title}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="md:w-1/2 h-full p-10 ">
-          <div className="md:mt-[-4rem]">
-            <SubHeadings fontSize={10} heading="BY JOB TITLE" />
-          </div>
-          {progressBarData.map((data, index) => (
-            <ProgressBar key={index} value={data.value} maxValue={100} index={index} title={data.title} />
-          ))}
-        </div>
-      </div> */}
     </>
   );
 }
-
-export default Cards;

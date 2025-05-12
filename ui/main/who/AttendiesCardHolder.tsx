@@ -1,9 +1,8 @@
 import React from "react";
-import RoundCard from "./RoundCard";
-import UnderLineCards from "./UnderLineCards";
-import SubHeadings from "@/ui/sub/headers/SubHeadings";
+import RoundCard from "./JobTitleCards";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
+import SectoralCard from "./SectoralCard";
 
 interface data {
   bgColor: string;
@@ -68,19 +67,18 @@ const dataOne = [
   },
 ];
 
-function RoundHolder({ data }: RoundHolderProps) {
+export default function AttendiesCardHolder({ data }: RoundHolderProps) {
   return (
-    <div className="w-full flex flex-col py-10">
-      <motion.div
-        variants={slideInFromTop}
-        className="text-[40px] font-medium text-center text-gray-200 py-10"
-      >
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-          BY{" "}
-        </span>
-        JOB TITLE
+    <div className="w-full mx-auto max-w-7xl flex flex-col">
+      <motion.div variants={slideInFromTop} className="flex justify-end py-5">
+        <div className="w-[400px] shadow-2xl bg-gradient-to-r from-[#000] to-[#1c0069] tracking-wider px-5 py-1 rounded-xl text-[30px] font-medium text-end mr-5 text-gray-200">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            BY{" "}
+          </span>
+          JOB TITLE
+        </div>
       </motion.div>
-      <div className="w-full flex md:flex-row flex-col">
+      <div className="w-full flex md:flex-row flex-col px-5 justify-evenly">
         <div className="w-full md:w-1/4 flex flex-col">
           {dataTwo?.map((item: data) => (
             <RoundCard
@@ -91,8 +89,8 @@ function RoundHolder({ data }: RoundHolderProps) {
             />
           ))}
         </div>
-        <div className="w-full md:w-2/4 flex flex-col px-5">
-          <UnderLineCards />
+        <div className="w-full md:w-2/4 flex flex-col px-5 mt-4">
+          <SectoralCard />
         </div>
         <div className="w-full md:w-1/4 flex flex-col">
           {dataOne?.map((item: data) => (
@@ -108,5 +106,3 @@ function RoundHolder({ data }: RoundHolderProps) {
     </div>
   );
 }
-
-export default RoundHolder;

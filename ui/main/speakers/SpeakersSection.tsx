@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ThreeDCard } from "../index/3dCards/3D_Speaker";
 import ProfileCard from "@/ui/sub/index/speakers/SpeakersCardComp";
-import Headers from "@/ui/sub/headers/Headers";
+import Headers from "@/ui/sub/headers/Typograpy";
 import NewProfileCard from "@/ui/sub/index/speakers/NewSpeaker";
 import Link from "next/link";
 

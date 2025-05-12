@@ -1,11 +1,9 @@
 import React, { useEffect, useRef } from "react";
-import Carousel from "./NewsCarousel";
-import NewsTicker from "./NewsTicker";
 import { motion } from "framer-motion";
 import { slideInFromTop } from "@/utils/motion";
 import NewCarousel from "./newCarousel";
 
-const NewsLetter: React.FC = () => {
+export default function NewsLetter() {
   const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -33,21 +31,25 @@ const NewsLetter: React.FC = () => {
           NEWS & ARTICLES{" "}
         </span>
       </motion.div>
-      {/* <div className="flex flex-col md:flex-row px-5 md:my-20  z-10">
-        <div className="w-2/3">
-          <Carousel />
-        </div>
-        <div className="w-1/3">
-          <NewsTicker />
-        </div>
-      </div> */}
-      <div className="flex flex-col md:flex-row md:my-20 z-10 gap-x-5">
+      <div className="w-full  mx-auto max-w-7xl flex flex-col md:flex-row md:my-20 z-10 gap-x-5">
         <div className="w-full">
           <NewCarousel />
         </div>
       </div>
     </div>
   );
-};
+}
 
-export default NewsLetter;
+// another way to show newses through new letter
+
+// import { Carousel } from "antd";
+// import NewsTicker from "./NewsTicker";
+
+// <div className="flex flex-col md:flex-row px-5 md:my-20  z-10">
+//   <div className="w-2/3">
+//     <Carousel />
+//   </div>
+//   <div className="w-1/3">
+//     <NewsTicker />
+//   </div>
+// </div>;

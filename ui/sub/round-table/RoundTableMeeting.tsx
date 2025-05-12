@@ -1,26 +1,13 @@
-import { useRouter } from "next/navigation";
-import React from "react";
+"use client";
 
-const ExecutiveRoundtable = () => {
+import React from "react";
+import { useRouter } from "next/navigation";
+
+export default function ExecutiveRoundtable() {
   const router = useRouter();
   return (
-    <section className="bg-darkBlue text-white py-10 mb-20">
+    <section className="bg-darkBlue text-white py-20 mb-20">
       <div className="container mx-auto flex flex-col lg:flex-row items-center lg:items-start lg:justify-center">
-        {/* Left Image Section */}
-        {/* <div className="flex justify-center lg:order-1 lg:w-1/3">
-          <div
-            className="p-6 rounded-lg shadow-lg w-64 lg:w-72 flex justify-center items-center"
-            style={{ animationDelay: "0.2s" }}
-          >
-            <img
-              src="/images/index/startup.png"
-              alt="Idea"
-              className="w-80 lg:w-96"
-            />
-          </div>
-        </div> */}
-
-        {/* Right Content Section */}
         <div className="relative lg:w-2/3 px-10 mt-10 lg:mt-0 rounded-2xl shadow-2xl overflow-hidden">
           <video
             className="absolute inset-0 w-full h-full object-cover"
@@ -69,6 +56,4 @@ const ExecutiveRoundtable = () => {
       </div>
     </section>
   );
-};
-
-export default ExecutiveRoundtable;
+}

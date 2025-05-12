@@ -1,23 +1,16 @@
-import React from "react";
-
 function DetailsProvider() {
   return (
-    <div className="md:flex flex-row w-full h-auto py-10 md:py-0">
-      <div
-        data-aos="fade-up-right"
-        className="flex p-3 flex-col md:w-2/4 w-full md:h-screen justify-center items-center"
-      >
-        <img
-          src="/images/alts/bg-1.png"
-          style={{ height: "400px" }}
-          className="rounded-xl w-full object-cover"
-        />
-      </div>
-      <div
-        data-aos="fade-up-left"
-        className="flex flex-col md:w-2/4 w-full md:h-screen h-auto justify-center items-center p-5"
-      >
-        <p className="text-[15px] text-gray-400 dark:text-gray-400 md:p-5 text-justify">
+    <div className="flex w-full md:flex-row flex-col justify-center px-5 gap-x-6 mt-5">
+      <img
+        data-aos="zoom-in"
+        src="/images/alts/bg-1.png"
+        className="rounded-xl md:w-1/2 w-full h-[390px] object-cover"
+      />
+      <div className="md:w-1/2 w-full">
+        <p
+          data-aos="zoom-in"
+          className="text-[14px] text-gray-400 dark:text-gray-400 md:mt-1 mt-4"
+        >
           Fintech is at the heart of Bahrain’s financial evolution, driving
           advancements in digital payments, blockchain, open banking, and
           AI-powered financial services. As a leading financial hub in the Gulf

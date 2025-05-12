@@ -2,7 +2,7 @@
 
 import FooterHolder from "@/ui/main/footer/FooterHolder";
 import SpeakersEnquiryForm from "@/ui/main/speakers-form/SpeakersForm";
-import Headers from "@/ui/sub/headers/Headers";
+import Headers from "@/ui/sub/headers/Typograpy";
 import React, { useEffect } from "react";
 
 const sponsorsPage: React.FC = () => {

@@ -1,31 +1,17 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
-import { slideInFromTop } from "@/utils/motion";
 import DetailsProvider from "@/ui/sub/index/aboutEvent/DetailsProvider";
-import Occation from "@/ui/sub/index/aboutEvent/Occation";
+import Typography from "@/ui/sub/headers/Typography";
 
-const Encryption = () => {
+export default function AboutEvent() {
   return (
-    <div className="w-[100%] overflow-hidden mt-[3rem]">
-      <div id="about-us" className="w-[100%] overflow-hidden h-auto z-[5]">
-        <motion.div
-          variants={slideInFromTop}
-          className="text-[40px] font-medium text-center text-gray-200"
-        >
-          ABOUT
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-            {" "}
-            THE{" "}
-          </span>
-          CONFERENCE  
-        </motion.div>
-      </div>
+    <div
+      id="about-us"
+      className="w-full max-w-7xl mx-auto overflow-hidden mt-20"
+    >
+      <Typography first="ABOUT" middle="THE" last="CONFERENCE" />
       <DetailsProvider />
-      {/* <Occation /> */}
     </div>
   );
-};
-
-export default Encryption;
+}

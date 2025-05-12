@@ -1,22 +1,22 @@
 export const attendies_Data = [
   {
-    label : "PREQUALIFIED DELEGATES",
-    toCount : 350
+    label: "Pre-Qualified Delegates",
+    toCount: 500,
   },
   {
-    label : "INDUSTRY EXPERTS",
-    toCount : 40
+    label: "Industry Experts",
+    toCount: 50,
   },
   {
-    label : "ORGANIZATIONS",
-    toCount : 120
+    label: "Organisations",
+    toCount: 150,
   },
   {
-    label : "SPONSORS & PARTNERS",
-    toCount : 30
+    label: "SPONSORS & PARTNERS",
+    toCount: 50,
   },
   {
-    label : "INVESTORS",
-    toCount : 40
-  }
-]
+    label: "INVESTORS",
+    toCount: 40,
+  },
+];

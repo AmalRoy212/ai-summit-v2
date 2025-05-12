@@ -2,7 +2,7 @@
 
 import FooterHolder from "@/ui/main/footer/FooterHolder";
 import PrivacyPage from "@/ui/main/privacy-policy/PrivacyPage";
-import Headers from "@/ui/sub/headers/Headers";
+import Headers from "@/ui/sub/headers/Typograpy";
 import React, { useEffect } from "react";
 
 const Page: React.FC = () => {

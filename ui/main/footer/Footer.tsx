@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <div
-      className={`bg-transparent text-gray-200 shadow-lg p-[15px]  mt-${
+      className={`w-full mx-auto max-w-7xl  bg-transparent text-gray-200 shadow-lg p-[15px]  mt-${
         pathname === "/delegates" ? 0 : 10
       } cursor-pointer`}
     >

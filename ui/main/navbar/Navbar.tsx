@@ -16,8 +16,8 @@ function Navbar() {
   console.log(pathname);
 
   return (
-    <div className="w-[100%] h-[65px] fixed top-0 bg-[#03001417] backdrop-blur-md z-[50] px-2 md:px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+    <div className="w-full h-[65px] fixed top-0 bg-[#03001417] backdrop-blur-md z-[50] px-2 md:px-10">
+      <div className="w-full h-full mx-auto max-w-7xl flex flex-row items-center justify-between m-auto px-[10px]">
         <a
           href="https://saudi.idasummit.com/"
           className="h-auto flex flex-row items-center"
