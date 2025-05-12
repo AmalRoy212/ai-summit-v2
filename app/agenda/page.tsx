@@ -1,12 +1,11 @@
 "use client";
 
+import React, { useEffect } from "react";
+import Typography from "@/ui/sub/headers/Typography";
 import AgendaHolder from "@/ui/main/agenda/AgendaHolder";
 import FooterHolder from "@/ui/main/footer/FooterHolder";
-import Headers from "@/ui/sub/headers/Typograpy";
-import React, { useEffect } from "react";
 
 const Page: React.FC = () => {
-
   useEffect(() => {
     localStorage.setItem("reloaded", "true");
   }, []);
@@ -23,7 +22,7 @@ const Page: React.FC = () => {
         className="bg-black bg-opacity-60 w-full md:h-[200px] h-[200px] flex justify-center"
       >
         <div className="bg-black bg-opacity-60 w-full md:py-7 flex justify-center">
-          <Headers first="" middle="AGENDA " last="" />
+          <Typography first="" middle="AGENDA " last="" />
         </div>
       </div>
 
@@ -36,9 +35,9 @@ const Page: React.FC = () => {
         }}
         className="w-full bg-contain py-20 flex justify-center items-start min-h-screen"
       >
-       <AgendaHolder/>
+        <AgendaHolder />
       </div>
-      <FooterHolder/>
+      <FooterHolder />
     </div>
   );
 };

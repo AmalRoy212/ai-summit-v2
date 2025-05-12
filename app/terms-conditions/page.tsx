@@ -1,9 +1,9 @@
 "use client";
 
+import React, { useEffect } from "react";
+import Typography from "@/ui/sub/headers/Typography";
 import FooterHolder from "@/ui/main/footer/FooterHolder";
 import TermsAndConditionsPage from "@/ui/main/terms-and-condtions/GeneralTerms";
-import Headers from "@/ui/sub/headers/Typograpy";
-import React, { useEffect } from "react";
 
 const Page: React.FC = () => {
   useEffect(() => {
@@ -22,7 +22,7 @@ const Page: React.FC = () => {
         className="bg-black bg-opacity-60 w-full md:h-[400px] h-[300px] flex justify-center"
       >
         <div className="bg-black bg-opacity-60 w-full md:py-24 flex justify-center">
-          <Headers first="" middle="General Terms" last=" & Conditions" />
+          <Typography first="" middle="General Terms" last=" & Conditions" />
         </div>
       </div>
 
@@ -37,7 +37,7 @@ const Page: React.FC = () => {
       >
         <TermsAndConditionsPage />
       </div>
-      <FooterHolder/>
+      <FooterHolder />
     </div>
   );
 };

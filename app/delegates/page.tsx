@@ -1,12 +1,11 @@
 "use client";
 
-import DelegateRegistration from "@/ui/main/deletegate-form/DeletegateForm";
-import FooterHolder from "@/ui/main/footer/FooterHolder";
-import Headers from "@/ui/sub/headers/Typograpy";
 import React, { useEffect } from "react";
+import Typography from "@/ui/sub/headers/Typography";
+import FooterHolder from "@/ui/main/footer/FooterHolder";
+import DelegateRegistration from "@/ui/main/deletegate-form/DeletegateForm";
 
 const EventsPage: React.FC = () => {
-
   useEffect(() => {
     localStorage.setItem("reloaded", "true");
   }, []);
@@ -23,7 +22,7 @@ const EventsPage: React.FC = () => {
         className="bg-black bg-opacity-60 w-full md:h-[400px] h-[300px] flex justify-center"
       >
         <div className="bg-black bg-opacity-60 w-full md:py-24 flex justify-center">
-          <Headers first="" middle="DELEGATE" last="REGISTRATION" />
+          <Typography first="" middle="DELEGATE" last="REGISTRATION" />
         </div>
       </div>
 
@@ -65,7 +64,7 @@ const EventsPage: React.FC = () => {
           </Link>
         </div> */}
       </div>
-      <FooterHolder/>
+      <FooterHolder />
     </div>
   );
 };

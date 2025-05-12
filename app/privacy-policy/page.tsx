@@ -1,12 +1,11 @@
 "use client";
 
+import React, { useEffect } from "react";
+import Typography from "@/ui/sub/headers/Typography";
 import FooterHolder from "@/ui/main/footer/FooterHolder";
 import PrivacyPage from "@/ui/main/privacy-policy/PrivacyPage";
-import Headers from "@/ui/sub/headers/Typograpy";
-import React, { useEffect } from "react";
 
 const Page: React.FC = () => {
-
   useEffect(() => {
     localStorage.setItem("reloaded", "true");
   }, []);
@@ -23,7 +22,7 @@ const Page: React.FC = () => {
         className="bg-black bg-opacity-60 w-full md:h-[400px] h-[300px] flex justify-center"
       >
         <div className="bg-black bg-opacity-60 w-full md:py-24 flex justify-center">
-          <Headers first="" middle="Privacy " last="Policy" />
+          <Typography first="" middle="Privacy " last="Policy" />
         </div>
       </div>
 
@@ -36,9 +35,9 @@ const Page: React.FC = () => {
         }}
         className="w-full bg-contain py-20 flex flex-col md:flex-row justify-center items-start min-h-screen"
       >
-       <PrivacyPage/>
+        <PrivacyPage />
       </div>
-      <FooterHolder/>
+      <FooterHolder />
     </div>
   );
 };

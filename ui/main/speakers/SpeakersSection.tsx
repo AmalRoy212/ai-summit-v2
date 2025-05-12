@@ -5,9 +5,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ThreeDCard } from "../index/3dCards/3D_Speaker";
 import ProfileCard from "@/ui/sub/index/speakers/SpeakersCardComp";
-import Headers from "@/ui/sub/headers/Typograpy";
 import NewProfileCard from "@/ui/sub/index/speakers/NewSpeaker";
 import Link from "next/link";
+import Typography from "@/ui/sub/headers/Typography";
 
 // Profile data array
 const profiles = [
@@ -457,7 +457,7 @@ const SpeakerProfiles: React.FC = () => {
       id="speakers"
       className="w-full flex flex-col items-center mb-28 px-4 md:px-16 z-10"
     >
-      <Headers first="OUR ESTEEMED" middle="SPEAKERS" last="" />
+      <Typography first="OUR ESTEEMED" middle="SPEAKERS" last="" />
       <div className="w-full overflow-x-auto py-5 px-2 hide-scrollbar">
         <div className="flex justify-center items-center gap-4 w-max">
           {newSpearks.map((item, index) => (
@@ -505,7 +505,10 @@ const SpeakerProfiles: React.FC = () => {
                 </div>
               </div>
               {index === 4 && (
-                <Link href="/all-speakers" className="flex justify-end h-[150px] w-[150px] rounded-full mt-4 px-2 bg-gradient-to-r from-purple-500 to-cyan-500">
+                <Link
+                  href="/all-speakers"
+                  className="flex justify-end h-[150px] w-[150px] rounded-full mt-4 px-2 bg-gradient-to-r from-purple-500 to-cyan-500"
+                >
                   <div className="flex items-center gap-2 text-white font-semibold hover:underline transition-all duration-200">
                     View More
                     <svg
@@ -530,7 +533,10 @@ const SpeakerProfiles: React.FC = () => {
         </div>
       </div>
 
-      <Link className="text-white font-bold bg-gradient-to-r from-purple-500 to-cyan-500 py-2 px-16 rounded-xl" href="/all-speakers">
+      <Link
+        className="text-white font-bold bg-gradient-to-r from-purple-500 to-cyan-500 py-2 px-16 rounded-xl"
+        href="/all-speakers"
+      >
         See All Speakers
       </Link>
       {/* <div className="flex flex-wrap justify-center gap-4 py-10 shadow-2xl rounded-2xl">
