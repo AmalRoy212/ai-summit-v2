@@ -12,9 +12,13 @@ import { GiDecapitation } from "react-icons/gi";
 import { RiGovernmentFill, RiMentalHealthFill } from "react-icons/ri";
 
 const items = [
+  // {
+  //   title: "Government & Regulatory",
+  //   element: <RiGovernmentFill size={45} />,
+  // },
   {
-    title: "Government & Regulatory",
-    element: <RiGovernmentFill size={45} />,
+    title: "Venture Capitalist",
+    element: <GiDecapitation size={45} />,
   },
   {
     title: "Banks & Financial",
@@ -29,12 +33,8 @@ const items = [
     element: <GiOilRig size={45} />,
   },
   {
-    title: "Retail & E-commerce",
-    element: <SiCashapp size={45} />,
-  },
-  {
-    title: "FMCG & Consumer Goods ",
-    element: <BsCartCheckFill size={45} />,
+    title: "Private Fundraising",
+    element: <PiCassetteTapeFill size={48} />,
   },
 ];
 
@@ -55,23 +55,22 @@ const itemsOne = [
     title: "SME Financial Institutions",
     element: <BiSolidInstitution size={45} />,
   },
+  {
+    title: "Retail & E-commerce",
+    element: <SiCashapp size={45} />,
+  },
 ];
 const itemsTwo = [
   {
-    title: "Venture Capitalist",
-    element: <GiDecapitation size={45} />,
-  },
-
-  {
-    title: "Private Fundraising",
-    element: <PiCassetteTapeFill size={48} />,
+    title: "FMCG & Consumer Goods ",
+    element: <BsCartCheckFill size={45} />,
   },
   {
     title: "Corporate Treasury & Large Enterprises",
     element: <GiMining size={43} />,
   },
   {
-    title: "Personal Finance & Treasury Management",
+    title: "Finance & Treasury Management",
     element: <GiTakeMyMoney size={48} />,
   },
 ];
@@ -79,7 +78,7 @@ const itemsTwo = [
 function BlockHelper({ title, element }: any) {
   return (
     <div
-      className="flex flex-col items-center md:w-1/6 w-full"
+      className="flex flex-col items-center md:w-1/5 w-full"
       data-aos="fade-up"
       data-aos-anchor="[data-aos-id-blocks]"
     >

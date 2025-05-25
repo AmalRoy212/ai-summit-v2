@@ -37,11 +37,11 @@ const data = [
 
 export default function SectoralCard() {
   return data.map((item) => (
-    <div data-aos="zoom-in" className="w-full text-white mt-2 pb-2">
+    <div data-aos="zoom-in" className="w-full text-white mt-1 pb-2 border-b-2">
       <div className="flex flex-wrap gap-x-1 gap-y-1 justify-start items-center">
         {item.dis?.map((item) => (
-          <div className="border text-sm border-slate-500 rounded-xl px-5 py-1">
-            {item}
+          <div className="text-normal">
+            {item},
           </div>
         ))}
       </div>
